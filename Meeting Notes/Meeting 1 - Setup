@@ -1,1 +1,27 @@
-a
+2026-09-12
+
+# Project Structure and Roles
+  - Project 1 (GTA housing affordability): Samriti leads
+
+- Each person pushes their own findings file; lead merges and makes final call
+- Approach: housing affordability first data, then tools, then Power BI
+
+# Data and Tooling
+
+- Primary datasets: CMHC rent data, Statistics Canada census income data
+- Tool discussion: Python, PySpark, SQL, Microsoft Fabric all on the table
+  - Different tools may be used across the project for variety
+  - Samriti to confirm tooling on GitHub after setup
+- Data extraction target: roughly End of the weekend
+
+# LinkedIn and Meeting Notes
+
+- Post strategy: lead writes the post, shares text to others to repost independently
+  - Tag each other rather than copy-paste reposts
+  - Power BI report post planned after project completion
+- Meeting notes: keep them concise, bullet-point style :) 
+
+# Next Steps
+
+- **Set up GitHub repo and invite (done)
+- **Push initial data findings file to GitHub**
