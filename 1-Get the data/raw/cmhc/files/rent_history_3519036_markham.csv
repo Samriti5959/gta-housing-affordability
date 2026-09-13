@@ -1,0 +1,45 @@
+ — Historical Average Rents by Bedroom Type  
+1990 to 2025 Row / Apartment October
+,Studio,,1 Bedroom,,2 Bedroom,,3 Bedroom +,,Total,,
+1990 October,422,a ,497,a ,529,a ,610,a ,519,a ,
+1991 October,496,a ,493,a ,562,a ,668,a ,540,a ,
+1992 October,445,a ,529,a ,594,a ,830,a ,587,a ,
+1993 October,509,a ,555,a ,624,a ,849,a ,615,a ,
+1994 October,486,a ,565,a ,650,a ,863,a ,633,a ,
+1995 October,503,a ,600,a ,680,a ,878,a ,664,a ,
+1996 October,542,a ,621,a ,704,a ,"1,004",a ,694,a ,
+1997 October,532,a ,624,a ,728,a ,896,a ,696,a ,
+1998 October,529,a ,657,a ,765,a ,957,a ,733,a ,
+1999 October,562,a ,751,a ,836,a ,967,a ,799,a ,
+2000 October,571,a ,729,a ,855,a ,"1,069",a ,818,a ,
+2001 October,604,c ,841,a ,962,a ,"1,131",a ,929,a ,
+2002 October,607,a ,829,a ,982,a ,"1,128",a ,928,a ,
+2003 October,665,a ,886,a ,"1,025",a ,"1,184",a ,976,a ,
+2004 October,627,a ,875,a ,"1,028",a ,"1,257",a ,"1,004",a ,
+2005 October,625,a ,903,a ,"1,037",a ,"1,239",a ,995,a ,
+2006 October,621,a ,924,a ,"1,083",a ,"1,249",a ,"1,019",a ,
+2007 October,**,,909,a ,"1,049",a ,"1,177",b ,998,a ,
+2008 October,**,,944,a ,"1,103",a ,"1,296",a ,"1,067",a ,
+2009 October,**,,931,b ,"1,056",b ,"1,220",b ,997,b ,
+2010 October,701,a ,934,a ,"1,059",a ,"1,305",a ,"1,026",a ,
+2011 October,**,,985,a ,"1,124",a ,"1,416",a ,"1,078",a ,
+2012 October,716,a ,986,a ,"1,149",a ,"1,518",a ,"1,097",a ,
+2013 October,773,a ,"1,029",a ,"1,183",a ,"1,333",a ,"1,128",a ,
+2014 October,**,,"1,031",a ,"1,191",a ,"1,617",a ,"1,145",a ,
+2015 October,**,,"1,092",a ,"1,257",a ,"1,401",a ,"1,197",a ,
+2016 October,**,,"1,149",a ,"1,271",a ,"1,362",a ,"1,228",a ,
+2017 October,**,,"1,234",a ,"1,394",a ,"1,544",a ,"1,339",a ,
+2018 October,**,,"1,213",a ,"1,408",a ,"1,538",a ,"1,337",a ,
+2019 October,"1,029",b ,"1,373",a ,"1,544",a ,"1,639",a ,"1,483",a ,
+2020 October,**,,"1,439",a ,"1,600",a ,"1,668",a ,"1,541",a ,
+2021 October,**,,"1,421",a ,"1,547",a ,"1,727",a ,"1,503",a ,
+2022 October,**,,"1,431",a ,"1,593",a ,"1,995",a ,"1,554",a ,
+2023 October,**,,"1,541",a ,"1,677",a ,"1,880",a ,"1,630",a ,
+2024 October,**,,"1,742",a ,"1,893",a ,"1,984",a ,"1,831",a ,
+2025 October,**,,"1,885",b ,"1,996",c ,"1,969",a ,"1,942",b ,
+
+Notes
+"The following letter codes are used to indicate the reliability of the estimates: a — Excellent, b — Very good, c — Good, d — Poor (Use with Caution))"
+** — Data suppressed to protect confidentiality or data not statistically reliable
+++ — Change in rent is not statistically significant. This means that the change in rent is not statistically different than zero (0). (Applies only to % Change of Average Rent Tables).
+Source,CMHC Rental Market Survey

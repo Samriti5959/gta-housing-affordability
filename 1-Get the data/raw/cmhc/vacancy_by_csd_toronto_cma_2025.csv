@@ -1,0 +1,111 @@
+survey_year,area,bedroom_type,value,reliability
+2025,Ajax (T),Studio,**,
+2025,Ajax (T),1 Bedroom,0.0,d
+2025,Ajax (T),2 Bedroom,2.4,c
+2025,Ajax (T),3 Bedroom +,0.9,a
+2025,Ajax (T),Total,2.0,c
+2025,Aurora (T),Studio,**,
+2025,Aurora (T),1 Bedroom,3.6,d
+2025,Aurora (T),2 Bedroom,2.8,a
+2025,Aurora (T),3 Bedroom +,**,
+2025,Aurora (T),Total,2.7,a
+2025,Bradford West Gwillimbury (T),Studio,**,
+2025,Bradford West Gwillimbury (T),1 Bedroom,**,
+2025,Bradford West Gwillimbury (T),2 Bedroom,0.0,d
+2025,Bradford West Gwillimbury (T),3 Bedroom +,**,
+2025,Bradford West Gwillimbury (T),Total,0.8,d
+2025,Brampton (CY),Studio,4.3,d
+2025,Brampton (CY),1 Bedroom,4.8,b
+2025,Brampton (CY),2 Bedroom,4.6,b
+2025,Brampton (CY),3 Bedroom +,1.6,a
+2025,Brampton (CY),Total,4.3,b
+2025,Caledon (T),Studio,**,
+2025,Caledon (T),1 Bedroom,**,
+2025,Caledon (T),2 Bedroom,**,
+2025,Caledon (T),3 Bedroom +,**,
+2025,Caledon (T),Total,**,
+2025,East Gwillimbury (T),Studio,**,
+2025,East Gwillimbury (T),1 Bedroom,**,
+2025,East Gwillimbury (T),2 Bedroom,**,
+2025,East Gwillimbury (T),3 Bedroom +,**,
+2025,East Gwillimbury (T),Total,**,
+2025,Georgina (T),Studio,**,
+2025,Georgina (T),1 Bedroom,**,
+2025,Georgina (T),2 Bedroom,**,
+2025,Georgina (T),3 Bedroom +,**,
+2025,Georgina (T),Total,**,
+2025,Halton Hills (T),Studio,**,
+2025,Halton Hills (T),1 Bedroom,**,
+2025,Halton Hills (T),2 Bedroom,**,
+2025,Halton Hills (T),3 Bedroom +,**,
+2025,Halton Hills (T),Total,**,
+2025,Markham (CY),Studio,**,
+2025,Markham (CY),1 Bedroom,3.2,d
+2025,Markham (CY),2 Bedroom,0.3,b
+2025,Markham (CY),3 Bedroom +,**,
+2025,Markham (CY),Total,**,
+2025,Milton (T),Studio,**,
+2025,Milton (T),1 Bedroom,5.0,d
+2025,Milton (T),2 Bedroom,1.8,c
+2025,Milton (T),3 Bedroom +,**,
+2025,Milton (T),Total,3.2,c
+2025,Mississauga (CY),Studio,5.8,d
+2025,Mississauga (CY),1 Bedroom,4.6,b
+2025,Mississauga (CY),2 Bedroom,3.4,b
+2025,Mississauga (CY),3 Bedroom +,2.5,a
+2025,Mississauga (CY),Total,3.8,a
+2025,New Tecumseth (T),Studio,**,
+2025,New Tecumseth (T),1 Bedroom,**,
+2025,New Tecumseth (T),2 Bedroom,2.9,b
+2025,New Tecumseth (T),3 Bedroom +,**,
+2025,New Tecumseth (T),Total,2.2,c
+2025,Newmarket (T),Studio,**,
+2025,Newmarket (T),1 Bedroom,5.0,d
+2025,Newmarket (T),2 Bedroom,**,
+2025,Newmarket (T),3 Bedroom +,**,
+2025,Newmarket (T),Total,**,
+2025,Oakville (T),Studio,**,
+2025,Oakville (T),1 Bedroom,2.5,b
+2025,Oakville (T),2 Bedroom,4.1,d
+2025,Oakville (T),3 Bedroom +,**,
+2025,Oakville (T),Total,3.3,d
+2025,Orangeville (T),Studio,**,
+2025,Orangeville (T),1 Bedroom,4.0,d
+2025,Orangeville (T),2 Bedroom,4.5,d
+2025,Orangeville (T),3 Bedroom +,0.0,d
+2025,Orangeville (T),Total,3.5,c
+2025,Pickering (CY),Studio,**,
+2025,Pickering (CY),1 Bedroom,**,
+2025,Pickering (CY),2 Bedroom,**,
+2025,Pickering (CY),3 Bedroom +,1.5,c
+2025,Pickering (CY),Total,**,
+2025,Richmond Hill (T),Studio,0.0,d
+2025,Richmond Hill (T),1 Bedroom,3.1,c
+2025,Richmond Hill (T),2 Bedroom,2.1,b
+2025,Richmond Hill (T),3 Bedroom +,**,
+2025,Richmond Hill (T),Total,2.4,a
+2025,Toronto (C),Studio,4.2,a
+2025,Toronto (C),1 Bedroom,3.5,a
+2025,Toronto (C),2 Bedroom,2.1,a
+2025,Toronto (C),3 Bedroom +,1.7,b
+2025,Toronto (C),Total,2.8,a
+2025,Uxbridge (TP),Studio,**,
+2025,Uxbridge (TP),1 Bedroom,**,
+2025,Uxbridge (TP),2 Bedroom,**,
+2025,Uxbridge (TP),3 Bedroom +,**,
+2025,Uxbridge (TP),Total,**,
+2025,Vaughan (CY),Studio,**,
+2025,Vaughan (CY),1 Bedroom,**,
+2025,Vaughan (CY),2 Bedroom,**,
+2025,Vaughan (CY),3 Bedroom +,**,
+2025,Vaughan (CY),Total,**,
+2025,Whitchurch-Stouffville (T),Studio,**,
+2025,Whitchurch-Stouffville (T),1 Bedroom,**,
+2025,Whitchurch-Stouffville (T),2 Bedroom,**,
+2025,Whitchurch-Stouffville (T),3 Bedroom +,**,
+2025,Whitchurch-Stouffville (T),Total,**,
+2025,Total,Studio,4.2,a
+2025,Total,1 Bedroom,3.6,a
+2025,Total,2 Bedroom,2.5,a
+2025,Total,3 Bedroom +,1.8,a
+2025,Total,Total,3.0,a

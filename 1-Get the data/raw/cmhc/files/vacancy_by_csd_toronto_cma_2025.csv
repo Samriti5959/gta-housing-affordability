@@ -1,0 +1,32 @@
+ — Vacancy Rates by Bedroom Type by Census Subdivision
+October 2025 Row / Apartment
+,Studio,,1 Bedroom,,2 Bedroom,,3 Bedroom +,,Total,,
+Ajax (T),**,,0.0,d ,2.4,c ,0.9,a ,2.0,c ,
+Aurora (T),**,,3.6,d ,2.8,a ,**,,2.7,a ,
+Bradford West Gwillimbury (T),**,,**,,0.0,d ,**,,0.8,d ,
+Brampton (CY),4.3,d ,4.8,b ,4.6,b ,1.6,a ,4.3,b ,
+Caledon (T),**,,**,,**,,**,,**,,
+East Gwillimbury (T),**,,**,,**,,**,,**,,
+Georgina (T),**,,**,,**,,**,,**,,
+Halton Hills (T),**,,**,,**,,**,,**,,
+Markham (CY),**,,3.2,d ,0.3,b ,**,,**,,
+Milton (T),**,,5.0,d ,1.8,c ,**,,3.2,c ,
+Mississauga (CY),5.8,d ,4.6,b ,3.4,b ,2.5,a ,3.8,a ,
+New Tecumseth (T),**,,**,,2.9,b ,**,,2.2,c ,
+Newmarket (T),**,,5.0,d ,**,,**,,**,,
+Oakville (T),**,,2.5,b ,4.1,d ,**,,3.3,d ,
+Orangeville (T),**,,4.0,d ,4.5,d ,0.0,d ,3.5,c ,
+Pickering (CY),**,,**,,**,,1.5,c ,**,,
+Richmond Hill (T),0.0,d ,3.1,c ,2.1,b ,**,,2.4,a ,
+Toronto (C),4.2,a ,3.5,a ,2.1,a ,1.7,b ,2.8,a ,
+Uxbridge (TP),**,,**,,**,,**,,**,,
+Vaughan (CY),**,,**,,**,,**,,**,,
+Whitchurch-Stouffville (T),**,,**,,**,,**,,**,,
+,4.2,a ,3.6,a ,2.5,a ,1.8,a ,3.0,a ,
+
+Notes
+"The following letter codes are used to indicate the reliability of the estimates: a — Excellent, b — Very good, c — Good, d — Poor (Use with Caution))"
+** — Data suppressed to protect confidentiality or data not statistically reliable
+++ — Change in rent is not statistically significant. This means that the change in rent is not statistically different than zero (0). (Applies only to % Change of Average Rent Tables).
+"CMA, CA and CSD definitions are based on 2021 Census Geography Definitions"
+Source,CMHC Rental Market Survey

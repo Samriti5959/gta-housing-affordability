@@ -1,0 +1,26 @@
+csd_code,municipality,csd_type,region,region_code,cma
+3520005,Toronto,C,Toronto,3520,Toronto
+3521005,Mississauga,CY,Peel,3521,Toronto
+3521010,Brampton,CY,Peel,3521,Toronto
+3521024,Caledon,T,Peel,3521,Toronto
+3519036,Markham,CY,York,3519,Toronto
+3519028,Vaughan,CY,York,3519,Toronto
+3519038,Richmond Hill,T,York,3519,Toronto
+3519048,Newmarket,T,York,3519,Toronto
+3519046,Aurora,T,York,3519,Toronto
+3519054,East Gwillimbury,T,York,3519,Toronto
+3519070,Georgina,T,York,3519,Toronto
+3519049,King,TP,York,3519,Toronto
+3519044,Whitchurch-Stouffville,T,York,3519,Toronto
+3518013,Oshawa,CY,Durham,3518,Oshawa
+3518009,Whitby,T,Durham,3518,Oshawa
+3518005,Ajax,T,Durham,3518,Toronto
+3518001,Pickering,CY,Durham,3518,Toronto
+3518017,Clarington,MU,Durham,3518,Oshawa
+3518020,Scugog,TP,Durham,3518,
+3518029,Uxbridge,TP,Durham,3518,Toronto
+3518039,Brock,TP,Durham,3518,
+3524002,Burlington,CY,Halton,3524,Hamilton
+3524001,Oakville,T,Halton,3524,Toronto
+3524009,Milton,T,Halton,3524,Toronto
+3524015,Halton Hills,T,Halton,3524,Toronto

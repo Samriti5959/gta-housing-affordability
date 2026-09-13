@@ -1,0 +1,32 @@
+ — Average Rent by Bedroom Type by Census Subdivision
+October 2025 Row / Apartment
+,Studio,,1 Bedroom,,2 Bedroom,,3 Bedroom +,,Total,,
+Ajax (T),**,,"1,216",b ,"1,727",a ,"1,870",a ,"1,740",a ,
+Aurora (T),**,,"1,853",b ,"2,187",a ,"2,960",a ,"2,191",b ,
+Bradford West Gwillimbury (T),**,,"1,431",c ,"1,635",c ,**,,"1,556",c ,
+Brampton (CY),"1,430",b ,"1,778",a ,"2,025",a ,"2,056",a ,"1,935",a ,
+Caledon (T),**,,**,,**,,**,,**,,
+East Gwillimbury (T),**,,**,,**,,**,,**,,
+Georgina (T),**,,**,,**,,**,,**,,
+Halton Hills (T),**,,"1,214",b ,"1,531",a ,**,,"1,433",b ,
+Markham (CY),**,,"1,885",b ,"1,996",c ,"1,969",a ,"1,942",b ,
+Milton (T),**,,"1,670",b ,"1,801",b ,**,,"1,735",b ,
+Mississauga (CY),"1,262",b ,"1,747",a ,"2,001",a ,"2,176",a ,"1,917",a ,
+New Tecumseth (T),**,,"1,248",a ,"1,419",a ,**,,"1,325",a ,
+Newmarket (T),**,,"1,951",b ,"2,384",c ,**,,"2,128",b ,
+Oakville (T),"1,477",a ,"1,915",a ,"2,309",b ,"2,385",b ,"2,192",b ,
+Orangeville (T),"1,350",b ,"1,463",b ,"1,671",c ,"1,334",c ,"1,532",b ,
+Pickering (CY),**,,**,,**,,"1,828",a ,"1,826",a ,
+Richmond Hill (T),"1,328",c ,"1,583",a ,"1,827",a ,"2,332",c ,"1,726",a ,
+Toronto (C),"1,499",a ,"1,763",a ,"2,055",a ,"2,342",a ,"1,916",a ,
+Uxbridge (TP),**,,**,,**,,**,,**,,
+Vaughan (CY),**,,**,,**,,**,,**,,
+Whitchurch-Stouffville (T),**,,**,,**,,**,,**,,
+,"1,491",a ,"1,761",a ,"2,045",a ,"2,294",a ,"1,917",a ,
+
+Notes
+"The following letter codes are used to indicate the reliability of the estimates: a — Excellent, b — Very good, c — Good, d — Poor (Use with Caution))"
+** — Data suppressed to protect confidentiality or data not statistically reliable
+++ — Change in rent is not statistically significant. This means that the change in rent is not statistically different than zero (0). (Applies only to % Change of Average Rent Tables).
+"CMA, CA and CSD definitions are based on 2021 Census Geography Definitions"
+Source,CMHC Rental Market Survey
