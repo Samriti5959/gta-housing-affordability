@@ -1,5 +1,12 @@
 # How to get the data
 
+> **Quickest way:** run the two scripts in this folder. No login or API key needed, Python 3 standard library only.
+> ```bash
+> python3 extract_cmhc.py      # CMHC rent + vacancy, ~1 min
+> python3 extract_statcan.py   # StatCan income, population, CPI, ~2 min
+> ```
+> Output lands in [`raw/`](raw/README.md). The manual steps below are the fallback.
+
 ## Rent numbers (CMHC)
 1. Go to CMHC's Housing Market Information Portal: https://www03.cmhc-schl.gc.ca/hmip-pimh/ — no login needed
 2. Pick the **individual municipalities** (census subdivisions: Brampton, Mississauga, Toronto, Oakville, etc.), **not** "Toronto CMA" — the CMA number lumps every city together and hides the differences this project is about

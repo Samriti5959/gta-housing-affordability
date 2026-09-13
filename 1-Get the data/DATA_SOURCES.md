@@ -1,5 +1,12 @@
 # Data sources — explained
 
+> **Update, Sep 13 (data pull done):** the data now lives in [`raw/`](raw/README.md), pulled by `extract_cmhc.py` and `extract_statcan.py` for all **25 GTA municipalities**.
+> This replaces parts of the text below:
+> - **Mississauga gap closed.** StatCan table 98-10-0057 has Mississauga's own median household income (**$102,000**), so the Peel Region proxy is no longer needed. Every municipality now has its own income figure.
+> - **Rent history for every municipality**, not just Toronto, Brampton and Mississauga: CMHC's export gives 1990–2025 per municipality, so rent growth can be calculated for all of them.
+> - **Join on `csd_code`**, not names. CMHC's export accepts StatCan census subdivision codes directly.
+> - The files referenced below (`data/bronze/`, `data/gold/`, `extract/*.py`, `notebooks/`) were never added to the repo; use `raw/` and the two scripts instead.
+
 ## Core datasets
 
 ### 1. CMHC Rental Market Survey (rent data)
@@ -46,7 +53,7 @@ CMHC and StatCan don't use identical geography labels, and this project ran into
 **The more rigorous fix**, for a future pass: Statistics Canada publishes a Standard Geographical Classification (SGC) correspondence file that formally crosswalks CSD codes to CMA/region codes. Grabbing that up front — rather than matching on city-name strings — is the more reliable way to do this join at scale, and worth doing before extending this project to more municipalities.
 
 ## Known gap
-Mississauga's own city-level median household income was not located in this pass — Statistics Canada's Census Profile web tool renders through a stateful JS app that returned 404s on direct URL fetches rather than the profile data. Peel Region's income ($107,000) was used as a labelled **proxy** for Mississauga in the gold table (`income_basis = 'peel_region_proxy'`), not presented as Mississauga's own figure. See `extract/statcan_extract.py` for the WDS API call that would resolve this properly with normal internet access.
+~~Mississauga's own city-level median household income was not located.~~ **Resolved Sep 13:** StatCan table 98-10-0057 (via the WDS API) gives Mississauga's median household total income for 2020 as $102,000. Remaining gaps are on the rent side: King has no CMHC rental data, and six smaller municipalities have suppressed 2025 totals (see [`raw/README.md`](raw/README.md#coverage-gaps-oct-2025-total-rent)).
 
 ## Interpretation caveats (read before quoting these numbers)
 - Household income is **household-level**, not per-person — a city with a higher median household income may simply have larger households or more income-earners per household, not necessarily higher individual prosperity. Brampton's relatively strong affordability ratio in this dataset should be read with that in mind.

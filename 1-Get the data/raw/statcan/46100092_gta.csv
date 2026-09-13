@@ -1,0 +1,691 @@
+REF_DATE,GEO,DGUID,Rental unit type,Estimates,UOM,UOM_ID,SCALAR_FACTOR,SCALAR_ID,VECTOR,COORDINATE,VALUE,STATUS,SYMBOL,TERMINATED,DECIMALS
+2019-01,"Hamilton, Census metropolitan area (CMA)",2021S0503537,House - 2 bedrooms,Average asking rent,Dollars,81,units,0,v1810299261,18.6.1,1750,,,,0
+2019-01,"Hamilton, Census metropolitan area (CMA)",2021S0503537,House - 3 or more bedrooms,Average asking rent,Dollars,81,units,0,v1810299262,18.7.1,2070,,,,0
+2019-01,"Hamilton, Census metropolitan area (CMA)",2021S0503537,Apartment - No bedroom,Average asking rent,Dollars,81,units,0,v1675425051,18.1.1,1070,,,,0
+2019-01,"Hamilton, Census metropolitan area (CMA)",2021S0503537,Apartment - 1 bedroom,Average asking rent,Dollars,81,units,0,v1675425052,18.2.1,1320,,,,0
+2019-01,"Hamilton, Census metropolitan area (CMA)",2021S0503537,Apartment - 2 bedrooms,Average asking rent,Dollars,81,units,0,v1675425053,18.3.1,1570,,,,0
+2019-01,"Hamilton, Census metropolitan area (CMA)",2021S0503537,Apartment - 3 or more bedrooms,Average asking rent,Dollars,81,units,0,v1675425054,18.4.1,1760,,,,0
+2019-01,"Hamilton, Census metropolitan area (CMA)",2021S0503537,Room,Average asking rent,Dollars,81,units,0,v1675425055,18.5.1,560,,,,0
+2019-01,"Oshawa, Census metropolitan area (CMA)",2021S0503532,House - 2 bedrooms,Average asking rent,Dollars,81,units,0,v1810299257,22.6.1,1560,,,,0
+2019-01,"Oshawa, Census metropolitan area (CMA)",2021S0503532,House - 3 or more bedrooms,Average asking rent,Dollars,81,units,0,v1810299258,22.7.1,1970,,,,0
+2019-01,"Oshawa, Census metropolitan area (CMA)",2021S0503532,Apartment - No bedroom,Average asking rent,Dollars,81,units,0,v1675425041,22.1.1,950,E,,,0
+2019-01,"Oshawa, Census metropolitan area (CMA)",2021S0503532,Apartment - 1 bedroom,Average asking rent,Dollars,81,units,0,v1675425042,22.2.1,1180,,,,0
+2019-01,"Oshawa, Census metropolitan area (CMA)",2021S0503532,Apartment - 2 bedrooms,Average asking rent,Dollars,81,units,0,v1675425043,22.3.1,1410,,,,0
+2019-01,"Oshawa, Census metropolitan area (CMA)",2021S0503532,Apartment - 3 or more bedrooms,Average asking rent,Dollars,81,units,0,v1675425044,22.4.1,1670,,,,0
+2019-01,"Oshawa, Census metropolitan area (CMA)",2021S0503532,Room,Average asking rent,Dollars,81,units,0,v1675425045,22.5.1,580,,,,0
+2019-01,"Toronto, Census metropolitan area (CMA)",2021S0503535,House - 2 bedrooms,Average asking rent,Dollars,81,units,0,v1810299259,27.6.1,2620,,,,0
+2019-01,"Toronto, Census metropolitan area (CMA)",2021S0503535,House - 3 or more bedrooms,Average asking rent,Dollars,81,units,0,v1810299260,27.7.1,3410,,,,0
+2019-01,"Toronto, Census metropolitan area (CMA)",2021S0503535,Apartment - No bedroom,Average asking rent,Dollars,81,units,0,v1675425046,27.1.1,1680,,,,0
+2019-01,"Toronto, Census metropolitan area (CMA)",2021S0503535,Apartment - 1 bedroom,Average asking rent,Dollars,81,units,0,v1675425047,27.2.1,1990,,,,0
+2019-01,"Toronto, Census metropolitan area (CMA)",2021S0503535,Apartment - 1 bedroom,Average paid rent,Dollars,81,units,0,v1938684513,27.2.2,1330,,,,0
+2019-01,"Toronto, Census metropolitan area (CMA)",2021S0503535,Apartment - 2 bedrooms,Average asking rent,Dollars,81,units,0,v1675425048,27.3.1,2560,,,,0
+2019-01,"Toronto, Census metropolitan area (CMA)",2021S0503535,Apartment - 2 bedrooms,Average paid rent,Dollars,81,units,0,v1938684514,27.3.2,1470,,,,0
+2019-01,"Toronto, Census metropolitan area (CMA)",2021S0503535,Apartment - 3 or more bedrooms,Average asking rent,Dollars,81,units,0,v1675425049,27.4.1,2850,,,,0
+2019-01,"Toronto, Census metropolitan area (CMA)",2021S0503535,Room,Average asking rent,Dollars,81,units,0,v1675425050,27.5.1,710,,,,0
+2019-04,"Hamilton, Census metropolitan area (CMA)",2021S0503537,House - 2 bedrooms,Average asking rent,Dollars,81,units,0,v1810299261,18.6.1,1810,,,,0
+2019-04,"Hamilton, Census metropolitan area (CMA)",2021S0503537,House - 3 or more bedrooms,Average asking rent,Dollars,81,units,0,v1810299262,18.7.1,2050,,,,0
+2019-04,"Hamilton, Census metropolitan area (CMA)",2021S0503537,Apartment - No bedroom,Average asking rent,Dollars,81,units,0,v1675425051,18.1.1,980,,,,0
+2019-04,"Hamilton, Census metropolitan area (CMA)",2021S0503537,Apartment - 1 bedroom,Average asking rent,Dollars,81,units,0,v1675425052,18.2.1,1330,,,,0
+2019-04,"Hamilton, Census metropolitan area (CMA)",2021S0503537,Apartment - 2 bedrooms,Average asking rent,Dollars,81,units,0,v1675425053,18.3.1,1620,,,,0
+2019-04,"Hamilton, Census metropolitan area (CMA)",2021S0503537,Apartment - 3 or more bedrooms,Average asking rent,Dollars,81,units,0,v1675425054,18.4.1,1860,,,,0
+2019-04,"Hamilton, Census metropolitan area (CMA)",2021S0503537,Room,Average asking rent,Dollars,81,units,0,v1675425055,18.5.1,540,,,,0
+2019-04,"Oshawa, Census metropolitan area (CMA)",2021S0503532,House - 2 bedrooms,Average asking rent,Dollars,81,units,0,v1810299257,22.6.1,1540,,,,0
+2019-04,"Oshawa, Census metropolitan area (CMA)",2021S0503532,House - 3 or more bedrooms,Average asking rent,Dollars,81,units,0,v1810299258,22.7.1,2060,,,,0
+2019-04,"Oshawa, Census metropolitan area (CMA)",2021S0503532,Apartment - No bedroom,Average asking rent,Dollars,81,units,0,v1675425041,22.1.1,980,,,,0
+2019-04,"Oshawa, Census metropolitan area (CMA)",2021S0503532,Apartment - 1 bedroom,Average asking rent,Dollars,81,units,0,v1675425042,22.2.1,1210,,,,0
+2019-04,"Oshawa, Census metropolitan area (CMA)",2021S0503532,Apartment - 2 bedrooms,Average asking rent,Dollars,81,units,0,v1675425043,22.3.1,1410,,,,0
+2019-04,"Oshawa, Census metropolitan area (CMA)",2021S0503532,Apartment - 3 or more bedrooms,Average asking rent,Dollars,81,units,0,v1675425044,22.4.1,1690,,,,0
+2019-04,"Oshawa, Census metropolitan area (CMA)",2021S0503532,Room,Average asking rent,Dollars,81,units,0,v1675425045,22.5.1,580,,,,0
+2019-04,"Toronto, Census metropolitan area (CMA)",2021S0503535,House - 2 bedrooms,Average asking rent,Dollars,81,units,0,v1810299259,27.6.1,2560,,,,0
+2019-04,"Toronto, Census metropolitan area (CMA)",2021S0503535,House - 3 or more bedrooms,Average asking rent,Dollars,81,units,0,v1810299260,27.7.1,3370,,,,0
+2019-04,"Toronto, Census metropolitan area (CMA)",2021S0503535,Apartment - No bedroom,Average asking rent,Dollars,81,units,0,v1675425046,27.1.1,1720,,,,0
+2019-04,"Toronto, Census metropolitan area (CMA)",2021S0503535,Apartment - 1 bedroom,Average asking rent,Dollars,81,units,0,v1675425047,27.2.1,1980,,,,0
+2019-04,"Toronto, Census metropolitan area (CMA)",2021S0503535,Apartment - 1 bedroom,Average paid rent,Dollars,81,units,0,v1938684513,27.2.2,1340,,,,0
+2019-04,"Toronto, Census metropolitan area (CMA)",2021S0503535,Apartment - 2 bedrooms,Average asking rent,Dollars,81,units,0,v1675425048,27.3.1,2550,,,,0
+2019-04,"Toronto, Census metropolitan area (CMA)",2021S0503535,Apartment - 2 bedrooms,Average paid rent,Dollars,81,units,0,v1938684514,27.3.2,1490,,,,0
+2019-04,"Toronto, Census metropolitan area (CMA)",2021S0503535,Apartment - 3 or more bedrooms,Average asking rent,Dollars,81,units,0,v1675425049,27.4.1,2860,,,,0
+2019-04,"Toronto, Census metropolitan area (CMA)",2021S0503535,Room,Average asking rent,Dollars,81,units,0,v1675425050,27.5.1,730,,,,0
+2019-07,"Hamilton, Census metropolitan area (CMA)",2021S0503537,House - 2 bedrooms,Average asking rent,Dollars,81,units,0,v1810299261,18.6.1,1800,,,,0
+2019-07,"Hamilton, Census metropolitan area (CMA)",2021S0503537,House - 3 or more bedrooms,Average asking rent,Dollars,81,units,0,v1810299262,18.7.1,2180,,,,0
+2019-07,"Hamilton, Census metropolitan area (CMA)",2021S0503537,Apartment - No bedroom,Average asking rent,Dollars,81,units,0,v1675425051,18.1.1,1000,,,,0
+2019-07,"Hamilton, Census metropolitan area (CMA)",2021S0503537,Apartment - 1 bedroom,Average asking rent,Dollars,81,units,0,v1675425052,18.2.1,1420,,,,0
+2019-07,"Hamilton, Census metropolitan area (CMA)",2021S0503537,Apartment - 2 bedrooms,Average asking rent,Dollars,81,units,0,v1675425053,18.3.1,1710,,,,0
+2019-07,"Hamilton, Census metropolitan area (CMA)",2021S0503537,Apartment - 3 or more bedrooms,Average asking rent,Dollars,81,units,0,v1675425054,18.4.1,1960,,,,0
+2019-07,"Hamilton, Census metropolitan area (CMA)",2021S0503537,Room,Average asking rent,Dollars,81,units,0,v1675425055,18.5.1,600,,,,0
+2019-07,"Oshawa, Census metropolitan area (CMA)",2021S0503532,House - 2 bedrooms,Average asking rent,Dollars,81,units,0,v1810299257,22.6.1,1820,E,,,0
+2019-07,"Oshawa, Census metropolitan area (CMA)",2021S0503532,House - 3 or more bedrooms,Average asking rent,Dollars,81,units,0,v1810299258,22.7.1,2060,,,,0
+2019-07,"Oshawa, Census metropolitan area (CMA)",2021S0503532,Apartment - No bedroom,Average asking rent,Dollars,81,units,0,v1675425041,22.1.1,1020,,,,0
+2019-07,"Oshawa, Census metropolitan area (CMA)",2021S0503532,Apartment - 1 bedroom,Average asking rent,Dollars,81,units,0,v1675425042,22.2.1,1220,,,,0
+2019-07,"Oshawa, Census metropolitan area (CMA)",2021S0503532,Apartment - 2 bedrooms,Average asking rent,Dollars,81,units,0,v1675425043,22.3.1,1460,,,,0
+2019-07,"Oshawa, Census metropolitan area (CMA)",2021S0503532,Apartment - 3 or more bedrooms,Average asking rent,Dollars,81,units,0,v1675425044,22.4.1,1730,,,,0
+2019-07,"Oshawa, Census metropolitan area (CMA)",2021S0503532,Room,Average asking rent,Dollars,81,units,0,v1675425045,22.5.1,600,,,,0
+2019-07,"Toronto, Census metropolitan area (CMA)",2021S0503535,House - 2 bedrooms,Average asking rent,Dollars,81,units,0,v1810299259,27.6.1,2530,,,,0
+2019-07,"Toronto, Census metropolitan area (CMA)",2021S0503535,House - 3 or more bedrooms,Average asking rent,Dollars,81,units,0,v1810299260,27.7.1,3090,E,,,0
+2019-07,"Toronto, Census metropolitan area (CMA)",2021S0503535,Apartment - No bedroom,Average asking rent,Dollars,81,units,0,v1675425046,27.1.1,1730,,,,0
+2019-07,"Toronto, Census metropolitan area (CMA)",2021S0503535,Apartment - 1 bedroom,Average asking rent,Dollars,81,units,0,v1675425047,27.2.1,1970,,,,0
+2019-07,"Toronto, Census metropolitan area (CMA)",2021S0503535,Apartment - 1 bedroom,Average paid rent,Dollars,81,units,0,v1938684513,27.2.2,1360,,,,0
+2019-07,"Toronto, Census metropolitan area (CMA)",2021S0503535,Apartment - 2 bedrooms,Average asking rent,Dollars,81,units,0,v1675425048,27.3.1,2480,,,,0
+2019-07,"Toronto, Census metropolitan area (CMA)",2021S0503535,Apartment - 2 bedrooms,Average paid rent,Dollars,81,units,0,v1938684514,27.3.2,1510,,,,0
+2019-07,"Toronto, Census metropolitan area (CMA)",2021S0503535,Apartment - 3 or more bedrooms,Average asking rent,Dollars,81,units,0,v1675425049,27.4.1,2840,,,,0
+2019-07,"Toronto, Census metropolitan area (CMA)",2021S0503535,Room,Average asking rent,Dollars,81,units,0,v1675425050,27.5.1,730,,,,0
+2019-10,"Hamilton, Census metropolitan area (CMA)",2021S0503537,House - 2 bedrooms,Average asking rent,Dollars,81,units,0,v1810299261,18.6.1,1900,,,,0
+2019-10,"Hamilton, Census metropolitan area (CMA)",2021S0503537,House - 3 or more bedrooms,Average asking rent,Dollars,81,units,0,v1810299262,18.7.1,2160,,,,0
+2019-10,"Hamilton, Census metropolitan area (CMA)",2021S0503537,Apartment - No bedroom,Average asking rent,Dollars,81,units,0,v1675425051,18.1.1,1010,,,,0
+2019-10,"Hamilton, Census metropolitan area (CMA)",2021S0503537,Apartment - 1 bedroom,Average asking rent,Dollars,81,units,0,v1675425052,18.2.1,1410,,,,0
+2019-10,"Hamilton, Census metropolitan area (CMA)",2021S0503537,Apartment - 2 bedrooms,Average asking rent,Dollars,81,units,0,v1675425053,18.3.1,1700,,,,0
+2019-10,"Hamilton, Census metropolitan area (CMA)",2021S0503537,Apartment - 3 or more bedrooms,Average asking rent,Dollars,81,units,0,v1675425054,18.4.1,1940,,,,0
+2019-10,"Hamilton, Census metropolitan area (CMA)",2021S0503537,Room,Average asking rent,Dollars,81,units,0,v1675425055,18.5.1,600,,,,0
+2019-10,"Oshawa, Census metropolitan area (CMA)",2021S0503532,House - 2 bedrooms,Average asking rent,Dollars,81,units,0,v1810299257,22.6.1,1650,,,,0
+2019-10,"Oshawa, Census metropolitan area (CMA)",2021S0503532,House - 3 or more bedrooms,Average asking rent,Dollars,81,units,0,v1810299258,22.7.1,2060,,,,0
+2019-10,"Oshawa, Census metropolitan area (CMA)",2021S0503532,Apartment - No bedroom,Average asking rent,Dollars,81,units,0,v1675425041,22.1.1,1030,,,,0
+2019-10,"Oshawa, Census metropolitan area (CMA)",2021S0503532,Apartment - 1 bedroom,Average asking rent,Dollars,81,units,0,v1675425042,22.2.1,1260,,,,0
+2019-10,"Oshawa, Census metropolitan area (CMA)",2021S0503532,Apartment - 2 bedrooms,Average asking rent,Dollars,81,units,0,v1675425043,22.3.1,1470,,,,0
+2019-10,"Oshawa, Census metropolitan area (CMA)",2021S0503532,Apartment - 3 or more bedrooms,Average asking rent,Dollars,81,units,0,v1675425044,22.4.1,1800,,,,0
+2019-10,"Oshawa, Census metropolitan area (CMA)",2021S0503532,Room,Average asking rent,Dollars,81,units,0,v1675425045,22.5.1,590,,,,0
+2019-10,"Toronto, Census metropolitan area (CMA)",2021S0503535,House - 2 bedrooms,Average asking rent,Dollars,81,units,0,v1810299259,27.6.1,2490,,,,0
+2019-10,"Toronto, Census metropolitan area (CMA)",2021S0503535,House - 3 or more bedrooms,Average asking rent,Dollars,81,units,0,v1810299260,27.7.1,2980,,,,0
+2019-10,"Toronto, Census metropolitan area (CMA)",2021S0503535,Apartment - No bedroom,Average asking rent,Dollars,81,units,0,v1675425046,27.1.1,1590,,,,0
+2019-10,"Toronto, Census metropolitan area (CMA)",2021S0503535,Apartment - 1 bedroom,Average asking rent,Dollars,81,units,0,v1675425047,27.2.1,1980,,,,0
+2019-10,"Toronto, Census metropolitan area (CMA)",2021S0503535,Apartment - 1 bedroom,Average paid rent,Dollars,81,units,0,v1938684513,27.2.2,1370,,,,0
+2019-10,"Toronto, Census metropolitan area (CMA)",2021S0503535,Apartment - 2 bedrooms,Average asking rent,Dollars,81,units,0,v1675425048,27.3.1,2480,,,,0
+2019-10,"Toronto, Census metropolitan area (CMA)",2021S0503535,Apartment - 2 bedrooms,Average paid rent,Dollars,81,units,0,v1938684514,27.3.2,1520,,,,0
+2019-10,"Toronto, Census metropolitan area (CMA)",2021S0503535,Apartment - 3 or more bedrooms,Average asking rent,Dollars,81,units,0,v1675425049,27.4.1,2800,,,,0
+2019-10,"Toronto, Census metropolitan area (CMA)",2021S0503535,Room,Average asking rent,Dollars,81,units,0,v1675425050,27.5.1,710,,,,0
+2020-01,"Hamilton, Census metropolitan area (CMA)",2021S0503537,House - 2 bedrooms,Average asking rent,Dollars,81,units,0,v1810299261,18.6.1,1930,,,,0
+2020-01,"Hamilton, Census metropolitan area (CMA)",2021S0503537,House - 3 or more bedrooms,Average asking rent,Dollars,81,units,0,v1810299262,18.7.1,2220,,,,0
+2020-01,"Hamilton, Census metropolitan area (CMA)",2021S0503537,Apartment - No bedroom,Average asking rent,Dollars,81,units,0,v1675425051,18.1.1,1080,,,,0
+2020-01,"Hamilton, Census metropolitan area (CMA)",2021S0503537,Apartment - 1 bedroom,Average asking rent,Dollars,81,units,0,v1675425052,18.2.1,1440,,,,0
+2020-01,"Hamilton, Census metropolitan area (CMA)",2021S0503537,Apartment - 2 bedrooms,Average asking rent,Dollars,81,units,0,v1675425053,18.3.1,1730,,,,0
+2020-01,"Hamilton, Census metropolitan area (CMA)",2021S0503537,Apartment - 3 or more bedrooms,Average asking rent,Dollars,81,units,0,v1675425054,18.4.1,1960,,,,0
+2020-01,"Hamilton, Census metropolitan area (CMA)",2021S0503537,Room,Average asking rent,Dollars,81,units,0,v1675425055,18.5.1,590,,,,0
+2020-01,"Oshawa, Census metropolitan area (CMA)",2021S0503532,House - 2 bedrooms,Average asking rent,Dollars,81,units,0,v1810299257,22.6.1,1640,,,,0
+2020-01,"Oshawa, Census metropolitan area (CMA)",2021S0503532,House - 3 or more bedrooms,Average asking rent,Dollars,81,units,0,v1810299258,22.7.1,2080,,,,0
+2020-01,"Oshawa, Census metropolitan area (CMA)",2021S0503532,Apartment - No bedroom,Average asking rent,Dollars,81,units,0,v1675425041,22.1.1,1090,,,,0
+2020-01,"Oshawa, Census metropolitan area (CMA)",2021S0503532,Apartment - 1 bedroom,Average asking rent,Dollars,81,units,0,v1675425042,22.2.1,1320,,,,0
+2020-01,"Oshawa, Census metropolitan area (CMA)",2021S0503532,Apartment - 2 bedrooms,Average asking rent,Dollars,81,units,0,v1675425043,22.3.1,1530,,,,0
+2020-01,"Oshawa, Census metropolitan area (CMA)",2021S0503532,Apartment - 3 or more bedrooms,Average asking rent,Dollars,81,units,0,v1675425044,22.4.1,1850,,,,0
+2020-01,"Oshawa, Census metropolitan area (CMA)",2021S0503532,Room,Average asking rent,Dollars,81,units,0,v1675425045,22.5.1,590,,,,0
+2020-01,"Toronto, Census metropolitan area (CMA)",2021S0503535,House - 2 bedrooms,Average asking rent,Dollars,81,units,0,v1810299259,27.6.1,2520,,,,0
+2020-01,"Toronto, Census metropolitan area (CMA)",2021S0503535,House - 3 or more bedrooms,Average asking rent,Dollars,81,units,0,v1810299260,27.7.1,3000,,,,0
+2020-01,"Toronto, Census metropolitan area (CMA)",2021S0503535,Apartment - No bedroom,Average asking rent,Dollars,81,units,0,v1675425046,27.1.1,1610,,,,0
+2020-01,"Toronto, Census metropolitan area (CMA)",2021S0503535,Apartment - 1 bedroom,Average asking rent,Dollars,81,units,0,v1675425047,27.2.1,2000,,,,0
+2020-01,"Toronto, Census metropolitan area (CMA)",2021S0503535,Apartment - 1 bedroom,Average paid rent,Dollars,81,units,0,v1938684513,27.2.2,1390,,,,0
+2020-01,"Toronto, Census metropolitan area (CMA)",2021S0503535,Apartment - 2 bedrooms,Average asking rent,Dollars,81,units,0,v1675425048,27.3.1,2490,,,,0
+2020-01,"Toronto, Census metropolitan area (CMA)",2021S0503535,Apartment - 2 bedrooms,Average paid rent,Dollars,81,units,0,v1938684514,27.3.2,1550,,,,0
+2020-01,"Toronto, Census metropolitan area (CMA)",2021S0503535,Apartment - 3 or more bedrooms,Average asking rent,Dollars,81,units,0,v1675425049,27.4.1,2840,,,,0
+2020-01,"Toronto, Census metropolitan area (CMA)",2021S0503535,Room,Average asking rent,Dollars,81,units,0,v1675425050,27.5.1,720,,,,0
+2020-04,"Hamilton, Census metropolitan area (CMA)",2021S0503537,House - 2 bedrooms,Average asking rent,Dollars,81,units,0,v1810299261,18.6.1,1940,,,,0
+2020-04,"Hamilton, Census metropolitan area (CMA)",2021S0503537,House - 3 or more bedrooms,Average asking rent,Dollars,81,units,0,v1810299262,18.7.1,2300,,,,0
+2020-04,"Hamilton, Census metropolitan area (CMA)",2021S0503537,Apartment - No bedroom,Average asking rent,Dollars,81,units,0,v1675425051,18.1.1,1120,,,,0
+2020-04,"Hamilton, Census metropolitan area (CMA)",2021S0503537,Apartment - 1 bedroom,Average asking rent,Dollars,81,units,0,v1675425052,18.2.1,1470,,,,0
+2020-04,"Hamilton, Census metropolitan area (CMA)",2021S0503537,Apartment - 2 bedrooms,Average asking rent,Dollars,81,units,0,v1675425053,18.3.1,1730,,,,0
+2020-04,"Hamilton, Census metropolitan area (CMA)",2021S0503537,Apartment - 3 or more bedrooms,Average asking rent,Dollars,81,units,0,v1675425054,18.4.1,1970,,,,0
+2020-04,"Hamilton, Census metropolitan area (CMA)",2021S0503537,Room,Average asking rent,Dollars,81,units,0,v1675425055,18.5.1,570,,,,0
+2020-04,"Oshawa, Census metropolitan area (CMA)",2021S0503532,House - 2 bedrooms,Average asking rent,Dollars,81,units,0,v1810299257,22.6.1,1730,,,,0
+2020-04,"Oshawa, Census metropolitan area (CMA)",2021S0503532,House - 3 or more bedrooms,Average asking rent,Dollars,81,units,0,v1810299258,22.7.1,2180,,,,0
+2020-04,"Oshawa, Census metropolitan area (CMA)",2021S0503532,Apartment - No bedroom,Average asking rent,Dollars,81,units,0,v1675425041,22.1.1,1100,,,,0
+2020-04,"Oshawa, Census metropolitan area (CMA)",2021S0503532,Apartment - 1 bedroom,Average asking rent,Dollars,81,units,0,v1675425042,22.2.1,1330,,,,0
+2020-04,"Oshawa, Census metropolitan area (CMA)",2021S0503532,Apartment - 2 bedrooms,Average asking rent,Dollars,81,units,0,v1675425043,22.3.1,1530,,,,0
+2020-04,"Oshawa, Census metropolitan area (CMA)",2021S0503532,Apartment - 3 or more bedrooms,Average asking rent,Dollars,81,units,0,v1675425044,22.4.1,1790,,,,0
+2020-04,"Oshawa, Census metropolitan area (CMA)",2021S0503532,Room,Average asking rent,Dollars,81,units,0,v1675425045,22.5.1,590,,,,0
+2020-04,"Toronto, Census metropolitan area (CMA)",2021S0503535,House - 2 bedrooms,Average asking rent,Dollars,81,units,0,v1810299259,27.6.1,2520,,,,0
+2020-04,"Toronto, Census metropolitan area (CMA)",2021S0503535,House - 3 or more bedrooms,Average asking rent,Dollars,81,units,0,v1810299260,27.7.1,3130,,,,0
+2020-04,"Toronto, Census metropolitan area (CMA)",2021S0503535,Apartment - No bedroom,Average asking rent,Dollars,81,units,0,v1675425046,27.1.1,1560,,,,0
+2020-04,"Toronto, Census metropolitan area (CMA)",2021S0503535,Apartment - 1 bedroom,Average asking rent,Dollars,81,units,0,v1675425047,27.2.1,1930,,,,0
+2020-04,"Toronto, Census metropolitan area (CMA)",2021S0503535,Apartment - 1 bedroom,Average paid rent,Dollars,81,units,0,v1938684513,27.2.2,1380,,,,0
+2020-04,"Toronto, Census metropolitan area (CMA)",2021S0503535,Apartment - 2 bedrooms,Average asking rent,Dollars,81,units,0,v1675425048,27.3.1,2370,,,,0
+2020-04,"Toronto, Census metropolitan area (CMA)",2021S0503535,Apartment - 2 bedrooms,Average paid rent,Dollars,81,units,0,v1938684514,27.3.2,1570,,,,0
+2020-04,"Toronto, Census metropolitan area (CMA)",2021S0503535,Apartment - 3 or more bedrooms,Average asking rent,Dollars,81,units,0,v1675425049,27.4.1,2780,,,,0
+2020-04,"Toronto, Census metropolitan area (CMA)",2021S0503535,Room,Average asking rent,Dollars,81,units,0,v1675425050,27.5.1,720,,,,0
+2020-07,"Hamilton, Census metropolitan area (CMA)",2021S0503537,House - 2 bedrooms,Average asking rent,Dollars,81,units,0,v1810299261,18.6.1,1980,,,,0
+2020-07,"Hamilton, Census metropolitan area (CMA)",2021S0503537,House - 3 or more bedrooms,Average asking rent,Dollars,81,units,0,v1810299262,18.7.1,2370,,,,0
+2020-07,"Hamilton, Census metropolitan area (CMA)",2021S0503537,Apartment - No bedroom,Average asking rent,Dollars,81,units,0,v1675425051,18.1.1,1160,E,,,0
+2020-07,"Hamilton, Census metropolitan area (CMA)",2021S0503537,Apartment - 1 bedroom,Average asking rent,Dollars,81,units,0,v1675425052,18.2.1,1490,,,,0
+2020-07,"Hamilton, Census metropolitan area (CMA)",2021S0503537,Apartment - 2 bedrooms,Average asking rent,Dollars,81,units,0,v1675425053,18.3.1,1740,,,,0
+2020-07,"Hamilton, Census metropolitan area (CMA)",2021S0503537,Apartment - 3 or more bedrooms,Average asking rent,Dollars,81,units,0,v1675425054,18.4.1,2010,,,,0
+2020-07,"Hamilton, Census metropolitan area (CMA)",2021S0503537,Room,Average asking rent,Dollars,81,units,0,v1675425055,18.5.1,590,,,,0
+2020-07,"Oshawa, Census metropolitan area (CMA)",2021S0503532,House - 2 bedrooms,Average asking rent,Dollars,81,units,0,v1810299257,22.6.1,1760,,,,0
+2020-07,"Oshawa, Census metropolitan area (CMA)",2021S0503532,House - 3 or more bedrooms,Average asking rent,Dollars,81,units,0,v1810299258,22.7.1,2300,,,,0
+2020-07,"Oshawa, Census metropolitan area (CMA)",2021S0503532,Apartment - No bedroom,Average asking rent,Dollars,81,units,0,v1675425041,22.1.1,1070,,,,0
+2020-07,"Oshawa, Census metropolitan area (CMA)",2021S0503532,Apartment - 1 bedroom,Average asking rent,Dollars,81,units,0,v1675425042,22.2.1,1320,,,,0
+2020-07,"Oshawa, Census metropolitan area (CMA)",2021S0503532,Apartment - 2 bedrooms,Average asking rent,Dollars,81,units,0,v1675425043,22.3.1,1550,,,,0
+2020-07,"Oshawa, Census metropolitan area (CMA)",2021S0503532,Apartment - 3 or more bedrooms,Average asking rent,Dollars,81,units,0,v1675425044,22.4.1,1800,,,,0
+2020-07,"Oshawa, Census metropolitan area (CMA)",2021S0503532,Room,Average asking rent,Dollars,81,units,0,v1675425045,22.5.1,590,,,,0
+2020-07,"Toronto, Census metropolitan area (CMA)",2021S0503535,House - 2 bedrooms,Average asking rent,Dollars,81,units,0,v1810299259,27.6.1,2450,,,,0
+2020-07,"Toronto, Census metropolitan area (CMA)",2021S0503535,House - 3 or more bedrooms,Average asking rent,Dollars,81,units,0,v1810299260,27.7.1,3210,,,,0
+2020-07,"Toronto, Census metropolitan area (CMA)",2021S0503535,Apartment - No bedroom,Average asking rent,Dollars,81,units,0,v1675425046,27.1.1,1510,,,,0
+2020-07,"Toronto, Census metropolitan area (CMA)",2021S0503535,Apartment - 1 bedroom,Average asking rent,Dollars,81,units,0,v1675425047,27.2.1,1860,,,,0
+2020-07,"Toronto, Census metropolitan area (CMA)",2021S0503535,Apartment - 1 bedroom,Average paid rent,Dollars,81,units,0,v1938684513,27.2.2,1390,,,,0
+2020-07,"Toronto, Census metropolitan area (CMA)",2021S0503535,Apartment - 2 bedrooms,Average asking rent,Dollars,81,units,0,v1675425048,27.3.1,2310,,,,0
+2020-07,"Toronto, Census metropolitan area (CMA)",2021S0503535,Apartment - 2 bedrooms,Average paid rent,Dollars,81,units,0,v1938684514,27.3.2,1590,,,,0
+2020-07,"Toronto, Census metropolitan area (CMA)",2021S0503535,Apartment - 3 or more bedrooms,Average asking rent,Dollars,81,units,0,v1675425049,27.4.1,2780,,,,0
+2020-07,"Toronto, Census metropolitan area (CMA)",2021S0503535,Room,Average asking rent,Dollars,81,units,0,v1675425050,27.5.1,700,,,,0
+2020-10,"Hamilton, Census metropolitan area (CMA)",2021S0503537,House - 2 bedrooms,Average asking rent,Dollars,81,units,0,v1810299261,18.6.1,2030,,,,0
+2020-10,"Hamilton, Census metropolitan area (CMA)",2021S0503537,House - 3 or more bedrooms,Average asking rent,Dollars,81,units,0,v1810299262,18.7.1,2340,,,,0
+2020-10,"Hamilton, Census metropolitan area (CMA)",2021S0503537,Apartment - No bedroom,Average asking rent,Dollars,81,units,0,v1675425051,18.1.1,1090,,,,0
+2020-10,"Hamilton, Census metropolitan area (CMA)",2021S0503537,Apartment - 1 bedroom,Average asking rent,Dollars,81,units,0,v1675425052,18.2.1,1480,,,,0
+2020-10,"Hamilton, Census metropolitan area (CMA)",2021S0503537,Apartment - 2 bedrooms,Average asking rent,Dollars,81,units,0,v1675425053,18.3.1,1750,,,,0
+2020-10,"Hamilton, Census metropolitan area (CMA)",2021S0503537,Apartment - 3 or more bedrooms,Average asking rent,Dollars,81,units,0,v1675425054,18.4.1,1970,,,,0
+2020-10,"Hamilton, Census metropolitan area (CMA)",2021S0503537,Room,Average asking rent,Dollars,81,units,0,v1675425055,18.5.1,590,,,,0
+2020-10,"Oshawa, Census metropolitan area (CMA)",2021S0503532,House - 2 bedrooms,Average asking rent,Dollars,81,units,0,v1810299257,22.6.1,1720,,,,0
+2020-10,"Oshawa, Census metropolitan area (CMA)",2021S0503532,House - 3 or more bedrooms,Average asking rent,Dollars,81,units,0,v1810299258,22.7.1,2360,,,,0
+2020-10,"Oshawa, Census metropolitan area (CMA)",2021S0503532,Apartment - No bedroom,Average asking rent,Dollars,81,units,0,v1675425041,22.1.1,1040,,,,0
+2020-10,"Oshawa, Census metropolitan area (CMA)",2021S0503532,Apartment - 1 bedroom,Average asking rent,Dollars,81,units,0,v1675425042,22.2.1,1340,,,,0
+2020-10,"Oshawa, Census metropolitan area (CMA)",2021S0503532,Apartment - 2 bedrooms,Average asking rent,Dollars,81,units,0,v1675425043,22.3.1,1540,,,,0
+2020-10,"Oshawa, Census metropolitan area (CMA)",2021S0503532,Apartment - 3 or more bedrooms,Average asking rent,Dollars,81,units,0,v1675425044,22.4.1,1890,,,,0
+2020-10,"Oshawa, Census metropolitan area (CMA)",2021S0503532,Room,Average asking rent,Dollars,81,units,0,v1675425045,22.5.1,630,,,,0
+2020-10,"Toronto, Census metropolitan area (CMA)",2021S0503535,House - 2 bedrooms,Average asking rent,Dollars,81,units,0,v1810299259,27.6.1,2370,,,,0
+2020-10,"Toronto, Census metropolitan area (CMA)",2021S0503535,House - 3 or more bedrooms,Average asking rent,Dollars,81,units,0,v1810299260,27.7.1,3080,,,,0
+2020-10,"Toronto, Census metropolitan area (CMA)",2021S0503535,Apartment - No bedroom,Average asking rent,Dollars,81,units,0,v1675425046,27.1.1,1400,,,,0
+2020-10,"Toronto, Census metropolitan area (CMA)",2021S0503535,Apartment - 1 bedroom,Average asking rent,Dollars,81,units,0,v1675425047,27.2.1,1750,,,,0
+2020-10,"Toronto, Census metropolitan area (CMA)",2021S0503535,Apartment - 1 bedroom,Average paid rent,Dollars,81,units,0,v1938684513,27.2.2,1370,,,,0
+2020-10,"Toronto, Census metropolitan area (CMA)",2021S0503535,Apartment - 2 bedrooms,Average asking rent,Dollars,81,units,0,v1675425048,27.3.1,2190,,,,0
+2020-10,"Toronto, Census metropolitan area (CMA)",2021S0503535,Apartment - 2 bedrooms,Average paid rent,Dollars,81,units,0,v1938684514,27.3.2,1600,,,,0
+2020-10,"Toronto, Census metropolitan area (CMA)",2021S0503535,Apartment - 3 or more bedrooms,Average asking rent,Dollars,81,units,0,v1675425049,27.4.1,2600,,,,0
+2020-10,"Toronto, Census metropolitan area (CMA)",2021S0503535,Room,Average asking rent,Dollars,81,units,0,v1675425050,27.5.1,680,,,,0
+2021-01,"Hamilton, Census metropolitan area (CMA)",2021S0503537,House - 2 bedrooms,Average asking rent,Dollars,81,units,0,v1810299261,18.6.1,2040,,,,0
+2021-01,"Hamilton, Census metropolitan area (CMA)",2021S0503537,House - 3 or more bedrooms,Average asking rent,Dollars,81,units,0,v1810299262,18.7.1,2440,,,,0
+2021-01,"Hamilton, Census metropolitan area (CMA)",2021S0503537,Apartment - No bedroom,Average asking rent,Dollars,81,units,0,v1675425051,18.1.1,1130,,,,0
+2021-01,"Hamilton, Census metropolitan area (CMA)",2021S0503537,Apartment - 1 bedroom,Average asking rent,Dollars,81,units,0,v1675425052,18.2.1,1490,,,,0
+2021-01,"Hamilton, Census metropolitan area (CMA)",2021S0503537,Apartment - 2 bedrooms,Average asking rent,Dollars,81,units,0,v1675425053,18.3.1,1750,,,,0
+2021-01,"Hamilton, Census metropolitan area (CMA)",2021S0503537,Apartment - 3 or more bedrooms,Average asking rent,Dollars,81,units,0,v1675425054,18.4.1,2010,,,,0
+2021-01,"Hamilton, Census metropolitan area (CMA)",2021S0503537,Room,Average asking rent,Dollars,81,units,0,v1675425055,18.5.1,590,,,,0
+2021-01,"Oshawa, Census metropolitan area (CMA)",2021S0503532,House - 2 bedrooms,Average asking rent,Dollars,81,units,0,v1810299257,22.6.1,1980,E,,,0
+2021-01,"Oshawa, Census metropolitan area (CMA)",2021S0503532,House - 3 or more bedrooms,Average asking rent,Dollars,81,units,0,v1810299258,22.7.1,2400,,,,0
+2021-01,"Oshawa, Census metropolitan area (CMA)",2021S0503532,Apartment - No bedroom,Average asking rent,Dollars,81,units,0,v1675425041,22.1.1,1110,,,,0
+2021-01,"Oshawa, Census metropolitan area (CMA)",2021S0503532,Apartment - 1 bedroom,Average asking rent,Dollars,81,units,0,v1675425042,22.2.1,1340,,,,0
+2021-01,"Oshawa, Census metropolitan area (CMA)",2021S0503532,Apartment - 2 bedrooms,Average asking rent,Dollars,81,units,0,v1675425043,22.3.1,1620,,,,0
+2021-01,"Oshawa, Census metropolitan area (CMA)",2021S0503532,Apartment - 3 or more bedrooms,Average asking rent,Dollars,81,units,0,v1675425044,22.4.1,2000,,,,0
+2021-01,"Oshawa, Census metropolitan area (CMA)",2021S0503532,Room,Average asking rent,Dollars,81,units,0,v1675425045,22.5.1,630,,,,0
+2021-01,"Toronto, Census metropolitan area (CMA)",2021S0503535,House - 2 bedrooms,Average asking rent,Dollars,81,units,0,v1810299259,27.6.1,2360,,,,0
+2021-01,"Toronto, Census metropolitan area (CMA)",2021S0503535,House - 3 or more bedrooms,Average asking rent,Dollars,81,units,0,v1810299260,27.7.1,3070,,,,0
+2021-01,"Toronto, Census metropolitan area (CMA)",2021S0503535,Apartment - No bedroom,Average asking rent,Dollars,81,units,0,v1675425046,27.1.1,1390,,,,0
+2021-01,"Toronto, Census metropolitan area (CMA)",2021S0503535,Apartment - 1 bedroom,Average asking rent,Dollars,81,units,0,v1675425047,27.2.1,1720,,,,0
+2021-01,"Toronto, Census metropolitan area (CMA)",2021S0503535,Apartment - 1 bedroom,Average paid rent,Dollars,81,units,0,v1938684513,27.2.2,1370,,,,0
+2021-01,"Toronto, Census metropolitan area (CMA)",2021S0503535,Apartment - 2 bedrooms,Average asking rent,Dollars,81,units,0,v1675425048,27.3.1,2140,,,,0
+2021-01,"Toronto, Census metropolitan area (CMA)",2021S0503535,Apartment - 2 bedrooms,Average paid rent,Dollars,81,units,0,v1938684514,27.3.2,1620,,,,0
+2021-01,"Toronto, Census metropolitan area (CMA)",2021S0503535,Apartment - 3 or more bedrooms,Average asking rent,Dollars,81,units,0,v1675425049,27.4.1,2540,,,,0
+2021-01,"Toronto, Census metropolitan area (CMA)",2021S0503535,Room,Average asking rent,Dollars,81,units,0,v1675425050,27.5.1,670,,,,0
+2021-04,"Hamilton, Census metropolitan area (CMA)",2021S0503537,House - 2 bedrooms,Average asking rent,Dollars,81,units,0,v1810299261,18.6.1,2130,,,,0
+2021-04,"Hamilton, Census metropolitan area (CMA)",2021S0503537,House - 3 or more bedrooms,Average asking rent,Dollars,81,units,0,v1810299262,18.7.1,2590,,,,0
+2021-04,"Hamilton, Census metropolitan area (CMA)",2021S0503537,Apartment - No bedroom,Average asking rent,Dollars,81,units,0,v1675425051,18.1.1,1200,,,,0
+2021-04,"Hamilton, Census metropolitan area (CMA)",2021S0503537,Apartment - 1 bedroom,Average asking rent,Dollars,81,units,0,v1675425052,18.2.1,1490,,,,0
+2021-04,"Hamilton, Census metropolitan area (CMA)",2021S0503537,Apartment - 2 bedrooms,Average asking rent,Dollars,81,units,0,v1675425053,18.3.1,1780,,,,0
+2021-04,"Hamilton, Census metropolitan area (CMA)",2021S0503537,Apartment - 3 or more bedrooms,Average asking rent,Dollars,81,units,0,v1675425054,18.4.1,2120,,,,0
+2021-04,"Hamilton, Census metropolitan area (CMA)",2021S0503537,Room,Average asking rent,Dollars,81,units,0,v1675425055,18.5.1,610,,,,0
+2021-04,"Oshawa, Census metropolitan area (CMA)",2021S0503532,House - 2 bedrooms,Average asking rent,Dollars,81,units,0,v1810299257,22.6.1,1990,,,,0
+2021-04,"Oshawa, Census metropolitan area (CMA)",2021S0503532,House - 3 or more bedrooms,Average asking rent,Dollars,81,units,0,v1810299258,22.7.1,2680,,,,0
+2021-04,"Oshawa, Census metropolitan area (CMA)",2021S0503532,Apartment - No bedroom,Average asking rent,Dollars,81,units,0,v1675425041,22.1.1,1120,,,,0
+2021-04,"Oshawa, Census metropolitan area (CMA)",2021S0503532,Apartment - 1 bedroom,Average asking rent,Dollars,81,units,0,v1675425042,22.2.1,1420,,,,0
+2021-04,"Oshawa, Census metropolitan area (CMA)",2021S0503532,Apartment - 2 bedrooms,Average asking rent,Dollars,81,units,0,v1675425043,22.3.1,1680,,,,0
+2021-04,"Oshawa, Census metropolitan area (CMA)",2021S0503532,Apartment - 3 or more bedrooms,Average asking rent,Dollars,81,units,0,v1675425044,22.4.1,2010,,,,0
+2021-04,"Oshawa, Census metropolitan area (CMA)",2021S0503532,Room,Average asking rent,Dollars,81,units,0,v1675425045,22.5.1,660,,,,0
+2021-04,"Toronto, Census metropolitan area (CMA)",2021S0503535,House - 2 bedrooms,Average asking rent,Dollars,81,units,0,v1810299259,27.6.1,2440,,,,0
+2021-04,"Toronto, Census metropolitan area (CMA)",2021S0503535,House - 3 or more bedrooms,Average asking rent,Dollars,81,units,0,v1810299260,27.7.1,3190,,,,0
+2021-04,"Toronto, Census metropolitan area (CMA)",2021S0503535,Apartment - No bedroom,Average asking rent,Dollars,81,units,0,v1675425046,27.1.1,1400,,,,0
+2021-04,"Toronto, Census metropolitan area (CMA)",2021S0503535,Apartment - 1 bedroom,Average asking rent,Dollars,81,units,0,v1675425047,27.2.1,1740,,,,0
+2021-04,"Toronto, Census metropolitan area (CMA)",2021S0503535,Apartment - 1 bedroom,Average paid rent,Dollars,81,units,0,v1938684513,27.2.2,1380,,,,0
+2021-04,"Toronto, Census metropolitan area (CMA)",2021S0503535,Apartment - 2 bedrooms,Average asking rent,Dollars,81,units,0,v1675425048,27.3.1,2190,,,,0
+2021-04,"Toronto, Census metropolitan area (CMA)",2021S0503535,Apartment - 2 bedrooms,Average paid rent,Dollars,81,units,0,v1938684514,27.3.2,1620,,,,0
+2021-04,"Toronto, Census metropolitan area (CMA)",2021S0503535,Apartment - 3 or more bedrooms,Average asking rent,Dollars,81,units,0,v1675425049,27.4.1,2600,,,,0
+2021-04,"Toronto, Census metropolitan area (CMA)",2021S0503535,Room,Average asking rent,Dollars,81,units,0,v1675425050,27.5.1,680,,,,0
+2021-07,"Hamilton, Census metropolitan area (CMA)",2021S0503537,House - 2 bedrooms,Average asking rent,Dollars,81,units,0,v1810299261,18.6.1,2220,,,,0
+2021-07,"Hamilton, Census metropolitan area (CMA)",2021S0503537,House - 3 or more bedrooms,Average asking rent,Dollars,81,units,0,v1810299262,18.7.1,2670,,,,0
+2021-07,"Hamilton, Census metropolitan area (CMA)",2021S0503537,Apartment - No bedroom,Average asking rent,Dollars,81,units,0,v1675425051,18.1.1,1150,,,,0
+2021-07,"Hamilton, Census metropolitan area (CMA)",2021S0503537,Apartment - 1 bedroom,Average asking rent,Dollars,81,units,0,v1675425052,18.2.1,1510,,,,0
+2021-07,"Hamilton, Census metropolitan area (CMA)",2021S0503537,Apartment - 2 bedrooms,Average asking rent,Dollars,81,units,0,v1675425053,18.3.1,1820,,,,0
+2021-07,"Hamilton, Census metropolitan area (CMA)",2021S0503537,Apartment - 3 or more bedrooms,Average asking rent,Dollars,81,units,0,v1675425054,18.4.1,2180,,,,0
+2021-07,"Hamilton, Census metropolitan area (CMA)",2021S0503537,Room,Average asking rent,Dollars,81,units,0,v1675425055,18.5.1,640,,,,0
+2021-07,"Oshawa, Census metropolitan area (CMA)",2021S0503532,House - 2 bedrooms,Average asking rent,Dollars,81,units,0,v1810299257,22.6.1,2000,,,,0
+2021-07,"Oshawa, Census metropolitan area (CMA)",2021S0503532,House - 3 or more bedrooms,Average asking rent,Dollars,81,units,0,v1810299258,22.7.1,2690,,,,0
+2021-07,"Oshawa, Census metropolitan area (CMA)",2021S0503532,Apartment - No bedroom,Average asking rent,Dollars,81,units,0,v1675425041,22.1.1,1200,,,,0
+2021-07,"Oshawa, Census metropolitan area (CMA)",2021S0503532,Apartment - 1 bedroom,Average asking rent,Dollars,81,units,0,v1675425042,22.2.1,1420,,,,0
+2021-07,"Oshawa, Census metropolitan area (CMA)",2021S0503532,Apartment - 2 bedrooms,Average asking rent,Dollars,81,units,0,v1675425043,22.3.1,1690,,,,0
+2021-07,"Oshawa, Census metropolitan area (CMA)",2021S0503532,Apartment - 3 or more bedrooms,Average asking rent,Dollars,81,units,0,v1675425044,22.4.1,2100,,,,0
+2021-07,"Oshawa, Census metropolitan area (CMA)",2021S0503532,Room,Average asking rent,Dollars,81,units,0,v1675425045,22.5.1,670,,,,0
+2021-07,"Toronto, Census metropolitan area (CMA)",2021S0503535,House - 2 bedrooms,Average asking rent,Dollars,81,units,0,v1810299259,27.6.1,2430,,,,0
+2021-07,"Toronto, Census metropolitan area (CMA)",2021S0503535,House - 3 or more bedrooms,Average asking rent,Dollars,81,units,0,v1810299260,27.7.1,3140,,,,0
+2021-07,"Toronto, Census metropolitan area (CMA)",2021S0503535,Apartment - No bedroom,Average asking rent,Dollars,81,units,0,v1675425046,27.1.1,1430,,,,0
+2021-07,"Toronto, Census metropolitan area (CMA)",2021S0503535,Apartment - 1 bedroom,Average asking rent,Dollars,81,units,0,v1675425047,27.2.1,1780,,,,0
+2021-07,"Toronto, Census metropolitan area (CMA)",2021S0503535,Apartment - 1 bedroom,Average paid rent,Dollars,81,units,0,v1938684513,27.2.2,1390,,,,0
+2021-07,"Toronto, Census metropolitan area (CMA)",2021S0503535,Apartment - 2 bedrooms,Average asking rent,Dollars,81,units,0,v1675425048,27.3.1,2210,,,,0
+2021-07,"Toronto, Census metropolitan area (CMA)",2021S0503535,Apartment - 2 bedrooms,Average paid rent,Dollars,81,units,0,v1938684514,27.3.2,1600,,,,0
+2021-07,"Toronto, Census metropolitan area (CMA)",2021S0503535,Apartment - 3 or more bedrooms,Average asking rent,Dollars,81,units,0,v1675425049,27.4.1,2620,,,,0
+2021-07,"Toronto, Census metropolitan area (CMA)",2021S0503535,Room,Average asking rent,Dollars,81,units,0,v1675425050,27.5.1,690,,,,0
+2021-10,"Hamilton, Census metropolitan area (CMA)",2021S0503537,House - 2 bedrooms,Average asking rent,Dollars,81,units,0,v1810299261,18.6.1,2250,,,,0
+2021-10,"Hamilton, Census metropolitan area (CMA)",2021S0503537,House - 3 or more bedrooms,Average asking rent,Dollars,81,units,0,v1810299262,18.7.1,2670,,,,0
+2021-10,"Hamilton, Census metropolitan area (CMA)",2021S0503537,Apartment - No bedroom,Average asking rent,Dollars,81,units,0,v1675425051,18.1.1,1210,,,,0
+2021-10,"Hamilton, Census metropolitan area (CMA)",2021S0503537,Apartment - 1 bedroom,Average asking rent,Dollars,81,units,0,v1675425052,18.2.1,1550,,,,0
+2021-10,"Hamilton, Census metropolitan area (CMA)",2021S0503537,Apartment - 2 bedrooms,Average asking rent,Dollars,81,units,0,v1675425053,18.3.1,1860,,,,0
+2021-10,"Hamilton, Census metropolitan area (CMA)",2021S0503537,Apartment - 3 or more bedrooms,Average asking rent,Dollars,81,units,0,v1675425054,18.4.1,2210,,,,0
+2021-10,"Hamilton, Census metropolitan area (CMA)",2021S0503537,Room,Average asking rent,Dollars,81,units,0,v1675425055,18.5.1,680,,,,0
+2021-10,"Oshawa, Census metropolitan area (CMA)",2021S0503532,House - 2 bedrooms,Average asking rent,Dollars,81,units,0,v1810299257,22.6.1,2020,,,,0
+2021-10,"Oshawa, Census metropolitan area (CMA)",2021S0503532,House - 3 or more bedrooms,Average asking rent,Dollars,81,units,0,v1810299258,22.7.1,2740,,,,0
+2021-10,"Oshawa, Census metropolitan area (CMA)",2021S0503532,Apartment - No bedroom,Average asking rent,Dollars,81,units,0,v1675425041,22.1.1,1220,,,,0
+2021-10,"Oshawa, Census metropolitan area (CMA)",2021S0503532,Apartment - 1 bedroom,Average asking rent,Dollars,81,units,0,v1675425042,22.2.1,1460,,,,0
+2021-10,"Oshawa, Census metropolitan area (CMA)",2021S0503532,Apartment - 2 bedrooms,Average asking rent,Dollars,81,units,0,v1675425043,22.3.1,1760,,,,0
+2021-10,"Oshawa, Census metropolitan area (CMA)",2021S0503532,Apartment - 3 or more bedrooms,Average asking rent,Dollars,81,units,0,v1675425044,22.4.1,2210,,,,0
+2021-10,"Oshawa, Census metropolitan area (CMA)",2021S0503532,Room,Average asking rent,Dollars,81,units,0,v1675425045,22.5.1,670,,,,0
+2021-10,"Toronto, Census metropolitan area (CMA)",2021S0503535,House - 2 bedrooms,Average asking rent,Dollars,81,units,0,v1810299259,27.6.1,2440,,,,0
+2021-10,"Toronto, Census metropolitan area (CMA)",2021S0503535,House - 3 or more bedrooms,Average asking rent,Dollars,81,units,0,v1810299260,27.7.1,3170,,,,0
+2021-10,"Toronto, Census metropolitan area (CMA)",2021S0503535,Apartment - No bedroom,Average asking rent,Dollars,81,units,0,v1675425046,27.1.1,1440,,,,0
+2021-10,"Toronto, Census metropolitan area (CMA)",2021S0503535,Apartment - 1 bedroom,Average asking rent,Dollars,81,units,0,v1675425047,27.2.1,1830,,,,0
+2021-10,"Toronto, Census metropolitan area (CMA)",2021S0503535,Apartment - 1 bedroom,Average paid rent,Dollars,81,units,0,v1938684513,27.2.2,1400,,,,0
+2021-10,"Toronto, Census metropolitan area (CMA)",2021S0503535,Apartment - 2 bedrooms,Average asking rent,Dollars,81,units,0,v1675425048,27.3.1,2280,,,,0
+2021-10,"Toronto, Census metropolitan area (CMA)",2021S0503535,Apartment - 2 bedrooms,Average paid rent,Dollars,81,units,0,v1938684514,27.3.2,1600,E,,,0
+2021-10,"Toronto, Census metropolitan area (CMA)",2021S0503535,Apartment - 3 or more bedrooms,Average asking rent,Dollars,81,units,0,v1675425049,27.4.1,2680,,,,0
+2021-10,"Toronto, Census metropolitan area (CMA)",2021S0503535,Room,Average asking rent,Dollars,81,units,0,v1675425050,27.5.1,690,,,,0
+2022-01,"Hamilton, Census metropolitan area (CMA)",2021S0503537,House - 2 bedrooms,Average asking rent,Dollars,81,units,0,v1810299261,18.6.1,2220,,,,0
+2022-01,"Hamilton, Census metropolitan area (CMA)",2021S0503537,House - 3 or more bedrooms,Average asking rent,Dollars,81,units,0,v1810299262,18.7.1,2690,,,,0
+2022-01,"Hamilton, Census metropolitan area (CMA)",2021S0503537,Apartment - No bedroom,Average asking rent,Dollars,81,units,0,v1675425051,18.1.1,1260,,,,0
+2022-01,"Hamilton, Census metropolitan area (CMA)",2021S0503537,Apartment - 1 bedroom,Average asking rent,Dollars,81,units,0,v1675425052,18.2.1,1570,,,,0
+2022-01,"Hamilton, Census metropolitan area (CMA)",2021S0503537,Apartment - 2 bedrooms,Average asking rent,Dollars,81,units,0,v1675425053,18.3.1,1940,,,,0
+2022-01,"Hamilton, Census metropolitan area (CMA)",2021S0503537,Apartment - 3 or more bedrooms,Average asking rent,Dollars,81,units,0,v1675425054,18.4.1,2300,,,,0
+2022-01,"Hamilton, Census metropolitan area (CMA)",2021S0503537,Room,Average asking rent,Dollars,81,units,0,v1675425055,18.5.1,670,,,,0
+2022-01,"Oshawa, Census metropolitan area (CMA)",2021S0503532,House - 2 bedrooms,Average asking rent,Dollars,81,units,0,v1810299257,22.6.1,2170,,,,0
+2022-01,"Oshawa, Census metropolitan area (CMA)",2021S0503532,House - 3 or more bedrooms,Average asking rent,Dollars,81,units,0,v1810299258,22.7.1,2760,,,,0
+2022-01,"Oshawa, Census metropolitan area (CMA)",2021S0503532,Apartment - No bedroom,Average asking rent,Dollars,81,units,0,v1675425041,22.1.1,1270,,,,0
+2022-01,"Oshawa, Census metropolitan area (CMA)",2021S0503532,Apartment - 1 bedroom,Average asking rent,Dollars,81,units,0,v1675425042,22.2.1,1520,,,,0
+2022-01,"Oshawa, Census metropolitan area (CMA)",2021S0503532,Apartment - 2 bedrooms,Average asking rent,Dollars,81,units,0,v1675425043,22.3.1,1810,,,,0
+2022-01,"Oshawa, Census metropolitan area (CMA)",2021S0503532,Apartment - 3 or more bedrooms,Average asking rent,Dollars,81,units,0,v1675425044,22.4.1,2230,,,,0
+2022-01,"Oshawa, Census metropolitan area (CMA)",2021S0503532,Room,Average asking rent,Dollars,81,units,0,v1675425045,22.5.1,700,,,,0
+2022-01,"Toronto, Census metropolitan area (CMA)",2021S0503535,House - 2 bedrooms,Average asking rent,Dollars,81,units,0,v1810299259,27.6.1,2500,,,,0
+2022-01,"Toronto, Census metropolitan area (CMA)",2021S0503535,House - 3 or more bedrooms,Average asking rent,Dollars,81,units,0,v1810299260,27.7.1,3200,,,,0
+2022-01,"Toronto, Census metropolitan area (CMA)",2021S0503535,Apartment - No bedroom,Average asking rent,Dollars,81,units,0,v1675425046,27.1.1,1480,,,,0
+2022-01,"Toronto, Census metropolitan area (CMA)",2021S0503535,Apartment - 1 bedroom,Average asking rent,Dollars,81,units,0,v1675425047,27.2.1,1870,,,,0
+2022-01,"Toronto, Census metropolitan area (CMA)",2021S0503535,Apartment - 1 bedroom,Average paid rent,Dollars,81,units,0,v1938684513,27.2.2,1420,,,,0
+2022-01,"Toronto, Census metropolitan area (CMA)",2021S0503535,Apartment - 2 bedrooms,Average asking rent,Dollars,81,units,0,v1675425048,27.3.1,2320,,,,0
+2022-01,"Toronto, Census metropolitan area (CMA)",2021S0503535,Apartment - 2 bedrooms,Average paid rent,Dollars,81,units,0,v1938684514,27.3.2,1630,E,,,0
+2022-01,"Toronto, Census metropolitan area (CMA)",2021S0503535,Apartment - 3 or more bedrooms,Average asking rent,Dollars,81,units,0,v1675425049,27.4.1,2740,,,,0
+2022-01,"Toronto, Census metropolitan area (CMA)",2021S0503535,Room,Average asking rent,Dollars,81,units,0,v1675425050,27.5.1,700,,,,0
+2022-04,"Hamilton, Census metropolitan area (CMA)",2021S0503537,House - 2 bedrooms,Average asking rent,Dollars,81,units,0,v1810299261,18.6.1,2320,,,,0
+2022-04,"Hamilton, Census metropolitan area (CMA)",2021S0503537,House - 3 or more bedrooms,Average asking rent,Dollars,81,units,0,v1810299262,18.7.1,2780,,,,0
+2022-04,"Hamilton, Census metropolitan area (CMA)",2021S0503537,Apartment - No bedroom,Average asking rent,Dollars,81,units,0,v1675425051,18.1.1,1270,,,,0
+2022-04,"Hamilton, Census metropolitan area (CMA)",2021S0503537,Apartment - 1 bedroom,Average asking rent,Dollars,81,units,0,v1675425052,18.2.1,1650,,,,0
+2022-04,"Hamilton, Census metropolitan area (CMA)",2021S0503537,Apartment - 2 bedrooms,Average asking rent,Dollars,81,units,0,v1675425053,18.3.1,1990,,,,0
+2022-04,"Hamilton, Census metropolitan area (CMA)",2021S0503537,Apartment - 3 or more bedrooms,Average asking rent,Dollars,81,units,0,v1675425054,18.4.1,2400,,,,0
+2022-04,"Hamilton, Census metropolitan area (CMA)",2021S0503537,Room,Average asking rent,Dollars,81,units,0,v1675425055,18.5.1,680,,,,0
+2022-04,"Oshawa, Census metropolitan area (CMA)",2021S0503532,House - 2 bedrooms,Average asking rent,Dollars,81,units,0,v1810299257,22.6.1,2240,,,,0
+2022-04,"Oshawa, Census metropolitan area (CMA)",2021S0503532,House - 3 or more bedrooms,Average asking rent,Dollars,81,units,0,v1810299258,22.7.1,2890,,,,0
+2022-04,"Oshawa, Census metropolitan area (CMA)",2021S0503532,Apartment - No bedroom,Average asking rent,Dollars,81,units,0,v1675425041,22.1.1,1290,,,,0
+2022-04,"Oshawa, Census metropolitan area (CMA)",2021S0503532,Apartment - 1 bedroom,Average asking rent,Dollars,81,units,0,v1675425042,22.2.1,1540,,,,0
+2022-04,"Oshawa, Census metropolitan area (CMA)",2021S0503532,Apartment - 2 bedrooms,Average asking rent,Dollars,81,units,0,v1675425043,22.3.1,1830,,,,0
+2022-04,"Oshawa, Census metropolitan area (CMA)",2021S0503532,Apartment - 3 or more bedrooms,Average asking rent,Dollars,81,units,0,v1675425044,22.4.1,2320,,,,0
+2022-04,"Oshawa, Census metropolitan area (CMA)",2021S0503532,Room,Average asking rent,Dollars,81,units,0,v1675425045,22.5.1,700,,,,0
+2022-04,"Toronto, Census metropolitan area (CMA)",2021S0503535,House - 2 bedrooms,Average asking rent,Dollars,81,units,0,v1810299259,27.6.1,2630,,,,0
+2022-04,"Toronto, Census metropolitan area (CMA)",2021S0503535,House - 3 or more bedrooms,Average asking rent,Dollars,81,units,0,v1810299260,27.7.1,3460,,,,0
+2022-04,"Toronto, Census metropolitan area (CMA)",2021S0503535,Apartment - No bedroom,Average asking rent,Dollars,81,units,0,v1675425046,27.1.1,1550,,,,0
+2022-04,"Toronto, Census metropolitan area (CMA)",2021S0503535,Apartment - 1 bedroom,Average asking rent,Dollars,81,units,0,v1675425047,27.2.1,1950,,,,0
+2022-04,"Toronto, Census metropolitan area (CMA)",2021S0503535,Apartment - 1 bedroom,Average paid rent,Dollars,81,units,0,v1938684513,27.2.2,1460,,,,0
+2022-04,"Toronto, Census metropolitan area (CMA)",2021S0503535,Apartment - 2 bedrooms,Average asking rent,Dollars,81,units,0,v1675425048,27.3.1,2460,,,,0
+2022-04,"Toronto, Census metropolitan area (CMA)",2021S0503535,Apartment - 2 bedrooms,Average paid rent,Dollars,81,units,0,v1938684514,27.3.2,1670,,,,0
+2022-04,"Toronto, Census metropolitan area (CMA)",2021S0503535,Apartment - 3 or more bedrooms,Average asking rent,Dollars,81,units,0,v1675425049,27.4.1,2930,,,,0
+2022-04,"Toronto, Census metropolitan area (CMA)",2021S0503535,Room,Average asking rent,Dollars,81,units,0,v1675425050,27.5.1,730,,,,0
+2022-07,"Hamilton, Census metropolitan area (CMA)",2021S0503537,House - 2 bedrooms,Average asking rent,Dollars,81,units,0,v1810299261,18.6.1,2340,,,,0
+2022-07,"Hamilton, Census metropolitan area (CMA)",2021S0503537,House - 3 or more bedrooms,Average asking rent,Dollars,81,units,0,v1810299262,18.7.1,2800,,,,0
+2022-07,"Hamilton, Census metropolitan area (CMA)",2021S0503537,Apartment - No bedroom,Average asking rent,Dollars,81,units,0,v1675425051,18.1.1,1270,,,,0
+2022-07,"Hamilton, Census metropolitan area (CMA)",2021S0503537,Apartment - 1 bedroom,Average asking rent,Dollars,81,units,0,v1675425052,18.2.1,1700,,,,0
+2022-07,"Hamilton, Census metropolitan area (CMA)",2021S0503537,Apartment - 2 bedrooms,Average asking rent,Dollars,81,units,0,v1675425053,18.3.1,2070,,,,0
+2022-07,"Hamilton, Census metropolitan area (CMA)",2021S0503537,Apartment - 3 or more bedrooms,Average asking rent,Dollars,81,units,0,v1675425054,18.4.1,2450,,,,0
+2022-07,"Hamilton, Census metropolitan area (CMA)",2021S0503537,Room,Average asking rent,Dollars,81,units,0,v1675425055,18.5.1,750,,,,0
+2022-07,"Oshawa, Census metropolitan area (CMA)",2021S0503532,House - 2 bedrooms,Average asking rent,Dollars,81,units,0,v1810299257,22.6.1,2220,,,,0
+2022-07,"Oshawa, Census metropolitan area (CMA)",2021S0503532,House - 3 or more bedrooms,Average asking rent,Dollars,81,units,0,v1810299258,22.7.1,2830,,,,0
+2022-07,"Oshawa, Census metropolitan area (CMA)",2021S0503532,Apartment - No bedroom,Average asking rent,Dollars,81,units,0,v1675425041,22.1.1,1360,,,,0
+2022-07,"Oshawa, Census metropolitan area (CMA)",2021S0503532,Apartment - 1 bedroom,Average asking rent,Dollars,81,units,0,v1675425042,22.2.1,1610,,,,0
+2022-07,"Oshawa, Census metropolitan area (CMA)",2021S0503532,Apartment - 2 bedrooms,Average asking rent,Dollars,81,units,0,v1675425043,22.3.1,1930,,,,0
+2022-07,"Oshawa, Census metropolitan area (CMA)",2021S0503532,Apartment - 3 or more bedrooms,Average asking rent,Dollars,81,units,0,v1675425044,22.4.1,2340,,,,0
+2022-07,"Oshawa, Census metropolitan area (CMA)",2021S0503532,Room,Average asking rent,Dollars,81,units,0,v1675425045,22.5.1,750,,,,0
+2022-07,"Toronto, Census metropolitan area (CMA)",2021S0503535,House - 2 bedrooms,Average asking rent,Dollars,81,units,0,v1810299259,27.6.1,2880,,,,0
+2022-07,"Toronto, Census metropolitan area (CMA)",2021S0503535,House - 3 or more bedrooms,Average asking rent,Dollars,81,units,0,v1810299260,27.7.1,3630,,,,0
+2022-07,"Toronto, Census metropolitan area (CMA)",2021S0503535,Apartment - No bedroom,Average asking rent,Dollars,81,units,0,v1675425046,27.1.1,1640,,,,0
+2022-07,"Toronto, Census metropolitan area (CMA)",2021S0503535,Apartment - 1 bedroom,Average asking rent,Dollars,81,units,0,v1675425047,27.2.1,2100,,,,0
+2022-07,"Toronto, Census metropolitan area (CMA)",2021S0503535,Apartment - 1 bedroom,Average paid rent,Dollars,81,units,0,v1938684513,27.2.2,1490,,,,0
+2022-07,"Toronto, Census metropolitan area (CMA)",2021S0503535,Apartment - 2 bedrooms,Average asking rent,Dollars,81,units,0,v1675425048,27.3.1,2640,,,,0
+2022-07,"Toronto, Census metropolitan area (CMA)",2021S0503535,Apartment - 2 bedrooms,Average paid rent,Dollars,81,units,0,v1938684514,27.3.2,1690,,,,0
+2022-07,"Toronto, Census metropolitan area (CMA)",2021S0503535,Apartment - 3 or more bedrooms,Average asking rent,Dollars,81,units,0,v1675425049,27.4.1,3130,,,,0
+2022-07,"Toronto, Census metropolitan area (CMA)",2021S0503535,Room,Average asking rent,Dollars,81,units,0,v1675425050,27.5.1,760,,,,0
+2022-10,"Hamilton, Census metropolitan area (CMA)",2021S0503537,House - 2 bedrooms,Average asking rent,Dollars,81,units,0,v1810299261,18.6.1,2370,,,,0
+2022-10,"Hamilton, Census metropolitan area (CMA)",2021S0503537,House - 3 or more bedrooms,Average asking rent,Dollars,81,units,0,v1810299262,18.7.1,2810,,,,0
+2022-10,"Hamilton, Census metropolitan area (CMA)",2021S0503537,Apartment - No bedroom,Average asking rent,Dollars,81,units,0,v1675425051,18.1.1,1430,,,,0
+2022-10,"Hamilton, Census metropolitan area (CMA)",2021S0503537,Apartment - 1 bedroom,Average asking rent,Dollars,81,units,0,v1675425052,18.2.1,1750,,,,0
+2022-10,"Hamilton, Census metropolitan area (CMA)",2021S0503537,Apartment - 2 bedrooms,Average asking rent,Dollars,81,units,0,v1675425053,18.3.1,2100,,,,0
+2022-10,"Hamilton, Census metropolitan area (CMA)",2021S0503537,Apartment - 3 or more bedrooms,Average asking rent,Dollars,81,units,0,v1675425054,18.4.1,2430,,,,0
+2022-10,"Hamilton, Census metropolitan area (CMA)",2021S0503537,Room,Average asking rent,Dollars,81,units,0,v1675425055,18.5.1,780,,,,0
+2022-10,"Oshawa, Census metropolitan area (CMA)",2021S0503532,House - 2 bedrooms,Average asking rent,Dollars,81,units,0,v1810299257,22.6.1,2160,,,,0
+2022-10,"Oshawa, Census metropolitan area (CMA)",2021S0503532,House - 3 or more bedrooms,Average asking rent,Dollars,81,units,0,v1810299258,22.7.1,2790,,,,0
+2022-10,"Oshawa, Census metropolitan area (CMA)",2021S0503532,Apartment - No bedroom,Average asking rent,Dollars,81,units,0,v1675425041,22.1.1,1370,,,,0
+2022-10,"Oshawa, Census metropolitan area (CMA)",2021S0503532,Apartment - 1 bedroom,Average asking rent,Dollars,81,units,0,v1675425042,22.2.1,1630,,,,0
+2022-10,"Oshawa, Census metropolitan area (CMA)",2021S0503532,Apartment - 2 bedrooms,Average asking rent,Dollars,81,units,0,v1675425043,22.3.1,1910,,,,0
+2022-10,"Oshawa, Census metropolitan area (CMA)",2021S0503532,Apartment - 3 or more bedrooms,Average asking rent,Dollars,81,units,0,v1675425044,22.4.1,2340,,,,0
+2022-10,"Oshawa, Census metropolitan area (CMA)",2021S0503532,Room,Average asking rent,Dollars,81,units,0,v1675425045,22.5.1,770,,,,0
+2022-10,"Toronto, Census metropolitan area (CMA)",2021S0503535,House - 2 bedrooms,Average asking rent,Dollars,81,units,0,v1810299259,27.6.1,2860,,,,0
+2022-10,"Toronto, Census metropolitan area (CMA)",2021S0503535,House - 3 or more bedrooms,Average asking rent,Dollars,81,units,0,v1810299260,27.7.1,3660,,,,0
+2022-10,"Toronto, Census metropolitan area (CMA)",2021S0503535,Apartment - No bedroom,Average asking rent,Dollars,81,units,0,v1675425046,27.1.1,1720,,,,0
+2022-10,"Toronto, Census metropolitan area (CMA)",2021S0503535,Apartment - 1 bedroom,Average asking rent,Dollars,81,units,0,v1675425047,27.2.1,2180,,,,0
+2022-10,"Toronto, Census metropolitan area (CMA)",2021S0503535,Apartment - 1 bedroom,Average paid rent,Dollars,81,units,0,v1938684513,27.2.2,1510,,,,0
+2022-10,"Toronto, Census metropolitan area (CMA)",2021S0503535,Apartment - 2 bedrooms,Average asking rent,Dollars,81,units,0,v1675425048,27.3.1,2710,,,,0
+2022-10,"Toronto, Census metropolitan area (CMA)",2021S0503535,Apartment - 2 bedrooms,Average paid rent,Dollars,81,units,0,v1938684514,27.3.2,1720,,,,0
+2022-10,"Toronto, Census metropolitan area (CMA)",2021S0503535,Apartment - 3 or more bedrooms,Average asking rent,Dollars,81,units,0,v1675425049,27.4.1,3230,,,,0
+2022-10,"Toronto, Census metropolitan area (CMA)",2021S0503535,Room,Average asking rent,Dollars,81,units,0,v1675425050,27.5.1,770,,,,0
+2023-01,"Hamilton, Census metropolitan area (CMA)",2021S0503537,House - 2 bedrooms,Average asking rent,Dollars,81,units,0,v1810299261,18.6.1,2390,,,,0
+2023-01,"Hamilton, Census metropolitan area (CMA)",2021S0503537,House - 3 or more bedrooms,Average asking rent,Dollars,81,units,0,v1810299262,18.7.1,2770,,,,0
+2023-01,"Hamilton, Census metropolitan area (CMA)",2021S0503537,Apartment - No bedroom,Average asking rent,Dollars,81,units,0,v1675425051,18.1.1,1440,,,,0
+2023-01,"Hamilton, Census metropolitan area (CMA)",2021S0503537,Apartment - 1 bedroom,Average asking rent,Dollars,81,units,0,v1675425052,18.2.1,1770,,,,0
+2023-01,"Hamilton, Census metropolitan area (CMA)",2021S0503537,Apartment - 2 bedrooms,Average asking rent,Dollars,81,units,0,v1675425053,18.3.1,2110,,,,0
+2023-01,"Hamilton, Census metropolitan area (CMA)",2021S0503537,Apartment - 3 or more bedrooms,Average asking rent,Dollars,81,units,0,v1675425054,18.4.1,2480,,,,0
+2023-01,"Hamilton, Census metropolitan area (CMA)",2021S0503537,Room,Average asking rent,Dollars,81,units,0,v1675425055,18.5.1,780,,,,0
+2023-01,"Oshawa, Census metropolitan area (CMA)",2021S0503532,House - 2 bedrooms,Average asking rent,Dollars,81,units,0,v1810299257,22.6.1,2230,,,,0
+2023-01,"Oshawa, Census metropolitan area (CMA)",2021S0503532,House - 3 or more bedrooms,Average asking rent,Dollars,81,units,0,v1810299258,22.7.1,2760,,,,0
+2023-01,"Oshawa, Census metropolitan area (CMA)",2021S0503532,Apartment - No bedroom,Average asking rent,Dollars,81,units,0,v1675425041,22.1.1,1460,,,,0
+2023-01,"Oshawa, Census metropolitan area (CMA)",2021S0503532,Apartment - 1 bedroom,Average asking rent,Dollars,81,units,0,v1675425042,22.2.1,1710,,,,0
+2023-01,"Oshawa, Census metropolitan area (CMA)",2021S0503532,Apartment - 2 bedrooms,Average asking rent,Dollars,81,units,0,v1675425043,22.3.1,1960,,,,0
+2023-01,"Oshawa, Census metropolitan area (CMA)",2021S0503532,Apartment - 3 or more bedrooms,Average asking rent,Dollars,81,units,0,v1675425044,22.4.1,2350,,,,0
+2023-01,"Oshawa, Census metropolitan area (CMA)",2021S0503532,Room,Average asking rent,Dollars,81,units,0,v1675425045,22.5.1,740,,,,0
+2023-01,"Toronto, Census metropolitan area (CMA)",2021S0503535,House - 2 bedrooms,Average asking rent,Dollars,81,units,0,v1810299259,27.6.1,2930,,,,0
+2023-01,"Toronto, Census metropolitan area (CMA)",2021S0503535,House - 3 or more bedrooms,Average asking rent,Dollars,81,units,0,v1810299260,27.7.1,3740,,,,0
+2023-01,"Toronto, Census metropolitan area (CMA)",2021S0503535,Apartment - No bedroom,Average asking rent,Dollars,81,units,0,v1675425046,27.1.1,1760,,,,0
+2023-01,"Toronto, Census metropolitan area (CMA)",2021S0503535,Apartment - 1 bedroom,Average asking rent,Dollars,81,units,0,v1675425047,27.2.1,2210,,,,0
+2023-01,"Toronto, Census metropolitan area (CMA)",2021S0503535,Apartment - 1 bedroom,Average paid rent,Dollars,81,units,0,v1938684513,27.2.2,1520,,,,0
+2023-01,"Toronto, Census metropolitan area (CMA)",2021S0503535,Apartment - 2 bedrooms,Average asking rent,Dollars,81,units,0,v1675425048,27.3.1,2730,,,,0
+2023-01,"Toronto, Census metropolitan area (CMA)",2021S0503535,Apartment - 2 bedrooms,Average paid rent,Dollars,81,units,0,v1938684514,27.3.2,1740,,,,0
+2023-01,"Toronto, Census metropolitan area (CMA)",2021S0503535,Apartment - 3 or more bedrooms,Average asking rent,Dollars,81,units,0,v1675425049,27.4.1,3230,,,,0
+2023-01,"Toronto, Census metropolitan area (CMA)",2021S0503535,Room,Average asking rent,Dollars,81,units,0,v1675425050,27.5.1,790,,,,0
+2023-04,"Hamilton, Census metropolitan area (CMA)",2021S0503537,House - 2 bedrooms,Average asking rent,Dollars,81,units,0,v1810299261,18.6.1,2410,,,,0
+2023-04,"Hamilton, Census metropolitan area (CMA)",2021S0503537,House - 3 or more bedrooms,Average asking rent,Dollars,81,units,0,v1810299262,18.7.1,2940,,,,0
+2023-04,"Hamilton, Census metropolitan area (CMA)",2021S0503537,Apartment - No bedroom,Average asking rent,Dollars,81,units,0,v1675425051,18.1.1,1390,,,,0
+2023-04,"Hamilton, Census metropolitan area (CMA)",2021S0503537,Apartment - 1 bedroom,Average asking rent,Dollars,81,units,0,v1675425052,18.2.1,1790,,,,0
+2023-04,"Hamilton, Census metropolitan area (CMA)",2021S0503537,Apartment - 2 bedrooms,Average asking rent,Dollars,81,units,0,v1675425053,18.3.1,2150,,,,0
+2023-04,"Hamilton, Census metropolitan area (CMA)",2021S0503537,Apartment - 3 or more bedrooms,Average asking rent,Dollars,81,units,0,v1675425054,18.4.1,2500,,,,0
+2023-04,"Hamilton, Census metropolitan area (CMA)",2021S0503537,Room,Average asking rent,Dollars,81,units,0,v1675425055,18.5.1,750,,,,0
+2023-04,"Oshawa, Census metropolitan area (CMA)",2021S0503532,House - 2 bedrooms,Average asking rent,Dollars,81,units,0,v1810299257,22.6.1,2300,,,,0
+2023-04,"Oshawa, Census metropolitan area (CMA)",2021S0503532,House - 3 or more bedrooms,Average asking rent,Dollars,81,units,0,v1810299258,22.7.1,2850,,,,0
+2023-04,"Oshawa, Census metropolitan area (CMA)",2021S0503532,Apartment - No bedroom,Average asking rent,Dollars,81,units,0,v1675425041,22.1.1,1400,,,,0
+2023-04,"Oshawa, Census metropolitan area (CMA)",2021S0503532,Apartment - 1 bedroom,Average asking rent,Dollars,81,units,0,v1675425042,22.2.1,1750,,,,0
+2023-04,"Oshawa, Census metropolitan area (CMA)",2021S0503532,Apartment - 2 bedrooms,Average asking rent,Dollars,81,units,0,v1675425043,22.3.1,1990,,,,0
+2023-04,"Oshawa, Census metropolitan area (CMA)",2021S0503532,Apartment - 3 or more bedrooms,Average asking rent,Dollars,81,units,0,v1675425044,22.4.1,2400,,,,0
+2023-04,"Oshawa, Census metropolitan area (CMA)",2021S0503532,Room,Average asking rent,Dollars,81,units,0,v1675425045,22.5.1,770,,,,0
+2023-04,"Toronto, Census metropolitan area (CMA)",2021S0503535,House - 2 bedrooms,Average asking rent,Dollars,81,units,0,v1810299259,27.6.1,2980,,,,0
+2023-04,"Toronto, Census metropolitan area (CMA)",2021S0503535,House - 3 or more bedrooms,Average asking rent,Dollars,81,units,0,v1810299260,27.7.1,3910,,,,0
+2023-04,"Toronto, Census metropolitan area (CMA)",2021S0503535,Apartment - No bedroom,Average asking rent,Dollars,81,units,0,v1675425046,27.1.1,1830,,,,0
+2023-04,"Toronto, Census metropolitan area (CMA)",2021S0503535,Apartment - 1 bedroom,Average asking rent,Dollars,81,units,0,v1675425047,27.2.1,2280,,,,0
+2023-04,"Toronto, Census metropolitan area (CMA)",2021S0503535,Apartment - 1 bedroom,Average paid rent,Dollars,81,units,0,v1938684513,27.2.2,1540,,,,0
+2023-04,"Toronto, Census metropolitan area (CMA)",2021S0503535,Apartment - 2 bedrooms,Average asking rent,Dollars,81,units,0,v1675425048,27.3.1,2880,,,,0
+2023-04,"Toronto, Census metropolitan area (CMA)",2021S0503535,Apartment - 2 bedrooms,Average paid rent,Dollars,81,units,0,v1938684514,27.3.2,1770,,,,0
+2023-04,"Toronto, Census metropolitan area (CMA)",2021S0503535,Apartment - 3 or more bedrooms,Average asking rent,Dollars,81,units,0,v1675425049,27.4.1,3470,,,,0
+2023-04,"Toronto, Census metropolitan area (CMA)",2021S0503535,Room,Average asking rent,Dollars,81,units,0,v1675425050,27.5.1,850,,,,0
+2023-07,"Hamilton, Census metropolitan area (CMA)",2021S0503537,House - 2 bedrooms,Average asking rent,Dollars,81,units,0,v1810299261,18.6.1,2470,,,,0
+2023-07,"Hamilton, Census metropolitan area (CMA)",2021S0503537,House - 3 or more bedrooms,Average asking rent,Dollars,81,units,0,v1810299262,18.7.1,3010,,,,0
+2023-07,"Hamilton, Census metropolitan area (CMA)",2021S0503537,Apartment - No bedroom,Average asking rent,Dollars,81,units,0,v1675425051,18.1.1,1420,,,,0
+2023-07,"Hamilton, Census metropolitan area (CMA)",2021S0503537,Apartment - 1 bedroom,Average asking rent,Dollars,81,units,0,v1675425052,18.2.1,1790,,,,0
+2023-07,"Hamilton, Census metropolitan area (CMA)",2021S0503537,Apartment - 2 bedrooms,Average asking rent,Dollars,81,units,0,v1675425053,18.3.1,2170,,,,0
+2023-07,"Hamilton, Census metropolitan area (CMA)",2021S0503537,Apartment - 3 or more bedrooms,Average asking rent,Dollars,81,units,0,v1675425054,18.4.1,2540,,,,0
+2023-07,"Hamilton, Census metropolitan area (CMA)",2021S0503537,Room,Average asking rent,Dollars,81,units,0,v1675425055,18.5.1,810,,,,0
+2023-07,"Oshawa, Census metropolitan area (CMA)",2021S0503532,House - 2 bedrooms,Average asking rent,Dollars,81,units,0,v1810299257,22.6.1,2300,,,,0
+2023-07,"Oshawa, Census metropolitan area (CMA)",2021S0503532,House - 3 or more bedrooms,Average asking rent,Dollars,81,units,0,v1810299258,22.7.1,2940,,,,0
+2023-07,"Oshawa, Census metropolitan area (CMA)",2021S0503532,Apartment - No bedroom,Average asking rent,Dollars,81,units,0,v1675425041,22.1.1,1500,,,,0
+2023-07,"Oshawa, Census metropolitan area (CMA)",2021S0503532,Apartment - 1 bedroom,Average asking rent,Dollars,81,units,0,v1675425042,22.2.1,1760,,,,0
+2023-07,"Oshawa, Census metropolitan area (CMA)",2021S0503532,Apartment - 2 bedrooms,Average asking rent,Dollars,81,units,0,v1675425043,22.3.1,2040,,,,0
+2023-07,"Oshawa, Census metropolitan area (CMA)",2021S0503532,Apartment - 3 or more bedrooms,Average asking rent,Dollars,81,units,0,v1675425044,22.4.1,2420,,,,0
+2023-07,"Oshawa, Census metropolitan area (CMA)",2021S0503532,Room,Average asking rent,Dollars,81,units,0,v1675425045,22.5.1,800,,,,0
+2023-07,"Toronto, Census metropolitan area (CMA)",2021S0503535,House - 2 bedrooms,Average asking rent,Dollars,81,units,0,v1810299259,27.6.1,3140,,,,0
+2023-07,"Toronto, Census metropolitan area (CMA)",2021S0503535,House - 3 or more bedrooms,Average asking rent,Dollars,81,units,0,v1810299260,27.7.1,4080,,,,0
+2023-07,"Toronto, Census metropolitan area (CMA)",2021S0503535,Apartment - No bedroom,Average asking rent,Dollars,81,units,0,v1675425046,27.1.1,1870,,,,0
+2023-07,"Toronto, Census metropolitan area (CMA)",2021S0503535,Apartment - 1 bedroom,Average asking rent,Dollars,81,units,0,v1675425047,27.2.1,2320,,,,0
+2023-07,"Toronto, Census metropolitan area (CMA)",2021S0503535,Apartment - 1 bedroom,Average paid rent,Dollars,81,units,0,v1938684513,27.2.2,1580,,,,0
+2023-07,"Toronto, Census metropolitan area (CMA)",2021S0503535,Apartment - 2 bedrooms,Average asking rent,Dollars,81,units,0,v1675425048,27.3.1,2920,,,,0
+2023-07,"Toronto, Census metropolitan area (CMA)",2021S0503535,Apartment - 2 bedrooms,Average paid rent,Dollars,81,units,0,v1938684514,27.3.2,1800,,,,0
+2023-07,"Toronto, Census metropolitan area (CMA)",2021S0503535,Apartment - 3 or more bedrooms,Average asking rent,Dollars,81,units,0,v1675425049,27.4.1,3490,,,,0
+2023-07,"Toronto, Census metropolitan area (CMA)",2021S0503535,Room,Average asking rent,Dollars,81,units,0,v1675425050,27.5.1,880,,,,0
+2023-10,"Hamilton, Census metropolitan area (CMA)",2021S0503537,House - 2 bedrooms,Average asking rent,Dollars,81,units,0,v1810299261,18.6.1,2450,,,,0
+2023-10,"Hamilton, Census metropolitan area (CMA)",2021S0503537,House - 3 or more bedrooms,Average asking rent,Dollars,81,units,0,v1810299262,18.7.1,3050,,,,0
+2023-10,"Hamilton, Census metropolitan area (CMA)",2021S0503537,Apartment - No bedroom,Average asking rent,Dollars,81,units,0,v1675425051,18.1.1,1510,,,,0
+2023-10,"Hamilton, Census metropolitan area (CMA)",2021S0503537,Apartment - 1 bedroom,Average asking rent,Dollars,81,units,0,v1675425052,18.2.1,1840,,,,0
+2023-10,"Hamilton, Census metropolitan area (CMA)",2021S0503537,Apartment - 2 bedrooms,Average asking rent,Dollars,81,units,0,v1675425053,18.3.1,2250,,,,0
+2023-10,"Hamilton, Census metropolitan area (CMA)",2021S0503537,Apartment - 3 or more bedrooms,Average asking rent,Dollars,81,units,0,v1675425054,18.4.1,2660,,,,0
+2023-10,"Hamilton, Census metropolitan area (CMA)",2021S0503537,Room,Average asking rent,Dollars,81,units,0,v1675425055,18.5.1,800,,,,0
+2023-10,"Oshawa, Census metropolitan area (CMA)",2021S0503532,House - 2 bedrooms,Average asking rent,Dollars,81,units,0,v1810299257,22.6.1,2220,,,,0
+2023-10,"Oshawa, Census metropolitan area (CMA)",2021S0503532,House - 3 or more bedrooms,Average asking rent,Dollars,81,units,0,v1810299258,22.7.1,2970,,,,0
+2023-10,"Oshawa, Census metropolitan area (CMA)",2021S0503532,Apartment - No bedroom,Average asking rent,Dollars,81,units,0,v1675425041,22.1.1,1490,,,,0
+2023-10,"Oshawa, Census metropolitan area (CMA)",2021S0503532,Apartment - 1 bedroom,Average asking rent,Dollars,81,units,0,v1675425042,22.2.1,1770,,,,0
+2023-10,"Oshawa, Census metropolitan area (CMA)",2021S0503532,Apartment - 2 bedrooms,Average asking rent,Dollars,81,units,0,v1675425043,22.3.1,2090,,,,0
+2023-10,"Oshawa, Census metropolitan area (CMA)",2021S0503532,Apartment - 3 or more bedrooms,Average asking rent,Dollars,81,units,0,v1675425044,22.4.1,2550,,,,0
+2023-10,"Oshawa, Census metropolitan area (CMA)",2021S0503532,Room,Average asking rent,Dollars,81,units,0,v1675425045,22.5.1,780,,,,0
+2023-10,"Toronto, Census metropolitan area (CMA)",2021S0503535,House - 2 bedrooms,Average asking rent,Dollars,81,units,0,v1810299259,27.6.1,2910,,,,0
+2023-10,"Toronto, Census metropolitan area (CMA)",2021S0503535,House - 3 or more bedrooms,Average asking rent,Dollars,81,units,0,v1810299260,27.7.1,4030,,,,0
+2023-10,"Toronto, Census metropolitan area (CMA)",2021S0503535,Apartment - No bedroom,Average asking rent,Dollars,81,units,0,v1675425046,27.1.1,1910,,,,0
+2023-10,"Toronto, Census metropolitan area (CMA)",2021S0503535,Apartment - 1 bedroom,Average asking rent,Dollars,81,units,0,v1675425047,27.2.1,2340,,,,0
+2023-10,"Toronto, Census metropolitan area (CMA)",2021S0503535,Apartment - 1 bedroom,Average paid rent,Dollars,81,units,0,v1938684513,27.2.2,1640,,,,0
+2023-10,"Toronto, Census metropolitan area (CMA)",2021S0503535,Apartment - 2 bedrooms,Average asking rent,Dollars,81,units,0,v1675425048,27.3.1,2920,,,,0
+2023-10,"Toronto, Census metropolitan area (CMA)",2021S0503535,Apartment - 2 bedrooms,Average paid rent,Dollars,81,units,0,v1938684514,27.3.2,1840,,,,0
+2023-10,"Toronto, Census metropolitan area (CMA)",2021S0503535,Apartment - 3 or more bedrooms,Average asking rent,Dollars,81,units,0,v1675425049,27.4.1,3660,,,,0
+2023-10,"Toronto, Census metropolitan area (CMA)",2021S0503535,Room,Average asking rent,Dollars,81,units,0,v1675425050,27.5.1,850,,,,0
+2024-01,"Hamilton, Census metropolitan area (CMA)",2021S0503537,House - 2 bedrooms,Average asking rent,Dollars,81,units,0,v1810299261,18.6.1,2350,,,,0
+2024-01,"Hamilton, Census metropolitan area (CMA)",2021S0503537,House - 3 or more bedrooms,Average asking rent,Dollars,81,units,0,v1810299262,18.7.1,3070,,,,0
+2024-01,"Hamilton, Census metropolitan area (CMA)",2021S0503537,Apartment - No bedroom,Average asking rent,Dollars,81,units,0,v1675425051,18.1.1,1520,,,,0
+2024-01,"Hamilton, Census metropolitan area (CMA)",2021S0503537,Apartment - 1 bedroom,Average asking rent,Dollars,81,units,0,v1675425052,18.2.1,1820,,,,0
+2024-01,"Hamilton, Census metropolitan area (CMA)",2021S0503537,Apartment - 2 bedrooms,Average asking rent,Dollars,81,units,0,v1675425053,18.3.1,2220,,,,0
+2024-01,"Hamilton, Census metropolitan area (CMA)",2021S0503537,Apartment - 3 or more bedrooms,Average asking rent,Dollars,81,units,0,v1675425054,18.4.1,2630,,,,0
+2024-01,"Hamilton, Census metropolitan area (CMA)",2021S0503537,Room,Average asking rent,Dollars,81,units,0,v1675425055,18.5.1,790,,,,0
+2024-01,"Oshawa, Census metropolitan area (CMA)",2021S0503532,House - 2 bedrooms,Average asking rent,Dollars,81,units,0,v1810299257,22.6.1,2180,,,,0
+2024-01,"Oshawa, Census metropolitan area (CMA)",2021S0503532,House - 3 or more bedrooms,Average asking rent,Dollars,81,units,0,v1810299258,22.7.1,2970,,,,0
+2024-01,"Oshawa, Census metropolitan area (CMA)",2021S0503532,Apartment - No bedroom,Average asking rent,Dollars,81,units,0,v1675425041,22.1.1,1590,,,,0
+2024-01,"Oshawa, Census metropolitan area (CMA)",2021S0503532,Apartment - 1 bedroom,Average asking rent,Dollars,81,units,0,v1675425042,22.2.1,1740,,,,0
+2024-01,"Oshawa, Census metropolitan area (CMA)",2021S0503532,Apartment - 2 bedrooms,Average asking rent,Dollars,81,units,0,v1675425043,22.3.1,2090,,,,0
+2024-01,"Oshawa, Census metropolitan area (CMA)",2021S0503532,Apartment - 3 or more bedrooms,Average asking rent,Dollars,81,units,0,v1675425044,22.4.1,2450,,,,0
+2024-01,"Oshawa, Census metropolitan area (CMA)",2021S0503532,Room,Average asking rent,Dollars,81,units,0,v1675425045,22.5.1,790,,,,0
+2024-01,"Toronto, Census metropolitan area (CMA)",2021S0503535,House - 2 bedrooms,Average asking rent,Dollars,81,units,0,v1810299259,27.6.1,2760,,,,0
+2024-01,"Toronto, Census metropolitan area (CMA)",2021S0503535,House - 3 or more bedrooms,Average asking rent,Dollars,81,units,0,v1810299260,27.7.1,3920,,,,0
+2024-01,"Toronto, Census metropolitan area (CMA)",2021S0503535,Apartment - No bedroom,Average asking rent,Dollars,81,units,0,v1675425046,27.1.1,1880,,,,0
+2024-01,"Toronto, Census metropolitan area (CMA)",2021S0503535,Apartment - 1 bedroom,Average asking rent,Dollars,81,units,0,v1675425047,27.2.1,2290,,,,0
+2024-01,"Toronto, Census metropolitan area (CMA)",2021S0503535,Apartment - 1 bedroom,Average paid rent,Dollars,81,units,0,v1938684513,27.2.2,1700,E,,,0
+2024-01,"Toronto, Census metropolitan area (CMA)",2021S0503535,Apartment - 2 bedrooms,Average asking rent,Dollars,81,units,0,v1675425048,27.3.1,2850,,,,0
+2024-01,"Toronto, Census metropolitan area (CMA)",2021S0503535,Apartment - 2 bedrooms,Average paid rent,Dollars,81,units,0,v1938684514,27.3.2,1890,,,,0
+2024-01,"Toronto, Census metropolitan area (CMA)",2021S0503535,Apartment - 3 or more bedrooms,Average asking rent,Dollars,81,units,0,v1675425049,27.4.1,3520,,,,0
+2024-01,"Toronto, Census metropolitan area (CMA)",2021S0503535,Room,Average asking rent,Dollars,81,units,0,v1675425050,27.5.1,860,,,,0
+2024-04,"Hamilton, Census metropolitan area (CMA)",2021S0503537,House - 2 bedrooms,Average asking rent,Dollars,81,units,0,v1810299261,18.6.1,2350,,,,0
+2024-04,"Hamilton, Census metropolitan area (CMA)",2021S0503537,House - 3 or more bedrooms,Average asking rent,Dollars,81,units,0,v1810299262,18.7.1,3000,,,,0
+2024-04,"Hamilton, Census metropolitan area (CMA)",2021S0503537,Apartment - No bedroom,Average asking rent,Dollars,81,units,0,v1675425051,18.1.1,1490,,,,0
+2024-04,"Hamilton, Census metropolitan area (CMA)",2021S0503537,Apartment - 1 bedroom,Average asking rent,Dollars,81,units,0,v1675425052,18.2.1,1820,,,,0
+2024-04,"Hamilton, Census metropolitan area (CMA)",2021S0503537,Apartment - 2 bedrooms,Average asking rent,Dollars,81,units,0,v1675425053,18.3.1,2250,,,,0
+2024-04,"Hamilton, Census metropolitan area (CMA)",2021S0503537,Apartment - 3 or more bedrooms,Average asking rent,Dollars,81,units,0,v1675425054,18.4.1,2640,,,,0
+2024-04,"Hamilton, Census metropolitan area (CMA)",2021S0503537,Room,Average asking rent,Dollars,81,units,0,v1675425055,18.5.1,760,,,,0
+2024-04,"Oshawa, Census metropolitan area (CMA)",2021S0503532,House - 2 bedrooms,Average asking rent,Dollars,81,units,0,v1810299257,22.6.1,2290,,,,0
+2024-04,"Oshawa, Census metropolitan area (CMA)",2021S0503532,House - 3 or more bedrooms,Average asking rent,Dollars,81,units,0,v1810299258,22.7.1,2990,,,,0
+2024-04,"Oshawa, Census metropolitan area (CMA)",2021S0503532,Apartment - No bedroom,Average asking rent,Dollars,81,units,0,v1675425041,22.1.1,1490,,,,0
+2024-04,"Oshawa, Census metropolitan area (CMA)",2021S0503532,Apartment - 1 bedroom,Average asking rent,Dollars,81,units,0,v1675425042,22.2.1,1770,,,,0
+2024-04,"Oshawa, Census metropolitan area (CMA)",2021S0503532,Apartment - 2 bedrooms,Average asking rent,Dollars,81,units,0,v1675425043,22.3.1,2090,,,,0
+2024-04,"Oshawa, Census metropolitan area (CMA)",2021S0503532,Apartment - 3 or more bedrooms,Average asking rent,Dollars,81,units,0,v1675425044,22.4.1,2410,,,,0
+2024-04,"Oshawa, Census metropolitan area (CMA)",2021S0503532,Room,Average asking rent,Dollars,81,units,0,v1675425045,22.5.1,760,,,,0
+2024-04,"Toronto, Census metropolitan area (CMA)",2021S0503535,House - 2 bedrooms,Average asking rent,Dollars,81,units,0,v1810299259,27.6.1,2750,,,,0
+2024-04,"Toronto, Census metropolitan area (CMA)",2021S0503535,House - 3 or more bedrooms,Average asking rent,Dollars,81,units,0,v1810299260,27.7.1,3950,,,,0
+2024-04,"Toronto, Census metropolitan area (CMA)",2021S0503535,Apartment - No bedroom,Average asking rent,Dollars,81,units,0,v1675425046,27.1.1,1880,,,,0
+2024-04,"Toronto, Census metropolitan area (CMA)",2021S0503535,Apartment - 1 bedroom,Average asking rent,Dollars,81,units,0,v1675425047,27.2.1,2280,,,,0
+2024-04,"Toronto, Census metropolitan area (CMA)",2021S0503535,Apartment - 1 bedroom,Average paid rent,Dollars,81,units,0,v1938684513,27.2.2,1730,E,,,0
+2024-04,"Toronto, Census metropolitan area (CMA)",2021S0503535,Apartment - 2 bedrooms,Average asking rent,Dollars,81,units,0,v1675425048,27.3.1,2830,,,,0
+2024-04,"Toronto, Census metropolitan area (CMA)",2021S0503535,Apartment - 2 bedrooms,Average paid rent,Dollars,81,units,0,v1938684514,27.3.2,1940,,,,0
+2024-04,"Toronto, Census metropolitan area (CMA)",2021S0503535,Apartment - 3 or more bedrooms,Average asking rent,Dollars,81,units,0,v1675425049,27.4.1,3520,,,,0
+2024-04,"Toronto, Census metropolitan area (CMA)",2021S0503535,Room,Average asking rent,Dollars,81,units,0,v1675425050,27.5.1,890,,,,0
+2024-07,"Hamilton, Census metropolitan area (CMA)",2021S0503537,House - 2 bedrooms,Average asking rent,Dollars,81,units,0,v1810299261,18.6.1,2310,,,,0
+2024-07,"Hamilton, Census metropolitan area (CMA)",2021S0503537,House - 3 or more bedrooms,Average asking rent,Dollars,81,units,0,v1810299262,18.7.1,2920,,,,0
+2024-07,"Hamilton, Census metropolitan area (CMA)",2021S0503537,Apartment - No bedroom,Average asking rent,Dollars,81,units,0,v1675425051,18.1.1,1610,E,,,0
+2024-07,"Hamilton, Census metropolitan area (CMA)",2021S0503537,Apartment - 1 bedroom,Average asking rent,Dollars,81,units,0,v1675425052,18.2.1,1850,,,,0
+2024-07,"Hamilton, Census metropolitan area (CMA)",2021S0503537,Apartment - 2 bedrooms,Average asking rent,Dollars,81,units,0,v1675425053,18.3.1,2300,,,,0
+2024-07,"Hamilton, Census metropolitan area (CMA)",2021S0503537,Apartment - 3 or more bedrooms,Average asking rent,Dollars,81,units,0,v1675425054,18.4.1,2680,,,,0
+2024-07,"Hamilton, Census metropolitan area (CMA)",2021S0503537,Room,Average asking rent,Dollars,81,units,0,v1675425055,18.5.1,810,,,,0
+2024-07,"Oshawa, Census metropolitan area (CMA)",2021S0503532,House - 2 bedrooms,Average asking rent,Dollars,81,units,0,v1810299257,22.6.1,2240,,,,0
+2024-07,"Oshawa, Census metropolitan area (CMA)",2021S0503532,House - 3 or more bedrooms,Average asking rent,Dollars,81,units,0,v1810299258,22.7.1,2940,,,,0
+2024-07,"Oshawa, Census metropolitan area (CMA)",2021S0503532,Apartment - No bedroom,Average asking rent,Dollars,81,units,0,v1675425041,22.1.1,1490,,,,0
+2024-07,"Oshawa, Census metropolitan area (CMA)",2021S0503532,Apartment - 1 bedroom,Average asking rent,Dollars,81,units,0,v1675425042,22.2.1,1800,,,,0
+2024-07,"Oshawa, Census metropolitan area (CMA)",2021S0503532,Apartment - 2 bedrooms,Average asking rent,Dollars,81,units,0,v1675425043,22.3.1,2090,,,,0
+2024-07,"Oshawa, Census metropolitan area (CMA)",2021S0503532,Apartment - 3 or more bedrooms,Average asking rent,Dollars,81,units,0,v1675425044,22.4.1,2420,,,,0
+2024-07,"Oshawa, Census metropolitan area (CMA)",2021S0503532,Room,Average asking rent,Dollars,81,units,0,v1675425045,22.5.1,750,,,,0
+2024-07,"Toronto, Census metropolitan area (CMA)",2021S0503535,House - 2 bedrooms,Average asking rent,Dollars,81,units,0,v1810299259,27.6.1,2870,,,,0
+2024-07,"Toronto, Census metropolitan area (CMA)",2021S0503535,House - 3 or more bedrooms,Average asking rent,Dollars,81,units,0,v1810299260,27.7.1,3700,,,,0
+2024-07,"Toronto, Census metropolitan area (CMA)",2021S0503535,Apartment - No bedroom,Average asking rent,Dollars,81,units,0,v1675425046,27.1.1,1890,,,,0
+2024-07,"Toronto, Census metropolitan area (CMA)",2021S0503535,Apartment - 1 bedroom,Average asking rent,Dollars,81,units,0,v1675425047,27.2.1,2270,,,,0
+2024-07,"Toronto, Census metropolitan area (CMA)",2021S0503535,Apartment - 1 bedroom,Average paid rent,Dollars,81,units,0,v1938684513,27.2.2,1740,E,,,0
+2024-07,"Toronto, Census metropolitan area (CMA)",2021S0503535,Apartment - 2 bedrooms,Average asking rent,Dollars,81,units,0,v1675425048,27.3.1,2830,,,,0
+2024-07,"Toronto, Census metropolitan area (CMA)",2021S0503535,Apartment - 2 bedrooms,Average paid rent,Dollars,81,units,0,v1938684514,27.3.2,1980,,,,0
+2024-07,"Toronto, Census metropolitan area (CMA)",2021S0503535,Apartment - 3 or more bedrooms,Average asking rent,Dollars,81,units,0,v1675425049,27.4.1,3510,,,,0
+2024-07,"Toronto, Census metropolitan area (CMA)",2021S0503535,Room,Average asking rent,Dollars,81,units,0,v1675425050,27.5.1,860,,,,0
+2024-10,"Hamilton, Census metropolitan area (CMA)",2021S0503537,House - 2 bedrooms,Average asking rent,Dollars,81,units,0,v1810299261,18.6.1,2230,,,,0
+2024-10,"Hamilton, Census metropolitan area (CMA)",2021S0503537,House - 3 or more bedrooms,Average asking rent,Dollars,81,units,0,v1810299262,18.7.1,2900,,,,0
+2024-10,"Hamilton, Census metropolitan area (CMA)",2021S0503537,Apartment - No bedroom,Average asking rent,Dollars,81,units,0,v1675425051,18.1.1,1480,,,,0
+2024-10,"Hamilton, Census metropolitan area (CMA)",2021S0503537,Apartment - 1 bedroom,Average asking rent,Dollars,81,units,0,v1675425052,18.2.1,1790,,,,0
+2024-10,"Hamilton, Census metropolitan area (CMA)",2021S0503537,Apartment - 2 bedrooms,Average asking rent,Dollars,81,units,0,v1675425053,18.3.1,2240,,,,0
+2024-10,"Hamilton, Census metropolitan area (CMA)",2021S0503537,Apartment - 3 or more bedrooms,Average asking rent,Dollars,81,units,0,v1675425054,18.4.1,2600,,,,0
+2024-10,"Hamilton, Census metropolitan area (CMA)",2021S0503537,Room,Average asking rent,Dollars,81,units,0,v1675425055,18.5.1,800,,,,0
+2024-10,"Oshawa, Census metropolitan area (CMA)",2021S0503532,House - 2 bedrooms,Average asking rent,Dollars,81,units,0,v1810299257,22.6.1,2230,,,,0
+2024-10,"Oshawa, Census metropolitan area (CMA)",2021S0503532,House - 3 or more bedrooms,Average asking rent,Dollars,81,units,0,v1810299258,22.7.1,2860,,,,0
+2024-10,"Oshawa, Census metropolitan area (CMA)",2021S0503532,Apartment - No bedroom,Average asking rent,Dollars,81,units,0,v1675425041,22.1.1,1520,,,,0
+2024-10,"Oshawa, Census metropolitan area (CMA)",2021S0503532,Apartment - 1 bedroom,Average asking rent,Dollars,81,units,0,v1675425042,22.2.1,1750,,,,0
+2024-10,"Oshawa, Census metropolitan area (CMA)",2021S0503532,Apartment - 2 bedrooms,Average asking rent,Dollars,81,units,0,v1675425043,22.3.1,2090,,,,0
+2024-10,"Oshawa, Census metropolitan area (CMA)",2021S0503532,Apartment - 3 or more bedrooms,Average asking rent,Dollars,81,units,0,v1675425044,22.4.1,2410,,,,0
+2024-10,"Oshawa, Census metropolitan area (CMA)",2021S0503532,Room,Average asking rent,Dollars,81,units,0,v1675425045,22.5.1,760,,,,0
+2024-10,"Toronto, Census metropolitan area (CMA)",2021S0503535,House - 2 bedrooms,Average asking rent,Dollars,81,units,0,v1810299259,27.6.1,2790,,,,0
+2024-10,"Toronto, Census metropolitan area (CMA)",2021S0503535,House - 3 or more bedrooms,Average asking rent,Dollars,81,units,0,v1810299260,27.7.1,3640,,,,0
+2024-10,"Toronto, Census metropolitan area (CMA)",2021S0503535,Apartment - No bedroom,Average asking rent,Dollars,81,units,0,v1675425046,27.1.1,1830,,,,0
+2024-10,"Toronto, Census metropolitan area (CMA)",2021S0503535,Apartment - 1 bedroom,Average asking rent,Dollars,81,units,0,v1675425047,27.2.1,2210,,,,0
+2024-10,"Toronto, Census metropolitan area (CMA)",2021S0503535,Apartment - 1 bedroom,Average paid rent,Dollars,81,units,0,v1938684513,27.2.2,1740,,,,0
+2024-10,"Toronto, Census metropolitan area (CMA)",2021S0503535,Apartment - 2 bedrooms,Average asking rent,Dollars,81,units,0,v1675425048,27.3.1,2740,,,,0
+2024-10,"Toronto, Census metropolitan area (CMA)",2021S0503535,Apartment - 2 bedrooms,Average paid rent,Dollars,81,units,0,v1938684514,27.3.2,2010,,,,0
+2024-10,"Toronto, Census metropolitan area (CMA)",2021S0503535,Apartment - 3 or more bedrooms,Average asking rent,Dollars,81,units,0,v1675425049,27.4.1,3440,,,,0
+2024-10,"Toronto, Census metropolitan area (CMA)",2021S0503535,Room,Average asking rent,Dollars,81,units,0,v1675425050,27.5.1,830,,,,0
+2025-01,"Hamilton, Census metropolitan area (CMA)",2021S0503537,House - 2 bedrooms,Average asking rent,Dollars,81,units,0,v1810299261,18.6.1,2350,,,,0
+2025-01,"Hamilton, Census metropolitan area (CMA)",2021S0503537,House - 3 or more bedrooms,Average asking rent,Dollars,81,units,0,v1810299262,18.7.1,2920,,,,0
+2025-01,"Hamilton, Census metropolitan area (CMA)",2021S0503537,Apartment - No bedroom,Average asking rent,Dollars,81,units,0,v1675425051,18.1.1,1430,,,,0
+2025-01,"Hamilton, Census metropolitan area (CMA)",2021S0503537,Apartment - 1 bedroom,Average asking rent,Dollars,81,units,0,v1675425052,18.2.1,1800,,,,0
+2025-01,"Hamilton, Census metropolitan area (CMA)",2021S0503537,Apartment - 2 bedrooms,Average asking rent,Dollars,81,units,0,v1675425053,18.3.1,2180,,,,0
+2025-01,"Hamilton, Census metropolitan area (CMA)",2021S0503537,Apartment - 3 or more bedrooms,Average asking rent,Dollars,81,units,0,v1675425054,18.4.1,2610,,,,0
+2025-01,"Hamilton, Census metropolitan area (CMA)",2021S0503537,Room,Average asking rent,Dollars,81,units,0,v1675425055,18.5.1,780,,,,0
+2025-01,"Oshawa, Census metropolitan area (CMA)",2021S0503532,House - 2 bedrooms,Average asking rent,Dollars,81,units,0,v1810299257,22.6.1,2160,,,,0
+2025-01,"Oshawa, Census metropolitan area (CMA)",2021S0503532,House - 3 or more bedrooms,Average asking rent,Dollars,81,units,0,v1810299258,22.7.1,2850,,,,0
+2025-01,"Oshawa, Census metropolitan area (CMA)",2021S0503532,Apartment - No bedroom,Average asking rent,Dollars,81,units,0,v1675425041,22.1.1,1460,,,,0
+2025-01,"Oshawa, Census metropolitan area (CMA)",2021S0503532,Apartment - 1 bedroom,Average asking rent,Dollars,81,units,0,v1675425042,22.2.1,1720,,,,0
+2025-01,"Oshawa, Census metropolitan area (CMA)",2021S0503532,Apartment - 2 bedrooms,Average asking rent,Dollars,81,units,0,v1675425043,22.3.1,2070,,,,0
+2025-01,"Oshawa, Census metropolitan area (CMA)",2021S0503532,Apartment - 3 or more bedrooms,Average asking rent,Dollars,81,units,0,v1675425044,22.4.1,2380,,,,0
+2025-01,"Oshawa, Census metropolitan area (CMA)",2021S0503532,Room,Average asking rent,Dollars,81,units,0,v1675425045,22.5.1,750,,,,0
+2025-01,"Toronto, Census metropolitan area (CMA)",2021S0503535,House - 2 bedrooms,Average asking rent,Dollars,81,units,0,v1810299259,27.6.1,2810,,,,0
+2025-01,"Toronto, Census metropolitan area (CMA)",2021S0503535,House - 3 or more bedrooms,Average asking rent,Dollars,81,units,0,v1810299260,27.7.1,3660,,,,0
+2025-01,"Toronto, Census metropolitan area (CMA)",2021S0503535,Apartment - No bedroom,Average asking rent,Dollars,81,units,0,v1675425046,27.1.1,1800,,,,0
+2025-01,"Toronto, Census metropolitan area (CMA)",2021S0503535,Apartment - 1 bedroom,Average asking rent,Dollars,81,units,0,v1675425047,27.2.1,2170,,,,0
+2025-01,"Toronto, Census metropolitan area (CMA)",2021S0503535,Apartment - 1 bedroom,Average paid rent,Dollars,81,units,0,v1938684513,27.2.2,1750,,,,0
+2025-01,"Toronto, Census metropolitan area (CMA)",2021S0503535,Apartment - 2 bedrooms,Average asking rent,Dollars,81,units,0,v1675425048,27.3.1,2690,,,,0
+2025-01,"Toronto, Census metropolitan area (CMA)",2021S0503535,Apartment - 2 bedrooms,Average paid rent,Dollars,81,units,0,v1938684514,27.3.2,2060,,,,0
+2025-01,"Toronto, Census metropolitan area (CMA)",2021S0503535,Apartment - 3 or more bedrooms,Average asking rent,Dollars,81,units,0,v1675425049,27.4.1,3320,,,,0
+2025-01,"Toronto, Census metropolitan area (CMA)",2021S0503535,Room,Average asking rent,Dollars,81,units,0,v1675425050,27.5.1,840,,,,0
+2025-04,"Hamilton, Census metropolitan area (CMA)",2021S0503537,House - 2 bedrooms,Average asking rent,Dollars,81,units,0,v1810299261,18.6.1,2330,E,,,0
+2025-04,"Hamilton, Census metropolitan area (CMA)",2021S0503537,House - 3 or more bedrooms,Average asking rent,Dollars,81,units,0,v1810299262,18.7.1,2930,E,,,0
+2025-04,"Hamilton, Census metropolitan area (CMA)",2021S0503537,Apartment - No bedroom,Average asking rent,Dollars,81,units,0,v1675425051,18.1.1,1420,E,,,0
+2025-04,"Hamilton, Census metropolitan area (CMA)",2021S0503537,Apartment - 1 bedroom,Average asking rent,Dollars,81,units,0,v1675425052,18.2.1,1790,E,,,0
+2025-04,"Hamilton, Census metropolitan area (CMA)",2021S0503537,Apartment - 2 bedrooms,Average asking rent,Dollars,81,units,0,v1675425053,18.3.1,2150,E,,,0
+2025-04,"Hamilton, Census metropolitan area (CMA)",2021S0503537,Apartment - 3 or more bedrooms,Average asking rent,Dollars,81,units,0,v1675425054,18.4.1,2580,E,,,0
+2025-04,"Hamilton, Census metropolitan area (CMA)",2021S0503537,Room,Average asking rent,Dollars,81,units,0,v1675425055,18.5.1,780,E,,,0
+2025-04,"Oshawa, Census metropolitan area (CMA)",2021S0503532,House - 2 bedrooms,Average asking rent,Dollars,81,units,0,v1810299257,22.6.1,2260,E,,,0
+2025-04,"Oshawa, Census metropolitan area (CMA)",2021S0503532,House - 3 or more bedrooms,Average asking rent,Dollars,81,units,0,v1810299258,22.7.1,2890,E,,,0
+2025-04,"Oshawa, Census metropolitan area (CMA)",2021S0503532,Apartment - No bedroom,Average asking rent,Dollars,81,units,0,v1675425041,22.1.1,1460,E,,,0
+2025-04,"Oshawa, Census metropolitan area (CMA)",2021S0503532,Apartment - 1 bedroom,Average asking rent,Dollars,81,units,0,v1675425042,22.2.1,1710,E,,,0
+2025-04,"Oshawa, Census metropolitan area (CMA)",2021S0503532,Apartment - 2 bedrooms,Average asking rent,Dollars,81,units,0,v1675425043,22.3.1,2050,E,,,0
+2025-04,"Oshawa, Census metropolitan area (CMA)",2021S0503532,Apartment - 3 or more bedrooms,Average asking rent,Dollars,81,units,0,v1675425044,22.4.1,2420,E,,,0
+2025-04,"Oshawa, Census metropolitan area (CMA)",2021S0503532,Room,Average asking rent,Dollars,81,units,0,v1675425045,22.5.1,760,E,,,0
+2025-04,"Toronto, Census metropolitan area (CMA)",2021S0503535,House - 2 bedrooms,Average asking rent,Dollars,81,units,0,v1810299259,27.6.1,2860,E,,,0
+2025-04,"Toronto, Census metropolitan area (CMA)",2021S0503535,House - 3 or more bedrooms,Average asking rent,Dollars,81,units,0,v1810299260,27.7.1,3680,E,,,0
+2025-04,"Toronto, Census metropolitan area (CMA)",2021S0503535,Apartment - No bedroom,Average asking rent,Dollars,81,units,0,v1675425046,27.1.1,1810,E,,,0
+2025-04,"Toronto, Census metropolitan area (CMA)",2021S0503535,Apartment - 1 bedroom,Average asking rent,Dollars,81,units,0,v1675425047,27.2.1,2150,E,,,0
+2025-04,"Toronto, Census metropolitan area (CMA)",2021S0503535,Apartment - 1 bedroom,Average paid rent,Dollars,81,units,0,v1938684513,27.2.2,1750,,,,0
+2025-04,"Toronto, Census metropolitan area (CMA)",2021S0503535,Apartment - 2 bedrooms,Average asking rent,Dollars,81,units,0,v1675425048,27.3.1,2670,E,,,0
+2025-04,"Toronto, Census metropolitan area (CMA)",2021S0503535,Apartment - 2 bedrooms,Average paid rent,Dollars,81,units,0,v1938684514,27.3.2,2090,,,,0
+2025-04,"Toronto, Census metropolitan area (CMA)",2021S0503535,Apartment - 3 or more bedrooms,Average asking rent,Dollars,81,units,0,v1675425049,27.4.1,3350,E,,,0
+2025-04,"Toronto, Census metropolitan area (CMA)",2021S0503535,Room,Average asking rent,Dollars,81,units,0,v1675425050,27.5.1,850,E,,,0
+2025-07,"Hamilton, Census metropolitan area (CMA)",2021S0503537,House - 2 bedrooms,Average asking rent,Dollars,81,units,0,v1810299261,18.6.1,2310,,,,0
+2025-07,"Hamilton, Census metropolitan area (CMA)",2021S0503537,House - 3 or more bedrooms,Average asking rent,Dollars,81,units,0,v1810299262,18.7.1,2930,,,,0
+2025-07,"Hamilton, Census metropolitan area (CMA)",2021S0503537,Apartment - No bedroom,Average asking rent,Dollars,81,units,0,v1675425051,18.1.1,1400,,,,0
+2025-07,"Hamilton, Census metropolitan area (CMA)",2021S0503537,Apartment - 1 bedroom,Average asking rent,Dollars,81,units,0,v1675425052,18.2.1,1780,,,,0
+2025-07,"Hamilton, Census metropolitan area (CMA)",2021S0503537,Apartment - 2 bedrooms,Average asking rent,Dollars,81,units,0,v1675425053,18.3.1,2140,,,,0
+2025-07,"Hamilton, Census metropolitan area (CMA)",2021S0503537,Apartment - 3 or more bedrooms,Average asking rent,Dollars,81,units,0,v1675425054,18.4.1,2540,,,,0
+2025-07,"Hamilton, Census metropolitan area (CMA)",2021S0503537,Room,Average asking rent,Dollars,81,units,0,v1675425055,18.5.1,780,,,,0
+2025-07,"Oshawa, Census metropolitan area (CMA)",2021S0503532,House - 2 bedrooms,Average asking rent,Dollars,81,units,0,v1810299257,22.6.1,2350,,,,0
+2025-07,"Oshawa, Census metropolitan area (CMA)",2021S0503532,House - 3 or more bedrooms,Average asking rent,Dollars,81,units,0,v1810299258,22.7.1,2930,,,,0
+2025-07,"Oshawa, Census metropolitan area (CMA)",2021S0503532,Apartment - No bedroom,Average asking rent,Dollars,81,units,0,v1675425041,22.1.1,1450,,,,0
+2025-07,"Oshawa, Census metropolitan area (CMA)",2021S0503532,Apartment - 1 bedroom,Average asking rent,Dollars,81,units,0,v1675425042,22.2.1,1740,,,,0
+2025-07,"Oshawa, Census metropolitan area (CMA)",2021S0503532,Apartment - 2 bedrooms,Average asking rent,Dollars,81,units,0,v1675425043,22.3.1,2040,,,,0
+2025-07,"Oshawa, Census metropolitan area (CMA)",2021S0503532,Apartment - 3 or more bedrooms,Average asking rent,Dollars,81,units,0,v1675425044,22.4.1,2460,,,,0
+2025-07,"Oshawa, Census metropolitan area (CMA)",2021S0503532,Room,Average asking rent,Dollars,81,units,0,v1675425045,22.5.1,770,,,,0
+2025-07,"Toronto, Census metropolitan area (CMA)",2021S0503535,House - 2 bedrooms,Average asking rent,Dollars,81,units,0,v1810299259,27.6.1,2900,,,,0
+2025-07,"Toronto, Census metropolitan area (CMA)",2021S0503535,House - 3 or more bedrooms,Average asking rent,Dollars,81,units,0,v1810299260,27.7.1,3700,,,,0
+2025-07,"Toronto, Census metropolitan area (CMA)",2021S0503535,Apartment - No bedroom,Average asking rent,Dollars,81,units,0,v1675425046,27.1.1,1810,,,,0
+2025-07,"Toronto, Census metropolitan area (CMA)",2021S0503535,Apartment - 1 bedroom,Average asking rent,Dollars,81,units,0,v1675425047,27.2.1,2160,,,,0
+2025-07,"Toronto, Census metropolitan area (CMA)",2021S0503535,Apartment - 1 bedroom,Average paid rent,Dollars,81,units,0,v1938684513,27.2.2,1780,,,,0
+2025-07,"Toronto, Census metropolitan area (CMA)",2021S0503535,Apartment - 2 bedrooms,Average asking rent,Dollars,81,units,0,v1675425048,27.3.1,2720,,,,0
+2025-07,"Toronto, Census metropolitan area (CMA)",2021S0503535,Apartment - 2 bedrooms,Average paid rent,Dollars,81,units,0,v1938684514,27.3.2,2120,,,,0
+2025-07,"Toronto, Census metropolitan area (CMA)",2021S0503535,Apartment - 3 or more bedrooms,Average asking rent,Dollars,81,units,0,v1675425049,27.4.1,3370,,,,0
+2025-07,"Toronto, Census metropolitan area (CMA)",2021S0503535,Room,Average asking rent,Dollars,81,units,0,v1675425050,27.5.1,850,,,,0
+2025-10,"Hamilton, Census metropolitan area (CMA)",2021S0503537,House - 2 bedrooms,Average asking rent,Dollars,81,units,0,v1810299261,18.6.1,2340,,,,0
+2025-10,"Hamilton, Census metropolitan area (CMA)",2021S0503537,House - 3 or more bedrooms,Average asking rent,Dollars,81,units,0,v1810299262,18.7.1,2970,,,,0
+2025-10,"Hamilton, Census metropolitan area (CMA)",2021S0503537,Apartment - No bedroom,Average asking rent,Dollars,81,units,0,v1675425051,18.1.1,1390,,,,0
+2025-10,"Hamilton, Census metropolitan area (CMA)",2021S0503537,Apartment - 1 bedroom,Average asking rent,Dollars,81,units,0,v1675425052,18.2.1,1790,,,,0
+2025-10,"Hamilton, Census metropolitan area (CMA)",2021S0503537,Apartment - 2 bedrooms,Average asking rent,Dollars,81,units,0,v1675425053,18.3.1,2190,,,,0
+2025-10,"Hamilton, Census metropolitan area (CMA)",2021S0503537,Apartment - 3 or more bedrooms,Average asking rent,Dollars,81,units,0,v1675425054,18.4.1,2570,,,,0
+2025-10,"Hamilton, Census metropolitan area (CMA)",2021S0503537,Room,Average asking rent,Dollars,81,units,0,v1675425055,18.5.1,780,,,,0
+2025-10,"Oshawa, Census metropolitan area (CMA)",2021S0503532,House - 2 bedrooms,Average asking rent,Dollars,81,units,0,v1810299257,22.6.1,2220,E,,,0
+2025-10,"Oshawa, Census metropolitan area (CMA)",2021S0503532,House - 3 or more bedrooms,Average asking rent,Dollars,81,units,0,v1810299258,22.7.1,2900,,,,0
+2025-10,"Oshawa, Census metropolitan area (CMA)",2021S0503532,Apartment - No bedroom,Average asking rent,Dollars,81,units,0,v1675425041,22.1.1,1370,,,,0
+2025-10,"Oshawa, Census metropolitan area (CMA)",2021S0503532,Apartment - 1 bedroom,Average asking rent,Dollars,81,units,0,v1675425042,22.2.1,1690,,,,0
+2025-10,"Oshawa, Census metropolitan area (CMA)",2021S0503532,Apartment - 2 bedrooms,Average asking rent,Dollars,81,units,0,v1675425043,22.3.1,2010,,,,0
+2025-10,"Oshawa, Census metropolitan area (CMA)",2021S0503532,Apartment - 3 or more bedrooms,Average asking rent,Dollars,81,units,0,v1675425044,22.4.1,2420,,,,0
+2025-10,"Oshawa, Census metropolitan area (CMA)",2021S0503532,Room,Average asking rent,Dollars,81,units,0,v1675425045,22.5.1,740,,,,0
+2025-10,"Toronto, Census metropolitan area (CMA)",2021S0503535,House - 2 bedrooms,Average asking rent,Dollars,81,units,0,v1810299259,27.6.1,2810,,,,0
+2025-10,"Toronto, Census metropolitan area (CMA)",2021S0503535,House - 3 or more bedrooms,Average asking rent,Dollars,81,units,0,v1810299260,27.7.1,3610,,,,0
+2025-10,"Toronto, Census metropolitan area (CMA)",2021S0503535,Apartment - No bedroom,Average asking rent,Dollars,81,units,0,v1675425046,27.1.1,1770,,,,0
+2025-10,"Toronto, Census metropolitan area (CMA)",2021S0503535,Apartment - 1 bedroom,Average asking rent,Dollars,81,units,0,v1675425047,27.2.1,2130,,,,0
+2025-10,"Toronto, Census metropolitan area (CMA)",2021S0503535,Apartment - 1 bedroom,Average paid rent,Dollars,81,units,0,v1938684513,27.2.2,1800,,,,0
+2025-10,"Toronto, Census metropolitan area (CMA)",2021S0503535,Apartment - 2 bedrooms,Average asking rent,Dollars,81,units,0,v1675425048,27.3.1,2670,,,,0
+2025-10,"Toronto, Census metropolitan area (CMA)",2021S0503535,Apartment - 2 bedrooms,Average paid rent,Dollars,81,units,0,v1938684514,27.3.2,2140,,,,0
+2025-10,"Toronto, Census metropolitan area (CMA)",2021S0503535,Apartment - 3 or more bedrooms,Average asking rent,Dollars,81,units,0,v1675425049,27.4.1,3290,,,,0
+2025-10,"Toronto, Census metropolitan area (CMA)",2021S0503535,Room,Average asking rent,Dollars,81,units,0,v1675425050,27.5.1,830,,,,0
+2026-01,"Hamilton, Census metropolitan area (CMA)",2021S0503537,House - 2 bedrooms,Average asking rent,Dollars,81,units,0,v1810299261,18.6.1,2310,,,,0
+2026-01,"Hamilton, Census metropolitan area (CMA)",2021S0503537,House - 3 or more bedrooms,Average asking rent,Dollars,81,units,0,v1810299262,18.7.1,2950,,,,0
+2026-01,"Hamilton, Census metropolitan area (CMA)",2021S0503537,Apartment - No bedroom,Average asking rent,Dollars,81,units,0,v1675425051,18.1.1,1450,,,,0
+2026-01,"Hamilton, Census metropolitan area (CMA)",2021S0503537,Apartment - 1 bedroom,Average asking rent,Dollars,81,units,0,v1675425052,18.2.1,1760,,,,0
+2026-01,"Hamilton, Census metropolitan area (CMA)",2021S0503537,Apartment - 2 bedrooms,Average asking rent,Dollars,81,units,0,v1675425053,18.3.1,2190,,,,0
+2026-01,"Hamilton, Census metropolitan area (CMA)",2021S0503537,Apartment - 3 or more bedrooms,Average asking rent,Dollars,81,units,0,v1675425054,18.4.1,2580,,,,0
+2026-01,"Hamilton, Census metropolitan area (CMA)",2021S0503537,Room,Average asking rent,Dollars,81,units,0,v1675425055,18.5.1,790,,,,0
+2026-01,"Oshawa, Census metropolitan area (CMA)",2021S0503532,House - 2 bedrooms,Average asking rent,Dollars,81,units,0,v1810299257,22.6.1,2350,E,,,0
+2026-01,"Oshawa, Census metropolitan area (CMA)",2021S0503532,House - 3 or more bedrooms,Average asking rent,Dollars,81,units,0,v1810299258,22.7.1,2910,,,,0
+2026-01,"Oshawa, Census metropolitan area (CMA)",2021S0503532,Apartment - No bedroom,Average asking rent,Dollars,81,units,0,v1675425041,22.1.1,1490,,,,0
+2026-01,"Oshawa, Census metropolitan area (CMA)",2021S0503532,Apartment - 1 bedroom,Average asking rent,Dollars,81,units,0,v1675425042,22.2.1,1740,,,,0
+2026-01,"Oshawa, Census metropolitan area (CMA)",2021S0503532,Apartment - 2 bedrooms,Average asking rent,Dollars,81,units,0,v1675425043,22.3.1,2000,,,,0
+2026-01,"Oshawa, Census metropolitan area (CMA)",2021S0503532,Apartment - 3 or more bedrooms,Average asking rent,Dollars,81,units,0,v1675425044,22.4.1,2450,,,,0
+2026-01,"Oshawa, Census metropolitan area (CMA)",2021S0503532,Room,Average asking rent,Dollars,81,units,0,v1675425045,22.5.1,780,,,,0
+2026-01,"Toronto, Census metropolitan area (CMA)",2021S0503535,House - 2 bedrooms,Average asking rent,Dollars,81,units,0,v1810299259,27.6.1,2870,,,,0
+2026-01,"Toronto, Census metropolitan area (CMA)",2021S0503535,House - 3 or more bedrooms,Average asking rent,Dollars,81,units,0,v1810299260,27.7.1,3570,,,,0
+2026-01,"Toronto, Census metropolitan area (CMA)",2021S0503535,Apartment - No bedroom,Average asking rent,Dollars,81,units,0,v1675425046,27.1.1,1760,,,,0
+2026-01,"Toronto, Census metropolitan area (CMA)",2021S0503535,Apartment - 1 bedroom,Average asking rent,Dollars,81,units,0,v1675425047,27.2.1,2110,,,,0
+2026-01,"Toronto, Census metropolitan area (CMA)",2021S0503535,Apartment - 1 bedroom,Average paid rent,Dollars,81,units,0,v1938684513,27.2.2,1840,,,,0
+2026-01,"Toronto, Census metropolitan area (CMA)",2021S0503535,Apartment - 2 bedrooms,Average asking rent,Dollars,81,units,0,v1675425048,27.3.1,2660,,,,0
+2026-01,"Toronto, Census metropolitan area (CMA)",2021S0503535,Apartment - 2 bedrooms,Average paid rent,Dollars,81,units,0,v1938684514,27.3.2,2150,,,,0
+2026-01,"Toronto, Census metropolitan area (CMA)",2021S0503535,Apartment - 3 or more bedrooms,Average asking rent,Dollars,81,units,0,v1675425049,27.4.1,3250,,,,0
+2026-01,"Toronto, Census metropolitan area (CMA)",2021S0503535,Room,Average asking rent,Dollars,81,units,0,v1675425050,27.5.1,830,,,,0
+2026-04,"Hamilton, Census metropolitan area (CMA)",2021S0503537,House - 2 bedrooms,Average asking rent,Dollars,81,units,0,v1810299261,18.6.1,2240,,,,0
+2026-04,"Hamilton, Census metropolitan area (CMA)",2021S0503537,House - 3 or more bedrooms,Average asking rent,Dollars,81,units,0,v1810299262,18.7.1,2920,,,,0
+2026-04,"Hamilton, Census metropolitan area (CMA)",2021S0503537,Apartment - No bedroom,Average asking rent,Dollars,81,units,0,v1675425051,18.1.1,1470,,,,0
+2026-04,"Hamilton, Census metropolitan area (CMA)",2021S0503537,Apartment - 1 bedroom,Average asking rent,Dollars,81,units,0,v1675425052,18.2.1,1720,,,,0
+2026-04,"Hamilton, Census metropolitan area (CMA)",2021S0503537,Apartment - 2 bedrooms,Average asking rent,Dollars,81,units,0,v1675425053,18.3.1,2150,,,,0
+2026-04,"Hamilton, Census metropolitan area (CMA)",2021S0503537,Apartment - 3 or more bedrooms,Average asking rent,Dollars,81,units,0,v1675425054,18.4.1,2540,,,,0
+2026-04,"Hamilton, Census metropolitan area (CMA)",2021S0503537,Room,Average asking rent,Dollars,81,units,0,v1675425055,18.5.1,770,,,,0
+2026-04,"Oshawa, Census metropolitan area (CMA)",2021S0503532,House - 2 bedrooms,Average asking rent,Dollars,81,units,0,v1810299257,22.6.1,2210,,,,0
+2026-04,"Oshawa, Census metropolitan area (CMA)",2021S0503532,House - 3 or more bedrooms,Average asking rent,Dollars,81,units,0,v1810299258,22.7.1,2970,,,,0
+2026-04,"Oshawa, Census metropolitan area (CMA)",2021S0503532,Apartment - No bedroom,Average asking rent,Dollars,81,units,0,v1675425041,22.1.1,1440,,,,0
+2026-04,"Oshawa, Census metropolitan area (CMA)",2021S0503532,Apartment - 1 bedroom,Average asking rent,Dollars,81,units,0,v1675425042,22.2.1,1720,,,,0
+2026-04,"Oshawa, Census metropolitan area (CMA)",2021S0503532,Apartment - 2 bedrooms,Average asking rent,Dollars,81,units,0,v1675425043,22.3.1,2000,,,,0
+2026-04,"Oshawa, Census metropolitan area (CMA)",2021S0503532,Apartment - 3 or more bedrooms,Average asking rent,Dollars,81,units,0,v1675425044,22.4.1,2400,,,,0
+2026-04,"Oshawa, Census metropolitan area (CMA)",2021S0503532,Room,Average asking rent,Dollars,81,units,0,v1675425045,22.5.1,720,,,,0
+2026-04,"Toronto, Census metropolitan area (CMA)",2021S0503535,House - 2 bedrooms,Average asking rent,Dollars,81,units,0,v1810299259,27.6.1,2710,,,,0
+2026-04,"Toronto, Census metropolitan area (CMA)",2021S0503535,House - 3 or more bedrooms,Average asking rent,Dollars,81,units,0,v1810299260,27.7.1,3630,,,,0
+2026-04,"Toronto, Census metropolitan area (CMA)",2021S0503535,Apartment - No bedroom,Average asking rent,Dollars,81,units,0,v1675425046,27.1.1,1750,,,,0
+2026-04,"Toronto, Census metropolitan area (CMA)",2021S0503535,Apartment - 1 bedroom,Average asking rent,Dollars,81,units,0,v1675425047,27.2.1,2090,,,,0
+2026-04,"Toronto, Census metropolitan area (CMA)",2021S0503535,Apartment - 1 bedroom,Average paid rent,Dollars,81,units,0,v1938684513,27.2.2,1840,,,,0
+2026-04,"Toronto, Census metropolitan area (CMA)",2021S0503535,Apartment - 2 bedrooms,Average asking rent,Dollars,81,units,0,v1675425048,27.3.1,2650,,,,0
+2026-04,"Toronto, Census metropolitan area (CMA)",2021S0503535,Apartment - 2 bedrooms,Average paid rent,Dollars,81,units,0,v1938684514,27.3.2,2160,,,,0
+2026-04,"Toronto, Census metropolitan area (CMA)",2021S0503535,Apartment - 3 or more bedrooms,Average asking rent,Dollars,81,units,0,v1675425049,27.4.1,3270,,,,0
+2026-04,"Toronto, Census metropolitan area (CMA)",2021S0503535,Room,Average asking rent,Dollars,81,units,0,v1675425050,27.5.1,840,,,,0

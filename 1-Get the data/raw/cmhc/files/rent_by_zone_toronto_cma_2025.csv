@@ -1,0 +1,42 @@
+ — Average Rent by Bedroom Type by Zone
+October 2025 Row / Apartment
+,Studio,,1 Bedroom,,2 Bedroom,,3 Bedroom +,,Total,,
+Toronto (Central),"1,606",a ,"2,042",a ,"2,776",b ,"3,580",d ,"2,163",a ,
+Toronto (East),"1,213",b ,"1,692",a ,"1,869",c ,"1,876",d ,"1,685",b ,
+Toronto (North),"1,570",a ,"1,892",a ,"2,476",a ,"2,985",c ,"2,057",a ,
+Toronto (West),"1,410",a ,"1,798",b ,"2,252",b ,"3,238",b ,"1,945",b ,
+Etobicoke (South),"1,502",a ,"1,493",a ,"1,762",a ,**,,"1,630",a ,
+Etobicoke (Central),"1,693",a ,"1,874",a ,"2,200",a ,"2,529",a ,"2,162",a ,
+Etobicoke (North),"1,342",d ,"1,718",a ,"2,015",a ,"2,321",b ,"2,047",b ,
+York,"1,381",a ,"1,706",a ,"2,067",b ,"2,547",b ,"1,864",a ,
+East York,"1,339",b ,"1,578",a ,"1,820",a ,"2,178",b ,"1,715",a ,
+Scarborough (Central),"1,520",a ,"1,610",a ,"1,843",a ,"1,932",b ,"1,754",a ,
+Scarborough (North),"1,335",a ,"1,616",a ,"1,774",a ,"1,811",a ,"1,717",a ,
+Scarborough (East),"1,460",a ,"1,633",a ,"1,852",a ,"2,072",b ,"1,816",a ,
+North York (Southeast),"1,188",d ,"1,638",a ,"1,890",a ,"2,238",a ,"1,842",a ,
+North York (Northeast),"1,498",a ,"1,815",a ,"2,156",a ,"2,342",a ,"2,081",a ,
+North York (Southwest),"1,379",b ,"1,567",a ,"1,814",a ,"2,243",b ,"1,728",a ,
+North York (N.Central),"1,471",b ,"1,771",a ,"2,039",a ,"2,324",b ,"1,989",a ,
+North York (Northwest),"1,167",c ,"1,517",a ,"1,751",a ,"1,966",b ,"1,700",a ,
+Mississauga (South),"1,338",b ,"1,684",a ,"1,929",a ,"1,963",b ,"1,819",a ,
+Mississauga (Northwest),"1,577",b ,"1,989",a ,"2,280",b ,"2,340",a ,"2,182",a ,
+Mississauga (Northeast),**,,"1,719",a ,"1,964",a ,"2,228",a ,"1,908",a ,
+Brampton (West),"1,510",b ,"1,782",a ,"2,047",a ,"2,161",b ,"1,953",a ,
+Brampton (East),"1,320",a ,"1,770",a ,"1,992",a ,"1,964",a ,"1,907",a ,
+Oakville,"1,477",a ,"1,915",a ,"2,309",b ,"2,385",b ,"2,192",b ,
+Caledon,**,,**,,**,,**,,**,,
+Richmond Hill/Vaughan/King,"1,328",c ,"1,583",a ,"1,827",b ,"2,332",c ,"1,726",b ,
+"Aurora, Newmkt, Whit-St.",**,,"1,863",b ,"2,183",b ,"2,518",b ,"2,053",b ,
+Markham,**,,"1,885",b ,"1,996",c ,"1,969",a ,"1,942",b ,
+Pickering/Ajax/Uxbridge,**,,"1,396",d ,"1,749",a ,"1,858",a ,"1,770",a ,
+Milton/Halton Hills,**,,"1,516",b ,"1,667",b ,**,,"1,600",b ,
+Orangeville/Mono,"1,350",b ,"1,463",b ,"1,671",c ,"1,334",c ,"1,532",b ,
+Bradford/West Gwillimbury/New Tecumseth,**,,"1,310",b ,"1,507",b ,"1,244",a ,"1,407",b ,
+,"1,491",a ,"1,761",a ,"2,045",a ,"2,294",a ,"1,917",a ,
+
+Notes
+"The following letter codes are used to indicate the reliability of the estimates: a — Excellent, b — Very good, c — Good, d — Poor (Use with Caution))"
+** — Data suppressed to protect confidentiality or data not statistically reliable
+++ — Change in rent is not statistically significant. This means that the change in rent is not statistically different than zero (0). (Applies only to % Change of Average Rent Tables).
+"CMA, CA and CSD definitions are based on 2021 Census Geography Definitions"
+Source,CMHC Rental Market Survey

@@ -1,0 +1,161 @@
+survey_year,area,bedroom_type,value,reliability
+2025,Toronto (Central),Studio,3.6,b
+2025,Toronto (Central),1 Bedroom,2.4,a
+2025,Toronto (Central),2 Bedroom,2.9,b
+2025,Toronto (Central),3 Bedroom +,4.0,d
+2025,Toronto (Central),Total,2.8,a
+2025,Toronto (East),Studio,**,
+2025,Toronto (East),1 Bedroom,3.7,c
+2025,Toronto (East),2 Bedroom,1.3,a
+2025,Toronto (East),3 Bedroom +,**,
+2025,Toronto (East),Total,2.6,b
+2025,Toronto (North),Studio,4.4,c
+2025,Toronto (North),1 Bedroom,3.3,b
+2025,Toronto (North),2 Bedroom,3.0,c
+2025,Toronto (North),3 Bedroom +,1.2,a
+2025,Toronto (North),Total,3.3,b
+2025,Toronto (West),Studio,4.4,c
+2025,Toronto (West),1 Bedroom,4.3,c
+2025,Toronto (West),2 Bedroom,2.0,c
+2025,Toronto (West),3 Bedroom +,**,
+2025,Toronto (West),Total,3.9,c
+2025,Etobicoke (South),Studio,3.6,c
+2025,Etobicoke (South),1 Bedroom,3.8,c
+2025,Etobicoke (South),2 Bedroom,1.7,c
+2025,Etobicoke (South),3 Bedroom +,0.4,b
+2025,Etobicoke (South),Total,2.7,b
+2025,Etobicoke (Central),Studio,**,
+2025,Etobicoke (Central),1 Bedroom,3.2,c
+2025,Etobicoke (Central),2 Bedroom,1.5,a
+2025,Etobicoke (Central),3 Bedroom +,0.9,a
+2025,Etobicoke (Central),Total,1.9,a
+2025,Etobicoke (North),Studio,0.0,d
+2025,Etobicoke (North),1 Bedroom,2.4,c
+2025,Etobicoke (North),2 Bedroom,1.4,a
+2025,Etobicoke (North),3 Bedroom +,1.2,a
+2025,Etobicoke (North),Total,1.5,b
+2025,York,Studio,3.6,c
+2025,York,1 Bedroom,4.3,c
+2025,York,2 Bedroom,2.3,b
+2025,York,3 Bedroom +,**,
+2025,York,Total,3.3,c
+2025,East York,Studio,**,
+2025,East York,1 Bedroom,4.2,b
+2025,East York,2 Bedroom,2.4,a
+2025,East York,3 Bedroom +,1.7,b
+2025,East York,Total,3.5,b
+2025,Scarborough (Central),Studio,5.0,c
+2025,Scarborough (Central),1 Bedroom,3.3,b
+2025,Scarborough (Central),2 Bedroom,2.4,a
+2025,Scarborough (Central),3 Bedroom +,0.8,a
+2025,Scarborough (Central),Total,2.7,a
+2025,Scarborough (North),Studio,4.3,a
+2025,Scarborough (North),1 Bedroom,2.9,a
+2025,Scarborough (North),2 Bedroom,2.2,a
+2025,Scarborough (North),3 Bedroom +,0.9,a
+2025,Scarborough (North),Total,2.3,a
+2025,Scarborough (East),Studio,5.2,d
+2025,Scarborough (East),1 Bedroom,2.5,a
+2025,Scarborough (East),2 Bedroom,1.6,a
+2025,Scarborough (East),3 Bedroom +,1.4,a
+2025,Scarborough (East),Total,1.9,a
+2025,North York (Southeast),Studio,5.4,d
+2025,North York (Southeast),1 Bedroom,3.6,b
+2025,North York (Southeast),2 Bedroom,2.4,a
+2025,North York (Southeast),3 Bedroom +,1.6,b
+2025,North York (Southeast),Total,2.7,a
+2025,North York (Northeast),Studio,3.4,d
+2025,North York (Northeast),1 Bedroom,3.1,b
+2025,North York (Northeast),2 Bedroom,2.2,a
+2025,North York (Northeast),3 Bedroom +,1.3,a
+2025,North York (Northeast),Total,2.3,a
+2025,North York (Southwest),Studio,5.7,d
+2025,North York (Southwest),1 Bedroom,3.0,c
+2025,North York (Southwest),2 Bedroom,1.7,c
+2025,North York (Southwest),3 Bedroom +,**,
+2025,North York (Southwest),Total,2.8,c
+2025,North York (N.Central),Studio,**,
+2025,North York (N.Central),1 Bedroom,3.3,c
+2025,North York (N.Central),2 Bedroom,1.8,a
+2025,North York (N.Central),3 Bedroom +,1.0,a
+2025,North York (N.Central),Total,2.2,a
+2025,North York (Northwest),Studio,**,
+2025,North York (Northwest),1 Bedroom,4.4,c
+2025,North York (Northwest),2 Bedroom,1.7,a
+2025,North York (Northwest),3 Bedroom +,0.9,a
+2025,North York (Northwest),Total,2.6,b
+2025,Mississauga (South),Studio,**,
+2025,Mississauga (South),1 Bedroom,4.0,b
+2025,Mississauga (South),2 Bedroom,2.9,a
+2025,Mississauga (South),3 Bedroom +,1.9,c
+2025,Mississauga (South),Total,3.4,a
+2025,Mississauga (Northwest),Studio,**,
+2025,Mississauga (Northwest),1 Bedroom,4.8,c
+2025,Mississauga (Northwest),2 Bedroom,3.8,b
+2025,Mississauga (Northwest),3 Bedroom +,3.6,b
+2025,Mississauga (Northwest),Total,4.1,b
+2025,Mississauga (Northeast),Studio,**,
+2025,Mississauga (Northeast),1 Bedroom,5.3,b
+2025,Mississauga (Northeast),2 Bedroom,3.8,c
+2025,Mississauga (Northeast),3 Bedroom +,2.3,b
+2025,Mississauga (Northeast),Total,4.0,b
+2025,Brampton (West),Studio,5.6,d
+2025,Brampton (West),1 Bedroom,4.5,b
+2025,Brampton (West),2 Bedroom,5.3,c
+2025,Brampton (West),3 Bedroom +,1.2,a
+2025,Brampton (West),Total,4.6,c
+2025,Brampton (East),Studio,2.2,a
+2025,Brampton (East),1 Bedroom,5.4,c
+2025,Brampton (East),2 Bedroom,3.5,b
+2025,Brampton (East),3 Bedroom +,1.9,a
+2025,Brampton (East),Total,3.8,b
+2025,Oakville,Studio,**,
+2025,Oakville,1 Bedroom,2.5,b
+2025,Oakville,2 Bedroom,4.1,d
+2025,Oakville,3 Bedroom +,**,
+2025,Oakville,Total,3.3,d
+2025,Caledon,Studio,**,
+2025,Caledon,1 Bedroom,**,
+2025,Caledon,2 Bedroom,**,
+2025,Caledon,3 Bedroom +,**,
+2025,Caledon,Total,**,
+2025,Richmond Hill/Vaughan/King,Studio,0.0,d
+2025,Richmond Hill/Vaughan/King,1 Bedroom,3.1,d
+2025,Richmond Hill/Vaughan/King,2 Bedroom,2.1,b
+2025,Richmond Hill/Vaughan/King,3 Bedroom +,**,
+2025,Richmond Hill/Vaughan/King,Total,2.4,b
+2025,"Aurora, Newmkt, Whit-St.",Studio,**,
+2025,"Aurora, Newmkt, Whit-St.",1 Bedroom,4.4,d
+2025,"Aurora, Newmkt, Whit-St.",2 Bedroom,**,
+2025,"Aurora, Newmkt, Whit-St.",3 Bedroom +,2.2,c
+2025,"Aurora, Newmkt, Whit-St.",Total,5.4,d
+2025,Markham,Studio,**,
+2025,Markham,1 Bedroom,3.2,d
+2025,Markham,2 Bedroom,0.3,b
+2025,Markham,3 Bedroom +,**,
+2025,Markham,Total,**,
+2025,Pickering/Ajax/Uxbridge,Studio,**,
+2025,Pickering/Ajax/Uxbridge,1 Bedroom,0.0,d
+2025,Pickering/Ajax/Uxbridge,2 Bedroom,2.3,c
+2025,Pickering/Ajax/Uxbridge,3 Bedroom +,1.1,a
+2025,Pickering/Ajax/Uxbridge,Total,1.8,c
+2025,Milton/Halton Hills,Studio,**,
+2025,Milton/Halton Hills,1 Bedroom,3.3,d
+2025,Milton/Halton Hills,2 Bedroom,0.9,a
+2025,Milton/Halton Hills,3 Bedroom +,**,
+2025,Milton/Halton Hills,Total,1.8,c
+2025,Orangeville/Mono,Studio,**,
+2025,Orangeville/Mono,1 Bedroom,4.0,d
+2025,Orangeville/Mono,2 Bedroom,4.5,d
+2025,Orangeville/Mono,3 Bedroom +,0.0,d
+2025,Orangeville/Mono,Total,3.5,c
+2025,Bradford/West Gwillimbury/New Tecumseth,Studio,**,
+2025,Bradford/West Gwillimbury/New Tecumseth,1 Bedroom,2.0,c
+2025,Bradford/West Gwillimbury/New Tecumseth,2 Bedroom,1.7,b
+2025,Bradford/West Gwillimbury/New Tecumseth,3 Bedroom +,0.0,d
+2025,Bradford/West Gwillimbury/New Tecumseth,Total,1.7,b
+2025,Total,Studio,4.2,a
+2025,Total,1 Bedroom,3.6,a
+2025,Total,2 Bedroom,2.5,a
+2025,Total,3 Bedroom +,1.8,a
+2025,Total,Total,3.0,a

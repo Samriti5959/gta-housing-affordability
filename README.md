@@ -2,7 +2,7 @@
 
 How affordable is renting in different Greater Toronto Area municipalities? This project compares **rent** (CMHC Rental Market Survey) against **household income** (Statistics Canada census) city by city (Brampton, Mississauga, Toronto, Oakville, Markham and more) instead of treating the GTA as one number. The final output is a Power BI dashboard.
 
-> **Status:** 🚧 In progress. Currently at step 1 (getting the data). See the [schedule](#schedule).
+> **Status:** 🚧 In progress. Step 1 (get the data) is done: see [`1-Get the data/raw/`](1-Get%20the%20data/raw/README.md). Next: step 2, loading into Fabric. See the [schedule](#schedule).
 
 ---
 
@@ -17,7 +17,7 @@ Most published numbers describe the **Toronto CMA** (the whole metro area) as a 
 | Rent | [CMHC Housing Market Information Portal](https://www03.cmhc-schl.gc.ca/hmip-pimh/) | Average rent by bedroom type (Rental Market Survey) | Census subdivision / CMHC zone |
 | Income | [Statistics Canada](https://www12.statcan.gc.ca/census-recensement/), 2021 Census via the WDS API | Median household income | Census subdivision |
 
-Full details, caveats and known gaps are in [DATA_SOURCES.md](Team-related-files/DATA_SOURCES.md). Step-by-step instructions for pulling the data are in [HOW_TO_GET_DATA.md](Team-related-files/HOW_TO_GET_DATA.md).
+Full details, caveats and known gaps are in [DATA_SOURCES.md](1-Get%20the%20data/DATA_SOURCES.md). Step-by-step instructions for pulling the data are in [HOW_TO_GET_DATA.md](1-Get%20the%20data/HOW_TO_GET_DATA.md).
 
 ## Pipeline
 
@@ -41,14 +41,12 @@ flowchart LR
 
 ```
 gta-housing-affordability/
-├── 1-Get the data/          # research notes and raw data pulls
+├── 1-Get the data/          # data sources, extraction scripts, raw data (raw/)
 ├── 2-Extract/               # loading data into the Fabric Lakehouse
 ├── 3-Clean/                 # cleaning and joining rent + income
 ├── 4-Analysis/              # SQL queries and KPIs
 ├── 5-Power BI dashboard/    # dashboard files and screenshots
 └── Team-related-files/
-    ├── DATA_SOURCES.md      # data sources explained, caveats, known gaps
-    ├── HOW_TO_GET_DATA.md   # how to pull each dataset
     ├── SCHEDULE_1.md        # timeline and owners
     └── Meeting Notes/       # meeting notes
 ```
