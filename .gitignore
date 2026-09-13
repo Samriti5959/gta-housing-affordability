@@ -15,6 +15,6 @@ __pycache__/
 .env
 
 # Data: full StatCan downloads (~50 MB, re-created by extract_statcan.py)
-1-Get the data/raw/statcan/zips/
+
 # Census table metadata lists every geography in Canada (~7 MB each); re-created by the script
 
