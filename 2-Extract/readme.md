@@ -11,6 +11,6 @@ as raw tables in the `raw_cmhc` dataset.
 3. Cleaned column names and data formatting during load
 4. Loaded all tables into BigQuery dataset `raw_cmhc`
 
-**Notebook:** [bigquery_extract.ipynb](./bigquery_extract.ipynb)
+**Notebook:** [[bigquery_extract.ipynb](./bigquery_extract.ipynb)](https://github.com/Samriti5959/gta-housing-affordability/blob/main/2-Extract/Bronze_Layer_load_Data_in_Tables.ipynb)
 
 **Status:** Done — all CMHC and StatCan tables loaded. Ready for cleaning step.
