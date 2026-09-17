@@ -1,0 +1,11 @@
+This is the link to the Colab notebook for these cleaning steps.
+
+
+:  https://colab.research.google.com/drive/1m5xfPu-LBRlDn5EFl7j8bu9wW3qOq0eq?usp=sharing
+
+-- Currently, the cob gets access to the BigQuery in the project for GTA housing
+-- Shows the project's dataset it is obtaining
+
+-> Trying to show all steps so that if any bug occurs, this can be fixed.
+
+Also thinking of having a separate complete dataset file for the metadata so it can be used as a reference for any insight.
