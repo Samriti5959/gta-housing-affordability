@@ -1,1 +1,1331 @@
-.
+# GTA Housing Affordability Project
+
+## Data Cleaning and Preparation Report 2
+
+### Historical Rent Cleaning, Validation, and Final Dataset Preparation
+
+### Project Status
+
+**Phase:** CMHC Historical Rent Data Cleaning and Validation
+**Current Progress:** Historical rent cleaning completed and validated
+**Primary Clean Dataset:** `rent_clean`
+**Platform:** Google BigQuery + Google Colab
+**Reporting Tool:** Power BI Desktop
+**Raw BigQuery Dataset:** `raw_cmhc`
+**Planned Clean BigQuery Dataset:** `cleaned_cmhc`
+
+---
+
+# 1. Report Overview
+
+Report 1 established the overall data architecture for the GTA Housing Affordability project, inventoried the source tables, identified the 25 municipalities included in the project, created the municipality reference table, and established Census Subdivision codes as the primary geographic key.
+
+Report 2 documents the next stage of the data-cleaning process: the detailed inspection, validation, consolidation, and transformation of the historical CMHC rental data.
+
+The objective of this phase was to create one reliable analytical rent dataset that can eventually support:
+
+1. rent-to-income calculations;
+2. income required to afford an average two-bedroom unit;
+3. historical rent-growth calculations;
+4. municipality-level comparisons;
+5. regional comparisons; and
+6. Power BI visualizations.
+
+The final output from this phase is a validated long-format dataset named:
+
+```text
+rent_clean
+```
+
+containing published CMHC rent observations together with their geographic identifiers, reference periods, bedroom types, quality flags, and source lineage.
+
+---
+
+# 2. Starting Point
+
+The project contains 25 target municipalities across:
+
+```text
+Durham
+York
+Toronto
+Peel
+Halton
+```
+
+The historical CMHC rent source was organized as separate municipality-level BigQuery tables following the general naming convention:
+
+```text
+rent_history_<csd_code>_<municipality>
+```
+
+Example:
+
+```text
+rent_history_3521010_brampton
+```
+
+Rather than immediately concatenating these tables, the first objective of this phase was to determine whether they shared compatible schemas and whether the apparent observations actually contained usable rent estimates.
+
+---
+
+# 3. Historical Rent Schema Validation
+
+All historical rent tables were inspected before consolidation.
+
+The validation identified **three distinct schema structures**.
+
+## 3.1 Standard Rent Schema
+
+Twenty-three municipalities used the expected structure:
+
+```text
+municipality
+Studio
+Studio_flag
+1_Bedroom
+1_Bedroom_flag
+2_Bedroom
+2_Bedroom_flag
+3_Bedroom
+3_Bedroom_flag
+Total
+Total_flag
+Total_flag_1
+```
+
+The rent columns contain the published average monthly rent estimates.
+
+The corresponding `_flag` columns contain CMHC reliability classifications.
+
+---
+
+## 3.2 East Gwillimbury Schema
+
+The East Gwillimbury table differed from the standard structure because it did not contain:
+
+```text
+Studio
+Studio_flag
+```
+
+To allow schema-compatible inspection, the missing fields were introduced as null columns during the Pandas consolidation stage.
+
+No source values were fabricated.
+
+Further inspection later showed that East Gwillimbury had a larger availability problem than simply missing Studio fields.
+
+---
+
+## 3.3 King Schema
+
+The King historical table was structurally different from every other municipality.
+
+Instead of rental observations, it contained only fields comparable to:
+
+```text
+Source
+CMHC_Rental_Market_Survey
+```
+
+It therefore could not be interpreted as a municipality-level historical rent table.
+
+King was excluded from the historical rent consolidation while remaining part of the project's 25-municipality geography reference.
+
+This distinction is important:
+
+```text
+Project geography ≠ data availability
+```
+
+A municipality remains part of the project even when a specific indicator is unavailable.
+
+---
+
+# 4. Historical Rent Consolidation
+
+Compatible historical tables were consolidated into a Pandas DataFrame.
+
+King was excluded because its source did not contain comparable historical rent observations.
+
+This resulted in:
+
+```text
+24 municipality source tables
+820 wide-format historical rows
+```
+
+The raw source field labelled:
+
+```text
+municipality
+```
+
+actually contained reference periods such as:
+
+```text
+1990 October
+2005 October
+2025 October
+```
+
+The field was therefore renamed:
+
+```text
+reference_period
+```
+
+The actual municipality name was derived from the municipality reference table and source-table name.
+
+Additional geographic and lineage fields were added:
+
+```text
+csd_code
+municipality
+region
+source_table
+```
+
+This prevents the incorrectly labelled raw source field from being confused with the actual municipality.
+
+---
+
+# 5. Missing-Value and Coverage Investigation
+
+Missing rent values were not automatically deleted.
+
+A null rent observation can indicate that CMHC did not publish an estimate for a particular municipality, bedroom type, or period.
+
+Treating these values as zero would create false rental prices and severely distort affordability calculations.
+
+A coverage audit was therefore created for:
+
+```text
+Studio
+1 Bedroom
+2 Bedroom
+3 Bedroom
+Total
+```
+
+---
+
+# 6. Major Historical Coverage Findings
+
+## 6.1 East Gwillimbury
+
+East Gwillimbury contained:
+
+```text
+36 reference-period rows
+1990 October → 2025 October
+```
+
+but contained:
+
+```text
+0 usable 1-bedroom observations
+0 usable 2-bedroom observations
+0 usable 3-bedroom observations
+0 usable Total observations
+```
+
+The missing observations were confirmed to exist in the original source rather than being introduced during cleaning.
+
+East Gwillimbury therefore has no usable historical rent observations in the current CMHC source.
+
+---
+
+## 6.2 Vaughan
+
+Vaughan similarly contained:
+
+```text
+36 reference-period rows
+```
+
+but:
+
+```text
+0 Studio observations
+0 1-bedroom observations
+0 2-bedroom observations
+0 3-bedroom observations
+0 Total observations
+```
+
+Vaughan therefore also has no usable historical rent observations in the source currently available to the project.
+
+---
+
+## 6.3 King
+
+King does not contain a comparable historical rent dataset.
+
+Therefore the three municipalities without usable historical rent observations are:
+
+```text
+King
+East Gwillimbury
+Vaughan
+```
+
+The remaining **22 municipalities contain at least some published historical rent information**.
+
+---
+
+# 7. Historical Coverage Is Not Uniform
+
+The coverage audit also showed that municipalities do not necessarily contain the same number of observations.
+
+Examples include:
+
+| Municipality           | Historical Rows | Published 2BR Values |
+| ---------------------- | --------------: | -------------------: |
+| Brampton               |              36 |                   36 |
+| Mississauga            |              36 |                   36 |
+| Burlington             |              36 |                   36 |
+| Toronto                |              28 |                   28 |
+| Brock                  |              18 |                   18 |
+| Scugog                 |              18 |                   18 |
+| Pickering              |              36 |                    4 |
+| Caledon                |              36 |                   15 |
+| Whitchurch Stouffville |              36 |                   24 |
+| East Gwillimbury       |              36 |                    0 |
+| Vaughan                |              36 |                    0 |
+
+This produced an important methodological distinction.
+
+For example:
+
+```text
+Brock = 18 published observations out of 18 available periods
+```
+
+is different from:
+
+```text
+Pickering = 4 published observations out of 36 reference-period rows
+```
+
+A shorter historical series is therefore not automatically an incomplete series.
+
+Coverage must be considered relative to the source period available for each municipality.
+
+---
+
+# 8. Investigation of the 2025 CSD Rent Table
+
+The separate current-year source:
+
+```text
+rent_by_csd_toronto_cma_2025
+```
+
+was also inspected.
+
+It contains:
+
+```text
+22 source rows
+12 columns
+```
+
+However, the 22 rows are not equivalent to 22 of the project's 25 municipalities.
+
+This table is specific to the Toronto CMA geography, while the project uses a broader 25-municipality GTA study area.
+
+---
+
+# 9. Municipalities Missing From the Toronto CMA 2025 Table
+
+The following project municipalities were not represented in the Toronto CMA CSD table:
+
+```text
+Whitby
+Oshawa
+Clarington
+Scugog
+Brock
+Burlington
+King
+```
+
+This demonstrated that:
+
+```text
+GTA project scope ≠ Toronto CMA coverage
+```
+
+The Toronto CMA table therefore cannot be used as the only current-rent source for the project.
+
+---
+
+# 10. Target Municipalities Present but Without Published Values
+
+Six target municipalities appeared in the 2025 Toronto CMA table but contained no published rent observations:
+
+```text
+Caledon
+East Gwillimbury
+Georgina
+Uxbridge
+Vaughan
+Whitchurch-Stouffville
+```
+
+This established another important distinction:
+
+```text
+Municipality appears in source
+        ≠
+Published estimate is available
+```
+
+Missing values were therefore retained as unavailable observations rather than converted to zero.
+
+---
+
+# 11. Municipalities Outside the Project Scope
+
+The Toronto CMA table also contained municipalities that are not part of the selected 25-municipality study area:
+
+```text
+New Tecumseth
+Bradford West Gwillimbury
+Orangeville
+```
+
+These records were preserved in the raw source but are not part of the project's municipality-level analytical model.
+
+---
+
+# 12. Unidentified 2025 Source Row
+
+One row contained:
+
+```text
+municipality = NULL
+```
+
+while still containing valid-looking published rent estimates:
+
+| Bedroom Type |   Rent |
+| ------------ | -----: |
+| Studio       | $1,491 |
+| 1 Bedroom    | $1,761 |
+| 2 Bedroom    | $2,045 |
+| 3 Bedroom    | $2,294 |
+| Total        | $1,917 |
+
+Because its geographic meaning was not established, the row was not assigned to a municipality.
+
+It was preserved for source investigation rather than being automatically removed or assigned to a project geography.
+
+This follows the project's general rule:
+
+> Unknown source records are investigated before they are deleted or reclassified.
+
+---
+
+# 13. Municipality Name Standardization
+
+The 2025 CSD source uses municipality names such as:
+
+```text
+Brampton (CY)
+Toronto (C)
+Caledon (T)
+Uxbridge (TP)
+Whitchurch-Stouffville (T)
+```
+
+while the municipality reference dataset uses standardized names such as:
+
+```text
+Brampton
+Toronto
+Caledon
+Uxbridge
+Whitchurch Stouffville
+```
+
+A separate standardized municipality field was therefore created.
+
+Municipal suffixes were removed and known formatting differences such as:
+
+```text
+Whitchurch-Stouffville
+```
+
+were standardized to:
+
+```text
+Whitchurch Stouffville
+```
+
+This allowed the 2025 table to be compared reliably against the 25-municipality reference dataset.
+
+---
+
+# 14. Historical Data vs. 2025 CSD Validation
+
+A major validation step compared 2025 observations in the historical municipality tables with observations in:
+
+```text
+rent_by_csd_toronto_cma_2025
+```
+
+The comparison focused particularly on:
+
+```text
+2 Bedroom
+Total
+```
+
+For municipalities where both sources contained a published value:
+
+```text
+difference_2br = 0
+difference_total = 0
+```
+
+Examples included:
+
+| Municipality | History 2BR | CSD 2BR | Difference |
+| ------------ | ----------: | ------: | ---------: |
+| Ajax         |      $1,727 |  $1,727 |         $0 |
+| Brampton     |      $2,025 |  $2,025 |         $0 |
+| Markham      |      $1,996 |  $1,996 |         $0 |
+| Mississauga  |      $2,001 |  $2,001 |         $0 |
+| Toronto      |      $2,055 |  $2,055 |         $0 |
+| Oakville     |      $2,309 |  $2,309 |         $0 |
+
+The same pattern was observed for published Total-rent values.
+
+### Key Finding
+
+For comparable observations:
+
+> **The municipality historical tables and the 2025 CSD table produced identical values.**
+
+The historical municipality tables were therefore selected as the **primary analytical rent source**, while the 2025 CSD table can be retained as a validation/reference source.
+
+This avoids unnecessary duplication of identical observations.
+
+---
+
+# 15. Recovery of 2025 Observations Outside the Toronto CMA Table
+
+Using the historical municipality tables allowed the project to recover 2025 values for six municipalities that were absent from the Toronto CMA CSD table.
+
+| Municipality | 2025 2BR Rent | 2025 Total Rent |
+| ------------ | ------------: | --------------: |
+| Brock        |        $1,296 |          $1,222 |
+| Burlington   |        $2,050 |          $1,977 |
+| Clarington   |        $1,788 |          $1,728 |
+| Oshawa       |        $1,780 |          $1,777 |
+| Scugog       |        $1,452 |          $1,436 |
+| Whitby       |        $1,673 |          $1,634 |
+
+King remained unavailable.
+
+This further supported the decision to use the municipality history tables as the primary source.
+
+---
+
+# 16. Final 2025 Rent Coverage
+
+Using the selected historical source, the project currently has published 2025 two-bedroom rent estimates for:
+
+```text
+17 of 25 municipalities
+```
+
+The municipalities without a published 2025 two-bedroom value are:
+
+```text
+Caledon
+East Gwillimbury
+Georgina
+King
+Pickering
+Uxbridge
+Vaughan
+Whitchurch Stouffville
+```
+
+The project has published 2025 Total rent estimates for:
+
+```text
+18 of 25 municipalities
+```
+
+Pickering is an example of partial current-year coverage:
+
+```text
+2025 2 Bedroom = unavailable
+2025 Total      = $1,826
+```
+
+This means that individual municipalities may be eligible for one KPI while unavailable for another.
+
+The final dashboard must therefore distinguish:
+
+```text
+No published estimate
+```
+
+from:
+
+```text
+Rent = $0
+```
+
+A missing CMHC estimate will never be interpreted as zero rent.
+
+---
+
+# 17. CMHC Reliability Flags
+
+The source contains reliability codes:
+
+```text
+a
+b
+c
+d
+```
+
+The CMHC Rental Market Survey methodology identifies these as statistical reliability classifications for estimates.
+
+For averages and totals:
+
+| Flag | Reliability             |
+| ---- | ----------------------- |
+| A    | Excellent               |
+| B    | Very good               |
+| C    | Good                    |
+| D    | Poor — use with caution |
+
+CMHC indicates that estimates exceeding its publication reliability threshold may be suppressed rather than published.
+
+The project therefore retains all published A–D observations.
+
+D-rated observations are not automatically deleted; instead, they remain available for analysis with a visible caution classification.
+
+---
+
+# 18. Rent and Quality-Flag Consistency Check
+
+Each bedroom-value column was checked against its corresponding quality-flag column.
+
+The validation tested for:
+
+```text
+rent value exists but flag missing
+```
+
+and:
+
+```text
+flag exists but rent value missing
+```
+
+for:
+
+```text
+Studio
+1 Bedroom
+2 Bedroom
+3 Bedroom
+Total
+```
+
+The result for every category was:
+
+```text
+Value exists but flag missing: 0
+Flag exists but value missing: 0
+```
+
+This confirms that published rent values and quality flags are internally aligned.
+
+---
+
+# 19. Quality-Flag Distribution
+
+After removing unavailable rent observations from the analytical dataset, the final reliability distribution was:
+
+| Reliability Flag            | Observations |
+| --------------------------- | -----------: |
+| A — Excellent               |        2,406 |
+| B — Very good               |          399 |
+| C — Good                    |          108 |
+| D — Poor / use with caution |           39 |
+| **Total**                   |    **2,952** |
+
+This means that the large majority of published observations in the cleaned historical rent dataset carry the strongest CMHC reliability classification.
+
+The original reliability flag is retained alongside the readable quality description.
+
+---
+
+# 20. Reference-Period Cleaning
+
+The raw reference period was stored as text:
+
+```text
+1990 October
+1991 October
+...
+2025 October
+```
+
+The value was separated into:
+
+```text
+year
+survey_month
+```
+
+Validation produced:
+
+```text
+Missing parsed years = 0
+Survey month = October for all 820 source rows
+```
+
+The CMHC Rental Market Survey is conducted annually in October and reflects rental-market conditions at that time.
+
+Therefore, the historical rent source should be interpreted as an annual October snapshot rather than a monthly time series.
+
+---
+
+# 21. Removal of Unused `Total_flag_1`
+
+The raw consolidated dataset included:
+
+```text
+Total_flag_1
+```
+
+Validation showed:
+
+```text
+None = 820
+```
+
+meaning that all 820 source rows contained no value in this field.
+
+Because the column contains no analytical information, it was not carried into the final cleaned analytical structure.
+
+The original raw BigQuery source remains unchanged.
+
+---
+
+# 22. Wide-to-Long Transformation
+
+The original historical structure stored bedroom categories across separate columns:
+
+```text
+municipality
+Studio
+1_Bedroom
+2_Bedroom
+3_Bedroom
+Total
+```
+
+For analytical use, the dataset was transformed into long format.
+
+Instead of one row containing multiple bedroom categories:
+
+```text
+Toronto | 2025 | 1499 | 1763 | 2055 | 2342 | 1916
+```
+
+the cleaned structure creates separate observations:
+
+```text
+Toronto | 2025 | Studio    | 1499 | a
+Toronto | 2025 | 1 Bedroom | 1763 | a
+Toronto | 2025 | 2 Bedroom | 2055 | a
+Toronto | 2025 | 3 Bedroom | 2342 | a
+Toronto | 2025 | Total     | 1916 | a
+```
+
+This structure is more suitable for:
+
+```text
+SQL
+Power BI
+time-series analysis
+bedroom-type filtering
+municipality comparisons
+regional aggregation
+```
+
+---
+
+# 23. Final `rent_clean` Schema
+
+The final analytical table contains:
+
+```text
+csd_code
+municipality
+region
+year
+survey_month
+bedroom_type
+avg_monthly_rent
+quality_flag
+quality_level
+source_table
+```
+
+### Field Definitions
+
+| Field              | Purpose                                                |
+| ------------------ | ------------------------------------------------------ |
+| `csd_code`         | Stable Census Subdivision geographic identifier        |
+| `municipality`     | Readable municipality name                             |
+| `region`           | Durham, York, Toronto, Peel, or Halton                 |
+| `year`             | CMHC reference year                                    |
+| `survey_month`     | Survey month, currently October                        |
+| `bedroom_type`     | Studio, 1 Bedroom, 2 Bedroom, 3 Bedroom, or Total      |
+| `avg_monthly_rent` | Published CMHC average monthly rent                    |
+| `quality_flag`     | Original CMHC reliability code                         |
+| `quality_level`    | Readable reliability classification                    |
+| `source_table`     | Original BigQuery table used to create the observation |
+
+The `source_table` field is intentionally retained to preserve data lineage.
+
+---
+
+# 24. Final Validation Results
+
+The completed `rent_clean` dataset contains:
+
+```text
+2,952 published rent observations
+```
+
+distributed as follows:
+
+| Bedroom Type |      Rows |
+| ------------ | --------: |
+| Total        |       709 |
+| 2 Bedroom    |       675 |
+| 1 Bedroom    |       656 |
+| 3 Bedroom    |       512 |
+| Studio       |       400 |
+| **Total**    | **2,952** |
+
+The final validation tests produced:
+
+```text
+Duplicate analytical rows = 0
+
+Zero or negative rent values = 0
+
+Missing rent values = 0
+
+Published values without quality flags = 0
+
+Quality flags without published values = 0
+```
+
+The uniqueness test used:
+
+```text
+csd_code
+year
+bedroom_type
+```
+
+as the analytical key.
+
+No duplicate observations were identified.
+
+---
+
+# 25. 2025 Two-Bedroom Validation
+
+The final cleaned dataset contains:
+
+```text
+17 municipalities
+```
+
+with published 2025 two-bedroom rent estimates.
+
+The resulting values are:
+
+| Municipality  | Region  | 2025 2BR Rent | Reliability |
+| ------------- | ------- | ------------: | ----------- |
+| Brock         | Durham  |        $1,296 | Excellent   |
+| Scugog        | Durham  |        $1,452 | Good        |
+| Halton Hills  | Halton  |        $1,531 | Excellent   |
+| Whitby        | Durham  |        $1,673 | Excellent   |
+| Ajax          | Durham  |        $1,727 | Excellent   |
+| Oshawa        | Durham  |        $1,780 | Excellent   |
+| Clarington    | Durham  |        $1,788 | Very good   |
+| Milton        | Halton  |        $1,801 | Very good   |
+| Richmond Hill | York    |        $1,827 | Excellent   |
+| Markham       | York    |        $1,996 | Good        |
+| Mississauga   | Peel    |        $2,001 | Excellent   |
+| Brampton      | Peel    |        $2,025 | Excellent   |
+| Burlington    | Halton  |        $2,050 | Excellent   |
+| Toronto       | Toronto |        $2,055 | Excellent   |
+| Aurora        | York    |        $2,187 | Excellent   |
+| Oakville      | Halton  |        $2,309 | Very good   |
+| Newmarket     | York    |        $2,384 | Good        |
+
+These observations will later support the KPI:
+
+> **Income Required to Afford an Average Two-Bedroom Unit**
+
+using the 30% affordability benchmark.
+
+---
+
+# 26. Difference Between `Total` and `2 Bedroom`
+
+The project will maintain a distinction between:
+
+```text
+Total average rent
+```
+
+and:
+
+```text
+2-bedroom average rent
+```
+
+For example, the 2025 published estimates include:
+
+| Municipality | Total Average Rent | 2BR Average Rent |
+| ------------ | -----------------: | ---------------: |
+| Toronto      |             $1,916 |           $2,055 |
+| Brampton     |             $1,935 |           $2,025 |
+| Mississauga  |             $1,917 |           $2,001 |
+
+The Total measure may be appropriate for general market-level comparisons.
+
+The 2-bedroom measure will specifically support the project's two-bedroom affordability KPI.
+
+These measures will not be used interchangeably.
+
+---
+
+# 27. Primary Rent Source Decision
+
+Based on the validation work, the historical municipality tables were selected as the project's primary CMHC rent source.
+
+The source strategy is therefore:
+
+```text
+rent_history_*
+        ↓
+Primary analytical source
+        ↓
+rent_clean
+```
+
+while:
+
+```text
+rent_by_csd_toronto_cma_2025
+        ↓
+Validation / reference source
+```
+
+The reason for this decision is that the municipality history tables:
+
+* provide multiple historical years;
+* support rent-growth analysis;
+* contain municipality-level identifiers;
+* reproduce the same 2025 values as the CSD table where both publish observations; and
+* provide 2025 observations for several project municipalities not represented in the Toronto CMA table.
+
+The two sources will therefore not be combined in a way that creates duplicate 2025 observations.
+
+---
+
+# 28. BigQuery Clean-Layer Architecture
+
+The raw source tables remain stored in:
+
+```text
+gta-housing-508813.raw_cmhc
+```
+
+and remain unmodified.
+
+The cleaned rent dataset is prepared for publication to a separate clean layer:
+
+```text
+gta-housing-508813.cleaned_cmhc.rent_clean
+```
+
+The intended architecture is:
+
+```text
+gta-housing-508813
+
+├── raw_cmhc
+│   ├── rent_history_*
+│   ├── vacancy_history_*
+│   ├── rent_by_csd_*
+│   ├── vacancy_by_csd_*
+│   ├── *_gta
+│   └── metadata
+│
+└── cleaned_cmhc
+    ├── municipality_reference
+    └── rent_clean
+```
+
+At the completion point documented in this report, `rent_clean` has been finalized and validated in Colab.
+
+The next publication step is to load the validated DataFrame into the separate `cleaned_cmhc` dataset and verify that its BigQuery row counts and KPI outputs match the validated Colab version.
+
+The raw dataset will not be overwritten.
+
+---
+
+# 29. Municipality Reference Layer
+
+The municipality reference table remains the master list for the full study area.
+
+It contains all:
+
+```text
+25 municipalities
+```
+
+even though `rent_clean` contains published observations for only 22 municipalities historically.
+
+The reference table also tracks current-year availability indicators such as:
+
+```text
+has_2025_2br
+has_2025_total
+```
+
+This allows the analytical model to distinguish:
+
+```text
+municipality is part of project
+```
+
+from:
+
+```text
+rent estimate is available for this municipality
+```
+
+This structure prevents municipalities from disappearing from Power BI simply because a specific CMHC indicator is unavailable.
+
+---
+
+# 30. Data Governance Decisions
+
+The following principles were applied throughout the rent-cleaning phase.
+
+## Preserve Raw Data
+
+No original CMHC BigQuery source table was edited.
+
+All cleaning was performed using:
+
+```text
+SELECT queries
+Pandas DataFrames
+validation checks
+new cleaned outputs
+```
+
+---
+
+## Do Not Convert Missing Data to Zero
+
+A missing rent estimate does not represent free or zero-cost housing.
+
+Null values were treated as unavailable observations.
+
+Only published numerical observations were included in the final `rent_clean` analytical table.
+
+---
+
+## Preserve Quality Information
+
+CMHC reliability flags were not discarded.
+
+Both:
+
+```text
+quality_flag
+quality_level
+```
+
+are retained in the cleaned table.
+
+---
+
+## Preserve Lineage
+
+Every observation retains:
+
+```text
+source_table
+```
+
+so the original BigQuery source can be identified if an observation requires investigation later.
+
+---
+
+## Separate Geography From Indicator Availability
+
+The 25-municipality reference table remains separate from indicator fact tables.
+
+This ensures that geographic scope is not determined by whether CMHC happened to publish a particular estimate.
+
+---
+
+# 31. CMHC Survey Coverage Limitation
+
+The CMHC Rental Market Survey does not represent every rental unit in the housing market.
+
+CMHC states that the survey is conducted in October and targets privately initiated rental structures containing at least three rental units that have been on the market for at least three months. Social and affordable housing structures or units are excluded from the Rental Market Survey frame.
+
+Therefore, the project's CMHC rent estimates should not be interpreted as representing every possible rental arrangement, such as every condominium rental or secondary-market unit.
+
+This limitation will be documented in the final methodology and Power BI dashboard.
+
+---
+
+# 32. Important Findings From Report 2
+
+The historical rent-cleaning phase produced several major findings.
+
+### 32.1 The 25-Municipality Project Scope Remains Valid
+
+All 25 municipalities remain part of the project's geography even when CMHC does not publish a rent value.
+
+---
+
+### 32.2 Published Rent Coverage Varies Significantly
+
+Some municipalities have complete historical series while others contain partial or unavailable estimates.
+
+---
+
+### 32.3 King Requires Separate Treatment
+
+King does not contain a comparable historical rent table in the available source.
+
+---
+
+### 32.4 East Gwillimbury and Vaughan Have No Usable Historical Rent Values
+
+Their historical structures contain reference periods but no published rent observations.
+
+---
+
+### 32.5 Toronto CMA Data Does Not Equal GTA Project Coverage
+
+The 2025 Toronto CMA table does not contain every municipality included in the broader project.
+
+---
+
+### 32.6 Historical Tables Provide Better Project Coverage
+
+Historical municipality tables recovered 2025 observations for:
+
+```text
+Brock
+Burlington
+Clarington
+Oshawa
+Scugog
+Whitby
+```
+
+which were absent from the Toronto CMA CSD table.
+
+---
+
+### 32.7 Overlapping 2025 Sources Match
+
+Where both sources published comparable observations:
+
+```text
+Difference = 0
+```
+
+for the tested two-bedroom and Total-rent measures.
+
+---
+
+### 32.8 Data Quality Flags Are Internally Consistent
+
+No published rent observation was found without its corresponding reliability flag.
+
+No reliability flag was found without a corresponding rent observation.
+
+---
+
+### 32.9 The Final Dataset Passed All Structural Tests
+
+The final `rent_clean` dataset contains:
+
+```text
+2,952 rows
+0 analytical duplicates
+0 missing rent values
+0 zero or negative rent values
+```
+
+---
+
+# 33. Current Project Progress
+
+| Task                                      | Status              |
+| ----------------------------------------- | ------------------- |
+| Connect Colab to BigQuery                 | ✅ Complete          |
+| Inventory source tables                   | ✅ Complete          |
+| Identify 25 municipalities                | ✅ Complete          |
+| Create CSD municipality reference         | ✅ Complete          |
+| Establish regional mapping                | ✅ Complete          |
+| Validate historical rent schemas          | ✅ Complete          |
+| Identify schema exceptions                | ✅ Complete          |
+| Combine compatible historical rent tables | ✅ Complete          |
+| Investigate historical coverage           | ✅ Complete          |
+| Investigate East Gwillimbury              | ✅ Complete          |
+| Investigate Vaughan                       | ✅ Complete          |
+| Investigate King                          | ✅ Complete          |
+| Inspect 2025 CSD rent table               | ✅ Complete          |
+| Standardize municipality names            | ✅ Complete          |
+| Compare 2025 history vs. CSD values       | ✅ Complete          |
+| Select primary rent source                | ✅ Complete          |
+| Validate CMHC quality flags               | ✅ Complete          |
+| Parse year and survey month               | ✅ Complete          |
+| Remove unused empty field                 | ✅ Complete          |
+| Reshape historical rent to long format    | ✅ Complete          |
+| Validate final `rent_clean`               | ✅ Complete          |
+| Create 2025 two-bedroom clean subset      | ✅ Complete          |
+| Save clean rent checkpoint                | ✅ Complete |
+| Publish `rent_clean` to `cleaned_cmhc`    | ✅ Complete              |
+| Verify clean BigQuery table               |✅ Complete |
+| Clean historical vacancy data             | ⏭️ Next major phase |
+| Clean StatCan indicators                  | ⏭️ Planned          |
+| Prepare inflation adjustment              | ⏭️ Planned          |
+| Build analytical SQL views                | ⏭️ Planned          |
+| Build Power BI dashboard                  | ⏭️ Planned          |
+
+---
+
+# 34. Next Phase — Historical Vacancy Cleaning
+
+After the cleaned rent table is published and verified in BigQuery, the next phase will process:
+
+```text
+vacancy_history_<csd_code>_<municipality>
+```
+
+The vacancy-cleaning process will follow the same controlled methodology established for rent:
+
+```text
+inspect schemas
+        ↓
+identify source exceptions
+        ↓
+combine compatible tables
+        ↓
+validate geographic coverage
+        ↓
+inspect missing observations
+        ↓
+interpret reliability flags
+        ↓
+parse reference periods
+        ↓
+reshape wide → long
+        ↓
+validate analytical keys
+        ↓
+create vacancy_clean
+        ↓
+publish to cleaned_cmhc
+```
+
+The rent-cleaning process therefore provides a reusable framework rather than requiring the vacancy process to be designed from scratch.
+
+---
+
+# 35. Planned Clean Data Architecture
+
+As the project progresses, the clean BigQuery layer is expected to develop into:
+
+```text
+cleaned_cmhc
+│
+├── municipality_reference
+├── rent_clean
+├── vacancy_clean
+├── income_clean
+├── shelter_affordability_clean
+└── inflation_clean
+```
+
+These clean fact and reference tables will later support analytical SQL views for:
+
+```text
+Rent-to-Income Ratio
+
+Income Required to Afford a 2BR
+
+Renter Households Spending 30%+
+
+Vacancy Rate
+
+Rent Growth vs. Income Growth
+```
+
+Power BI will connect to the analytical layer rather than directly performing transformations against the raw source tables.
+
+---
+
+# Conclusion
+
+The second phase of the GTA Housing Affordability project completed the end-to-end cleaning and validation of the historical CMHC rent data.
+
+The process identified important source limitations that would have been hidden if all municipality tables had simply been concatenated without inspection.
+
+Three major availability exceptions were identified: King does not contain a comparable historical rent table, while East Gwillimbury and Vaughan contain historical reference periods but no usable published rent estimates.
+
+The investigation also demonstrated that the 2025 Toronto CMA CSD table does not represent the full geographic scope of the project. Municipality-specific historical tables provided broader GTA coverage and reproduced the same 2025 values wherever the two sources overlapped.
+
+As a result, the historical municipality tables were selected as the primary rent source.
+
+The final cleaned dataset contains:
+
+```text
+2,952 published CMHC rent observations
+22 municipalities with at least some historical rent data
+17 municipalities with a published 2025 two-bedroom estimate
+18 municipalities with a published 2025 Total-rent estimate
+0 analytical duplicates
+0 missing analytical rent values
+0 zero or negative rent values
+```
+
+The final structure preserves CSD identifiers, municipality and regional classifications, reference years, bedroom categories, CMHC reliability classifications, and source-table lineage.
+
+The historical rent-cleaning phase is therefore complete.
+
+The immediate next action is to publish and verify `rent_clean` and `municipality_reference` in the separate `cleaned_cmhc` BigQuery layer. Once that validation is complete, the project will proceed to the historical vacancy-cleaning phase using the same controlled cleaning and validation framework.
