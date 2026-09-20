@@ -1,0 +1,760 @@
+# GTA Housing Affordability Project
+
+## Data Cleaning and Preparation Report
+
+### Project Status
+
+**Phase:** Data Cleaning and Preparation
+**Current Progress:** Steps 1–4 completed (Data Cleaning)
+**Platform:** Google BigQuery + Google Colab
+**Reporting Tool:** Power BI Desktop
+
+---
+
+## 1. Project Overview
+
+The GTA Housing Affordability project examines whether renting in municipalities outside Toronto is actually more affordable once local household income is considered alongside rental prices.
+
+Rather than treating the Greater Toronto Area as a single housing market, the analysis compares municipalities across:
+
+* Toronto
+* Peel Region
+* York Region
+* Durham Region
+* Halton Region
+
+The project currently includes **25 municipalities**.
+
+The main business question is:
+
+> **Where in the GTA is renting affordable, for whom, and how is that changing over time?**
+
+The project combines rental-market information from CMHC with demographic and income information from Statistics Canada.
+
+---
+
+## 2. Planned Analytical KPIs
+
+The cleaned datasets will eventually support the following KPIs:
+
+1. **Rent-to-Income Ratio**
+   Measures the percentage of median household income required to pay annual rent.
+
+2. **Income Required to Afford an Average Two-Bedroom Unit**
+   Converts average monthly rent into the annual household income required for rent to remain at or below the 30% affordability benchmark.
+
+3. **Share of Renter Households Spending 30% or More on Shelter Costs**
+   Measures the proportion of renter households already exceeding the commonly used affordability threshold.
+
+4. **Vacancy Rate**
+   Measures rental-market availability and the amount of choice available to renters.
+
+5. **Rent Growth Compared with Income Growth**
+   Examines whether household income is keeping pace with changes in rental costs over time.
+
+---
+
+# 3. Data Architecture
+
+The raw source data is currently stored in the Google BigQuery project:
+
+```text
+gta-housing-508813
+```
+
+The primary raw dataset is:
+
+```text
+raw_cmhc
+```
+
+Google Colab is being used as the working environment for data inspection and cleaning.
+
+At the current stage, BigQuery is treated as a **read-only source**.
+
+The workflow is:
+
+```text
+BigQuery raw tables
+        ↓
+Google Colab
+        ↓
+Data inspection
+        ↓
+Data cleaning
+        ↓
+Validation
+        ↓
+Final cleaned DataFrames
+        ↓
+Cleaned BigQuery tables
+        ↓
+SQL analysis
+        ↓
+Power BI
+```
+
+No transformations completed during Steps 1–4 have modified the original BigQuery tables.
+
+The intention is to upload cleaned data to a separate analytical layer only after validation is complete.
+
+---
+
+# 4. Step 1 — BigQuery Connection and Safe Working Environment
+
+The first step was connecting Google Colab to the BigQuery project.
+
+The following libraries were used:
+
+```python
+from google.colab import auth
+from google.cloud import bigquery
+import pandas as pd
+import numpy as np
+import re
+```
+
+Authentication was completed using:
+
+```python
+auth.authenticate_user()
+```
+
+The project configuration was then defined:
+
+```python
+PROJECT_ID = "gta-housing-508813"
+DATASET_ID = "raw_cmhc"
+
+client = bigquery.Client(project=PROJECT_ID)
+```
+
+### Reason for This Approach
+
+The purpose of this setup is to allow raw data to be queried from BigQuery while performing transformations only inside temporary Pandas DataFrames in Google Colab.
+
+During the cleaning phase, commands that write back to BigQuery are intentionally avoided.
+
+Examples of write operations that are not currently being used include:
+
+```text
+CREATE TABLE
+UPDATE
+DELETE
+INSERT
+MERGE
+DROP
+```
+
+The Python BigQuery upload function is also not being used yet:
+
+```python
+client.load_table_from_dataframe(...)
+```
+
+This protects the original source data while the cleaning process is still under development.
+
+---
+
+# 5. Step 2 — Dataset Inventory
+
+The next step was to create an inventory of all tables stored in:
+
+```text
+gta-housing-508813.raw_cmhc
+```
+
+Each table was classified based on its naming pattern.
+
+The major groups identified were:
+
+```text
+StatCan GTA datasets
+Metadata
+Historical rent
+Historical vacancy
+2025 rent by CSD
+2025 vacancy by CSD
+2025 rent by CMHC zone
+2025 vacancy by CMHC zone
+```
+
+The resulting inventory contained:
+
+```text
+111 tables
+```
+
+with four inventory fields:
+
+```text
+table_name
+group
+rows
+columns
+```
+
+Example records included:
+
+| Table                              | Classification    | Rows | Columns |
+| ---------------------------------- | ----------------- | ---: | ------: |
+| `rent_by_csd_toronto_cma_2025`     | 2025 rent CSD     |   22 |      12 |
+| `rent_by_zone_toronto_cma_2025`    | 2025 rent zone    |   32 |      12 |
+| `vacancy_by_csd_toronto_cma_2025`  | 2025 vacancy CSD  |   22 |      12 |
+| `vacancy_by_zone_toronto_cma_2025` | 2025 vacancy zone |   32 |      12 |
+| `vacancy_history_3521024_caledon`  | Vacancy history   |   36 |      12 |
+| `vacancy_history_3524001_oakville` | Vacancy history   |   36 |      12 |
+
+### Key Finding
+
+The original dataset does not contain 111 observations in one table.
+
+Instead, it contains **111 separate BigQuery tables serving different purposes**.
+
+This distinction was important because different categories of tables require different cleaning strategies.
+
+For example:
+
+```text
+rent_history_*
+```
+
+contains historical CMHC rental estimates, while:
+
+```text
+*_metadata_*
+```
+
+contains descriptive information about Statistics Canada datasets.
+
+These should not be processed as though they are the same type of data.
+
+---
+
+# 6. Step 3 — Creation of the Municipality Reference Table
+
+The historical rent table names follow a useful naming convention.
+
+Example:
+
+```text
+rent_history_3521010_brampton
+```
+
+This contains three pieces of information:
+
+```text
+rent_history
+3521010
+brampton
+```
+
+The seven-digit number represents the Census Subdivision identifier, while the final portion identifies the municipality.
+
+These table names were parsed to create a municipality reference dataset.
+
+The resulting structure contains:
+
+```text
+csd_code
+municipality
+source_table
+```
+
+A total of **25 municipalities** were identified.
+
+### Current Municipality List
+
+| CSD Code | Municipality           |
+| -------- | ---------------------- |
+| 3518001  | Pickering              |
+| 3518005  | Ajax                   |
+| 3518009  | Whitby                 |
+| 3518013  | Oshawa                 |
+| 3518017  | Clarington             |
+| 3518020  | Scugog                 |
+| 3518029  | Uxbridge               |
+| 3518039  | Brock                  |
+| 3519028  | Vaughan                |
+| 3519036  | Markham                |
+| 3519038  | Richmond Hill          |
+| 3519044  | Whitchurch Stouffville |
+| 3519046  | Aurora                 |
+| 3519048  | Newmarket              |
+| 3519049  | King                   |
+| 3519054  | East Gwillimbury       |
+| 3519070  | Georgina               |
+| 3520005  | Toronto                |
+| 3521005  | Mississauga            |
+| 3521010  | Brampton               |
+| 3521024  | Caledon                |
+| 3524001  | Oakville               |
+| 3524002  | Burlington             |
+| 3524009  | Milton                 |
+| 3524015  | Halton Hills           |
+
+### Why the CSD Code Is Important
+
+Municipality names can differ slightly between datasets.
+
+Examples could include:
+
+```text
+Whitchurch-Stouffville
+Whitchurch Stouffville
+Town of Whitchurch-Stouffville
+```
+
+Using only municipality names as a join key could therefore create inconsistencies.
+
+The CSD identifier provides a more stable geographic key that can later be used to align:
+
+* CMHC rent data
+* CMHC vacancy data
+* Statistics Canada census data
+* income data
+* shelter-cost data
+
+The intended geographic key for the analytical model will therefore be:
+
+```text
+csd_code
+```
+
+with municipality name retained as a readable label.
+
+---
+
+# 7. Step 4 — Municipality Validation and Regional Mapping
+
+Before combining the historical datasets, the municipality reference table was validated.
+
+The validation checks were designed to confirm:
+
+```text
+Total rows = 25
+
+Unique municipality names = 25
+
+Unique CSD codes = 25
+```
+
+Duplicate checks were also introduced for:
+
+```text
+csd_code
+municipality
+```
+
+The purpose of this validation is to prevent duplicated municipalities from producing incorrect joins or duplicated KPI values later in the analysis.
+
+---
+
+## Regional Classification
+
+The 25 municipalities were then grouped into the five geographic areas covered by the project:
+
+```text
+Durham
+York
+Toronto
+Peel
+Halton
+```
+
+The grouping was based on the Census Subdivision code structure.
+
+The resulting regional distribution is expected to be:
+
+| Region    | Municipalities |
+| --------- | -------------: |
+| Durham    |              8 |
+| York      |              9 |
+| Toronto   |              1 |
+| Peel      |              3 |
+| Halton    |              4 |
+| **Total** |         **25** |
+
+This creates a master geography structure similar to:
+
+| CSD Code | Municipality | Region  |
+| -------- | ------------ | ------- |
+| 3518001  | Pickering    | Durham  |
+| 3519036  | Markham      | York    |
+| 3520005  | Toronto      | Toronto |
+| 3521005  | Mississauga  | Peel    |
+| 3521010  | Brampton     | Peel    |
+| 3524001  | Oakville     | Halton  |
+
+---
+
+# 8. Current Master Geography Model
+
+The municipality reference dataset will eventually function as a dimension table for the project.
+
+Conceptually:
+
+```text
+                 Municipality Reference
+                ┌──────────────────────┐
+                │ csd_code             │
+                │ municipality         │
+                │ region               │
+                └──────────┬───────────┘
+                           │
+             ┌─────────────┼─────────────┐
+             │             │             │
+             ▼             ▼             ▼
+         Rent Data     Vacancy Data   Income Data
+```
+
+This structure provides a consistent geographic layer across all source datasets.
+
+---
+
+# 9. Important Findings So Far
+
+Several useful observations were made during the first four cleaning steps.
+
+### 9.1 Twenty-Five Municipalities Confirmed
+
+The historical rental-table naming structure produced exactly 25 municipality records.
+
+This matches the intended project scope.
+
+---
+
+### 9.2 CSD Codes Are Available
+
+Each historical municipality rent table includes the municipality's CSD identifier in its table name.
+
+This provides a stronger join key than municipality names alone.
+
+---
+
+### 9.3 The Data Contains Multiple Table Types
+
+The BigQuery dataset includes separate tables for:
+
+* current rent
+* historical rent
+* current vacancy
+* historical vacancy
+* Statistics Canada indicators
+* Statistics Canada metadata
+
+These should be cleaned independently before being joined.
+
+---
+
+### 9.4 Current 2025 Coverage Needs Investigation
+
+The current 2025 CSD rent table contains:
+
+```text
+22 rows
+```
+
+while the project contains:
+
+```text
+25 municipalities
+```
+
+This difference requires investigation.
+
+Possible reasons include:
+
+* geographic coverage differences;
+* unavailable or suppressed CMHC observations;
+* CMA boundary differences;
+* municipalities appearing under different geography definitions.
+
+No assumption will be made until the actual CSD values in the current 2025 table are compared against the 25-municipality reference table.
+
+---
+
+### 9.5 Raw Source Tables Remain Unmodified
+
+All work completed so far has involved:
+
+```text
+SELECT
+inspection
+Pandas DataFrames
+validation
+```
+
+No cleaned data has yet been uploaded back into BigQuery.
+
+This allows the cleaning process to remain reproducible and prevents accidental modification of the source datasets.
+
+---
+
+# 10. Planned Next Cleaning Steps
+
+The next phase will focus on the historical CMHC rent data.
+
+The planned process is:
+
+### Step 5 — Inspect Representative Rent Tables
+
+A sample of municipality tables will be examined to verify that their schemas are identical.
+
+Example tables:
+
+```text
+rent_history_3520005_toronto
+rent_history_3521010_brampton
+rent_history_3518001_pickering
+```
+
+---
+
+### Step 6 — Validate Schema Consistency
+
+All 25 historical rent tables will be checked to confirm whether the same 12-column schema is used throughout.
+
+Tables will only be combined automatically if their schemas are compatible.
+
+---
+
+### Step 7 — Combine Historical Rent Tables
+
+The 25 municipality-specific tables will be concatenated into one Colab DataFrame.
+
+Geographic fields will be added from the municipality reference table:
+
+```text
+csd_code
+municipality
+region
+source_table
+```
+
+---
+
+### Step 8 — Correct the Reference Period Field
+
+The raw CMHC historical tables currently contain a column labelled:
+
+```text
+municipality
+```
+
+but sample records indicate that the field contains values such as:
+
+```text
+2003 October
+2004 October
+2025 October
+```
+
+The column will therefore be renamed:
+
+```text
+reference_period
+```
+
+and parsed into:
+
+```text
+year
+survey_month
+```
+
+---
+
+### Step 9 — Investigate Missing Values
+
+Rental observations for:
+
+```text
+Studio
+1 Bedroom
+2 Bedroom
+3 Bedroom
+Total
+```
+
+will be inspected for missing values.
+
+Missing values will not automatically be removed because they may represent suppressed or unavailable CMHC estimates rather than data-quality errors.
+
+---
+
+### Step 10 — Investigate CMHC Quality Flags
+
+Fields including:
+
+```text
+Studio_flag
+1_Bedroom_flag
+2_Bedroom_flag
+3_Bedroom_flag
+Total_flag
+```
+
+contain values such as:
+
+```text
+a
+b
+c
+d
+```
+
+These fields will be retained until their official definitions are verified.
+
+The flags may provide information about estimate reliability or data quality.
+
+---
+
+### Step 11 — Reshape the Dataset
+
+The historical rent data will eventually be transformed from wide format:
+
+```text
+municipality | Studio | 1_Bedroom | 2_Bedroom | 3_Bedroom
+```
+
+into long analytical format:
+
+```text
+csd_code
+municipality
+region
+year
+survey_month
+bedroom_type
+avg_monthly_rent
+quality_flag
+```
+
+This format will make SQL analysis and Power BI reporting easier.
+
+---
+
+# 11. Data Governance Approach
+
+The project follows three principles during data preparation.
+
+### Preserve Raw Data
+
+Raw source tables in:
+
+```text
+raw_cmhc
+```
+
+are not manually edited.
+
+---
+
+### Separate Cleaning From Analysis
+
+The final architecture is intended to follow:
+
+```text
+raw data
+   ↓
+cleaned data
+   ↓
+analytical SQL views
+   ↓
+Power BI
+```
+
+---
+
+### Preserve Source Metadata
+
+Statistics Canada metadata tables will not be mixed directly into analytical observations.
+
+Instead, relevant metadata will eventually be organized separately for:
+
+* source documentation;
+* reference periods;
+* data definitions;
+* footnotes;
+* limitations;
+* Power BI methodology documentation.
+
+---
+
+# 12. Project Limitations Identified for Later Review
+
+Several methodological issues still need to be resolved before KPI analysis begins.
+
+### Household Income Definition
+
+The current `11100009_gta` sample includes:
+
+```text
+Median total income, all families
+```
+
+The project KPI requires **median household income**.
+
+These are not assumed to be interchangeable.
+
+The correct Statistics Canada household-income measure will therefore be identified before the income dataset is cleaned.
+
+---
+
+### Income and Rent Reference Years
+
+The planned analysis compares Census-era income data with newer CMHC rental data.
+
+If historical income is adjusted to a later year's dollars, both values must be retained separately:
+
+```text
+nominal income
+inflation-adjusted income
+```
+
+An inflation-adjusted historical value must not be described as observed income for the later year.
+
+---
+
+### CMHC Rental Coverage
+
+CMHC rental-market data may not represent every type of rental housing.
+
+This limitation will be documented in the final dashboard and methodology notes.
+
+---
+
+# 13. Current Progress Summary
+
+| Task                                    | Status                     |
+| --------------------------------------- | -------------------------- |
+| Connect Colab to BigQuery               | ✅ Complete                 |
+| Protect raw BigQuery data               | ✅ Complete                 |
+| Inventory BigQuery tables               | ✅ Complete                 |
+| Classify source table types             | ✅ Complete                 |
+| Identify 25 municipalities              | ✅ Complete                 |
+| Extract CSD identifiers                 | ✅ Complete                 |
+| Create municipality reference table     | ✅ Complete                 |
+| Establish regional mapping              | ✅ Complete                 |
+| Validate municipality uniqueness        | 🔄 Current validation step |
+| Inspect historical rent schemas         | ⏭️ Next                    |
+| Combine historical rent tables          | ⏭️ Next                    |
+| Clean and reshape rent data             | ⏭️ Next                    |
+| Clean vacancy data                      | ⏭️ Planned                 |
+| Identify correct StatCan income measure | ⏭️ Planned                 |
+| Prepare inflation adjustment            | ⏭️ Planned                 |
+| Build analytical SQL views              | ⏭️ Planned                 |
+| Build Power BI dashboard                | ⏭️ Planned                 |
+
+---
+
+## Conclusion
+
+The first stage of the data-cleaning process has established the structure required for the remainder of the GTA Housing Affordability analysis.
+
+Rather than immediately transforming the raw datasets, the initial work focused on understanding the source architecture, identifying the project's 25 municipalities, extracting stable Census Subdivision identifiers, and constructing a reusable geography reference layer.
+
+This approach creates a controlled foundation for combining CMHC rent, vacancy, and Statistics Canada datasets later in the project.
+
+The next stage will begin the detailed transformation of the historical rent tables while continuing to preserve the original BigQuery source data.
