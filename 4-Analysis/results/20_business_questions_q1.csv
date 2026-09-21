@@ -1,0 +1,18 @@
+rank_most_affordable,municipality,region,rent_2br_2025,median_hh_income_2025_est,rti_2br_2025_est_pct,pts_vs_toronto,rent_diff_vs_toronto,rent_2br_2025_quality
+1,Halton Hills,Halton,1531.0,151800.0,12.1,-12.5,-524.0,a
+2,Scugog,Durham,1452.0,129100.0,13.5,-11.1,-603.0,c
+3,Whitby,Durham,1673.0,147000.0,13.7,-10.9,-382.0,a
+4,Brock,Durham,1296.0,109900.0,14.2,-10.4,-759.0,a
+5,Milton,Halton,1801.0,150600.0,14.4,-10.2,-254.0,b
+6,Ajax,Durham,1727.0,142200.0,14.6,-10.0,-328.0,a
+7,Clarington,Durham,1788.0,133800.0,16.0,-8.6,-267.0,b
+8,Richmond Hill,York,1827.0,121900.0,18.0,-6.6,-228.0,a
+9,Oakville,Halton,2309.0,153000.0,18.1,-6.5,254.0,b
+10,Brampton,Peel,2025.0,132600.0,18.3,-6.3,-30.0,a
+11,Aurora,York,2187.0,142200.0,18.5,-6.1,132.0,a
+12,Burlington,Halton,2050.0,131400.0,18.7,-5.9,-5.0,a
+13,Markham,York,1996.0,124300.0,19.3,-5.3,-59.0,c
+14,Mississauga,Peel,2001.0,121900.0,19.7,-4.9,-54.0,a
+15,Oshawa,Durham,1780.0,102800.0,20.8,-3.8,-275.0,a
+16,Newmarket,York,2384.0,131400.0,21.8,-2.8,329.0,c
+17,Toronto,Toronto,2055.0,100400.0,24.6,0.0,0.0,a

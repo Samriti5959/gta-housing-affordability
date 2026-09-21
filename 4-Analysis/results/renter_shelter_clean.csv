@@ -1,0 +1,33 @@
+geo_level,geo_code,geo_name,renter_households,renters_30_plus,renters_30_plus_pct,renter_share_pct,owners_30_plus_pct
+Municipality,3518013,Oshawa,23870.0,10120.0,42.7,35.8,19.3
+Municipality,3518017,Clarington,5135.0,2075.0,40.6,14.4,15.0
+Municipality,3519054,East Gwillimbury,1805.0,790.0,44.0,15.8,23.6
+Municipality,3519070,Georgina,3335.0,1345.0,40.5,18.7,19.6
+Region,3521,Peel,114840.0,43535.0,38.4,25.5,25.7
+Municipality,3524002,Burlington,18225.0,8140.0,44.9,24.9,15.9
+Municipality,3518029,Uxbridge,1255.0,525.0,41.8,16.1,16.1
+Municipality,3519038,Richmond Hill,15105.0,7635.0,51.2,21.8,33.2
+Municipality,3519049,King,1045.0,390.0,37.9,11.8,25.1
+Municipality,3518001,Pickering,4950.0,1890.0,38.4,14.8,21.7
+Municipality,3519046,Aurora,4030.0,1770.0,44.1,18.7,25.9
+Region,3518,Durham,52005.0,21005.0,40.6,21.5,18.7
+Municipality,3518005,Ajax,6530.0,2455.0,37.8,16.5,22.1
+Municipality,3519036,Markham,20310.0,9540.0,47.8,18.3,29.5
+Municipality,3524009,Milton,6950.0,2855.0,41.6,17.4,21.9
+Country,11124,Canada,4947975.0,1627445.0,33.1,33.4,14.8
+Municipality,3518039,Brock,870.0,275.0,31.6,18.7,17.7
+Region,3519,York,69600.0,32490.0,47.2,17.8,26.9
+Municipality,3519044,Whitchurch-Stouffville,2005.0,860.0,43.3,12.0,23.4
+Municipality,3520005,Toronto,557970.0,220490.0,40.0,48.1,25.6
+Municipality,3521024,Caledon,2500.0,1005.0,40.4,10.6,19.8
+Region,3524,Halton,44915.0,19740.0,44.4,21.5,18.7
+Municipality,3524015,Halton Hills,3210.0,1290.0,40.3,14.7,14.8
+Municipality,3518009,Whitby,8335.0,3275.0,39.5,17.9,17.4
+Municipality,3518020,Scugog,1055.0,390.0,37.5,13.2,13.5
+Municipality,3521010,Brampton,39990.0,14670.0,37.0,21.9,29.3
+Province,35,Ontario,1723285.0,655825.0,38.4,31.6,17.7
+Municipality,3519028,Vaughan,14615.0,7280.0,50.4,14.1,24.2
+Municipality,3519048,Newmarket,7350.0,2880.0,39.5,24.3,22.4
+Region,3520,Toronto,557970.0,220490.0,40.0,48.1,25.6
+Municipality,3521005,Mississauga,72350.0,27860.0,39.1,29.6,23.5
+Municipality,3524001,Oakville,16530.0,7450.0,45.8,22.5,20.8
