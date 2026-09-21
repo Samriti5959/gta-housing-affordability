@@ -7,7 +7,7 @@
 -- East Gwillimbury's table has no Studio columns, so those are NULL.
 -- Suppressed values (**) were already loaded as NULL and are dropped here, never set to 0.
 
-CREATE OR REPLACE VIEW `gta-housing-508813.gta_analytics.vacancy_clean` AS
+CREATE OR REPLACE VIEW `gta-housing-508813.cleaned_cmhc.vacancy_clean` AS
 WITH wide AS (
   SELECT 3518001 AS csd_code, municipality AS reference_period,
          SAFE_CAST(`Studio` AS FLOAT64) AS studio, CAST(`Studio_flag` AS STRING) AS studio_flag,
@@ -220,5 +220,5 @@ SELECT
   CASE l.quality_flag WHEN 'a' THEN 'Excellent' WHEN 'b' THEN 'Very good'
                       WHEN 'c' THEN 'Good' WHEN 'd' THEN 'Poor (use with caution)' END AS quality_level
 FROM long AS l
-JOIN `gta-housing-508813.gta_analytics.dim_municipality` AS d USING (csd_code)
+JOIN `gta-housing-508813.cleaned_cmhc.dim_municipality` AS d USING (csd_code)
 WHERE l.vacancy_rate_pct IS NOT NULL;

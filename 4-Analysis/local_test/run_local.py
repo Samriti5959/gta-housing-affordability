@@ -6,7 +6,7 @@ No Google Cloud account needed. The script:
      column names match BigQuery exactly), and loads 3-Clean/Cleaned_Data/rent_clean.csv
      as cleaned_cmhc.rent_clean;
   2. translates each SQL file from BigQuery to DuckDB syntax with sqlglot and runs it;
-  3. writes every gta_analytics view to ../results/<view>.csv.
+  3. writes every view (cleaned_cmhc and gta_analytics) and query result to ../results/.
 
 Setup:  pip install duckdb sqlglot pandas
 Usage:  python3 run_local.py
@@ -94,10 +94,12 @@ def main():
 
     RESULTS.mkdir(exist_ok=True)
     views = con.execute(
-        "SELECT table_name FROM information_schema.tables WHERE table_schema = 'gta_analytics' ORDER BY 1"
+        "SELECT table_schema, table_name FROM information_schema.tables "
+        "WHERE table_type = 'VIEW' AND table_schema IN ('cleaned_cmhc', 'gta_analytics') ORDER BY 1, 2"
     ).fetchall()
-    for (view,) in views:
-        df = con.execute(f"SELECT * FROM gta_analytics.{view}").df()
+    for schema, view in views:
+        df = con.execute(f"SELECT * FROM {schema}.{view}").df()
+        df = df.sort_values(list(df.columns), ignore_index=True)  # views have no order; keep files stable
         df.to_csv(RESULTS / f"{view}.csv", index=False)
         print(f"results/{view}.csv  {len(df):,} rows")
 

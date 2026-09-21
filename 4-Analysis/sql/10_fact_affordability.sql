@@ -34,7 +34,7 @@ vacancy AS (
     csd_code,
     MAX(CASE WHEN bedroom_type = 'Total' THEN vacancy_rate_pct END) AS vacancy_total_2025_pct,
     MAX(CASE WHEN bedroom_type = '2 Bedroom' THEN vacancy_rate_pct END) AS vacancy_2br_2025_pct
-  FROM `gta-housing-508813.gta_analytics.vacancy_clean`
+  FROM `gta-housing-508813.cleaned_cmhc.vacancy_clean`
   WHERE year = 2025
   GROUP BY csd_code
 ),
@@ -42,7 +42,7 @@ cpi AS (
   SELECT
     MAX(CASE WHEN year = 2025 THEN all_items_cpi END) / MAX(CASE WHEN year = 2020 THEN all_items_cpi END) AS factor_2020_to_2025,
     MAX(CASE WHEN year = 2020 THEN all_items_cpi END) / MAX(CASE WHEN year = 2015 THEN all_items_cpi END) AS factor_2015_to_2020
-  FROM `gta-housing-508813.gta_analytics.cpi_annual`
+  FROM `gta-housing-508813.cleaned_cmhc.cpi_annual`
 ),
 joined AS (
   SELECT
@@ -59,15 +59,15 @@ joined AS (
     s.renters_30_plus_pct AS renters_30_plus_2021_pct,
     v.vacancy_total_2025_pct, v.vacancy_2br_2025_pct,
     cpi.factor_2020_to_2025, cpi.factor_2015_to_2020
-  FROM `gta-housing-508813.gta_analytics.dim_municipality` AS d
+  FROM `gta-housing-508813.cleaned_cmhc.dim_municipality` AS d
   CROSS JOIN cpi
   LEFT JOIN rent AS r USING (csd_code)
   LEFT JOIN vacancy AS v USING (csd_code)
-  LEFT JOIN `gta-housing-508813.gta_analytics.income_clean` AS i
+  LEFT JOIN `gta-housing-508813.cleaned_cmhc.income_clean` AS i
     ON i.geo_level = 'Municipality' AND i.geo_code = d.csd_code
-  LEFT JOIN `gta-housing-508813.gta_analytics.renter_shelter_clean` AS s
+  LEFT JOIN `gta-housing-508813.cleaned_cmhc.renter_shelter_clean` AS s
     ON s.geo_level = 'Municipality' AND s.geo_code = d.csd_code
-  LEFT JOIN `gta-housing-508813.gta_analytics.population_clean` AS p
+  LEFT JOIN `gta-housing-508813.cleaned_cmhc.population_clean` AS p
     ON p.csd_code = d.csd_code AND p.year = 2025
 )
 SELECT

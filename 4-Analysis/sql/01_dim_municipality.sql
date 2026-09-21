@@ -1,10 +1,14 @@
 -- 01_dim_municipality.sql
 -- One row per project municipality (the 25 in City of Toronto + Peel, York, Durham, Halton).
 -- csd_code is the join key for every other table.
+--
+-- Layers: raw_cmhc (bronze, as loaded) -> cleaned_cmhc (silver, clean tables)
+--         -> gta_analytics (gold, what Power BI reads).
 
+CREATE SCHEMA IF NOT EXISTS `gta-housing-508813.cleaned_cmhc`;
 CREATE SCHEMA IF NOT EXISTS `gta-housing-508813.gta_analytics`;
 
-CREATE OR REPLACE VIEW `gta-housing-508813.gta_analytics.dim_municipality` AS
+CREATE OR REPLACE VIEW `gta-housing-508813.cleaned_cmhc.dim_municipality` AS
 SELECT 3520005 AS csd_code, 'Toronto' AS municipality, 'Toronto' AS region, 3520 AS region_code, 'Toronto' AS cma
 UNION ALL SELECT 3521005, 'Mississauga', 'Peel', 3521, 'Toronto'
 UNION ALL SELECT 3521010, 'Brampton', 'Peel', 3521, 'Toronto'

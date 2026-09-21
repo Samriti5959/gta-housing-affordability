@@ -7,7 +7,7 @@
 -- Note: this covers all households (owners and renters). StatCan does not publish
 -- renter-only median income by municipality in its standard tables.
 
-CREATE OR REPLACE VIEW `gta-housing-508813.gta_analytics.income_clean` AS
+CREATE OR REPLACE VIEW `gta-housing-508813.cleaned_cmhc.income_clean` AS
 WITH totals AS (
   SELECT *
   FROM `gta-housing-508813.raw_cmhc.98100057_gta`

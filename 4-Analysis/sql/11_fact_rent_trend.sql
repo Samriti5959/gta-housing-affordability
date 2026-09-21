@@ -9,8 +9,8 @@ WITH base AS (
     r.avg_monthly_rent, r.quality_flag, r.quality_level,
     c.all_items_cpi, c.rent_cpi
   FROM `gta-housing-508813.cleaned_cmhc.rent_clean` AS r
-  JOIN `gta-housing-508813.gta_analytics.dim_municipality` AS d USING (csd_code)
-  LEFT JOIN `gta-housing-508813.gta_analytics.cpi_annual` AS c USING (year)
+  JOIN `gta-housing-508813.cleaned_cmhc.dim_municipality` AS d USING (csd_code)
+  LEFT JOIN `gta-housing-508813.cleaned_cmhc.cpi_annual` AS c USING (year)
 ),
 with_lag AS (
   SELECT
@@ -29,7 +29,7 @@ SELECT
   -- only a true year-over-year change when the previous published year is the year before
   CASE WHEN prev_year = year - 1
        THEN ROUND(100 * (avg_monthly_rent / prev_rent - 1), 1) END AS yoy_change_pct,
-  ROUND(avg_monthly_rent * (SELECT all_items_cpi FROM `gta-housing-508813.gta_analytics.cpi_annual` WHERE year = 2025)
+  ROUND(avg_monthly_rent * (SELECT all_items_cpi FROM `gta-housing-508813.cleaned_cmhc.cpi_annual` WHERE year = 2025)
         / all_items_cpi, 0) AS rent_in_2025_dollars,
   ROUND(100 * avg_monthly_rent / rent_2015, 1) AS rent_index_2015_100
 FROM with_lag;

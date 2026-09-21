@@ -4,7 +4,7 @@
 --   all_items_cpi -> used to express incomes and rents in the same year's dollars
 --   rent_cpi      -> StatCan's rent index, a cross-check on CMHC rent growth
 
-CREATE OR REPLACE VIEW `gta-housing-508813.gta_analytics.cpi_annual` AS
+CREATE OR REPLACE VIEW `gta-housing-508813.cleaned_cmhc.cpi_annual` AS
 SELECT
   CAST(SUBSTR(REF_DATE, 1, 4) AS INT64) AS year,
   ROUND(AVG(CASE WHEN Products_and_product_groups = 'All-items' THEN VALUE END), 2) AS all_items_cpi,

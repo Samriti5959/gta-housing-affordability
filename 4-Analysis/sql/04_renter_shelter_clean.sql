@@ -6,7 +6,7 @@
 -- ("less than 30%" + "30% or more"), which excludes "Not applicable" households
 -- (zero or negative income). This matches how StatCan reports the percentage.
 
-CREATE OR REPLACE VIEW `gta-housing-508813.gta_analytics.renter_shelter_clean` AS
+CREATE OR REPLACE VIEW `gta-housing-508813.cleaned_cmhc.renter_shelter_clean` AS
 WITH base AS (
   SELECT
     DGUID, GEO,

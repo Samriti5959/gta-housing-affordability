@@ -64,7 +64,7 @@ SELECT
   rent_2br_cagr_2020_2025_pct,
   rent_2br_cagr_2015_2025_pct,
   ROUND(100 * (POW((SELECT MAX(CASE WHEN year = 2025 THEN all_items_cpi END) / MAX(CASE WHEN year = 2020 THEN all_items_cpi END)
-                    FROM `gta-housing-508813.gta_analytics.cpi_annual`), 1 / 5) - 1), 1) AS cpi_inflation_2020_2025_pct
+                    FROM `gta-housing-508813.cleaned_cmhc.cpi_annual`), 1 / 5) - 1), 1) AS cpi_inflation_2020_2025_pct
 FROM `gta-housing-508813.gta_analytics.fact_affordability`
 WHERE rent_2br_cagr_2020_2025_pct IS NOT NULL
 ORDER BY rent_2br_cagr_2020_2025_pct DESC;

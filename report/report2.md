@@ -7,7 +7,7 @@
 ## Summary
 
 - **The rent cleaning is correct.** `rent_clean.csv` matches the raw CMHC data exactly: 2,952 of 2,952 published values, with no missing, extra or changed values.
-- **Built the analysis layer in BigQuery SQL:** 9 views in a new dataset `gta_analytics`, plus 6 business-question queries. Everything was tested locally against an exact copy of the `raw_cmhc` tables.
+- **Built the analysis layer in BigQuery SQL,** in bronze / silver / gold layers: 6 clean views in `cleaned_cmhc` (silver) and 6 dashboard views in `gta_analytics` (gold), plus 6 business-question queries. Everything was tested locally against an exact copy of the `raw_cmhc` tables.
 - **Main finding:** relative to the median household, renting outside Toronto is more affordable, and Toronto has the highest rent-to-income (24.6%). But renters are under strain everywhere: 37–51% spend 30% or more of income on shelter. The worst is in York and Halton suburbs (Richmond Hill 51%, Vaughan 50%).
 
 ## 1. Cleaning review
@@ -33,7 +33,7 @@
 
 ### Issues to fix
 
-1. **Vacancy cleaning wasn't done yet.** I built it as a SQL view (`gta_analytics.vacancy_clean`) with the same shape as `rent_clean`. If the Colab version gets finished, compare the two.
+1. **Vacancy cleaning wasn't done yet.** I built it as a SQL view (`cleaned_cmhc.vacancy_clean`) with the same shape as `rent_clean`. If the Colab version gets finished, compare the two.
 2. **`rent_clean` isn't in BigQuery yet** (Report 2 plans `cleaned_cmhc`). The SQL expects `cleaned_cmhc.rent_clean`; please upload the CSV there.
 3. **The cleaning code lives only in Colab.** Export the notebook (`.ipynb`) into `3-Clean/` so it's versioned with the data.
 4. **The two cleaning reports have no `.md` extension**, so GitHub shows them as plain text. Renaming them to `.md` fixes that.
@@ -43,13 +43,11 @@
 
 All SQL is in [`4-Analysis/sql/`](../4-Analysis/sql/); the model, KPI definitions and run steps are in [`4-Analysis/readme.md`](../4-Analysis/readme.md).
 
-| View | What it is |
-|---|---|
-| `dim_municipality` | The 25 municipalities, region and CMA |
-| `vacancy_clean`, `income_clean`, `renter_shelter_clean`, `population_clean`, `cpi_annual` | Clean staging views |
-| `fact_affordability` | Main KPI table, one row per municipality |
-| `fact_rent_trend` | Rent by year with year-over-year change, 2025 dollars and index |
-| `region_summary` | Region roll-up plus Ontario |
+| Layer | Dataset | Views |
+|---|---|---|
+| Bronze | `raw_cmhc` | The raw tables from step 2 (unchanged) |
+| Silver | `cleaned_cmhc` | `rent_clean` (team) + `dim_municipality`, `vacancy_clean`, `income_clean`, `renter_shelter_clean`, `population_clean`, `cpi_annual` |
+| Gold | `gta_analytics` | `fact_affordability` (main KPI table), `fact_rent_trend`, `fact_vacancy_trend`, `region_summary`, `dim_municipality`. Power BI reads only this |
 
 ### KPIs
 
@@ -93,4 +91,4 @@ Several results were also checked by hand. For example, Toronto: $2,055 × 12 ÷
 | 1 | Upload `rent_clean.csv` to `cleaned_cmhc.rent_clean` | Cleaning owner |
 | 2 | Run `4-Analysis/sql/` 01 → 20 in BigQuery Studio | Samir / Samriti |
 | 3 | Review the KPI definitions and the 30% / 40% band thresholds | Team |
-| 4 | Build the dashboard on `fact_affordability`, `fact_rent_trend`, `region_summary` | Dashboard owner |
+| 4 | Build the dashboard on the `gta_analytics` views (see `4-Analysis/readme.md`, "For the Power BI dashboard") | Samriti |

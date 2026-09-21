@@ -20,7 +20,7 @@ WITH muni AS (
 ),
 cpi AS (
   SELECT MAX(CASE WHEN year = 2025 THEN all_items_cpi END) / MAX(CASE WHEN year = 2020 THEN all_items_cpi END) AS factor
-  FROM `gta-housing-508813.gta_analytics.cpi_annual`
+  FROM `gta-housing-508813.cleaned_cmhc.cpi_annual`
 )
 SELECT
   i.geo_name AS region,
@@ -36,9 +36,9 @@ SELECT
   m.rent_2br_2025_max,
   ROUND(100 * SAFE_DIVIDE(m.rent_2br_2025_weighted * 12, i.median_hh_income_2020 * cpi.factor), 1) AS rti_2br_2025_est_pct,
   s.renters_30_plus_pct AS renters_30_plus_2021_pct
-FROM `gta-housing-508813.gta_analytics.income_clean` AS i
+FROM `gta-housing-508813.cleaned_cmhc.income_clean` AS i
 CROSS JOIN cpi
-LEFT JOIN `gta-housing-508813.gta_analytics.renter_shelter_clean` AS s
+LEFT JOIN `gta-housing-508813.cleaned_cmhc.renter_shelter_clean` AS s
   ON s.geo_level = i.geo_level AND s.geo_code = i.geo_code
 LEFT JOIN muni AS m ON m.region = i.geo_name
 WHERE i.geo_level IN ('Region', 'Province');
