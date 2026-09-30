@@ -49,7 +49,7 @@ SELECT
   municipality, region,
   real_rent_2br_growth_2015_2020_pct,
   real_income_growth_2015_2020_pct,
-  ROUND(real_rent_2br_growth_2015_2020_pct - real_income_growth_2015_2020_pct, 1) AS rent_minus_income_pts,
+  rent_minus_income_pts_2015_2020 AS rent_minus_income_pts,
   CASE WHEN real_rent_2br_growth_2015_2020_pct > real_income_growth_2015_2020_pct
        THEN 'Rent grew faster' ELSE 'Income grew faster' END AS verdict
 FROM `gta-housing-508813.gta_analytics.fact_affordability`

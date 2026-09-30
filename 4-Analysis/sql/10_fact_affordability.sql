@@ -111,6 +111,13 @@ SELECT
   -- 2015 -> 2020, both in 2020 dollars (real): rent adjusted with Toronto CPI, income already in constant dollars
   ROUND(100 * (SAFE_DIVIDE(rent_2br_2020, rent_2br_2015 * factor_2015_to_2020) - 1), 1) AS real_rent_2br_growth_2015_2020_pct,
   ROUND(100 * (SAFE_DIVIDE(median_hh_income_2020, median_hh_income_2015_in_2020_dollars) - 1), 1) AS real_income_growth_2015_2020_pct,
+  -- The growth gap in percentage points: positive means rent grew faster than income.
+  -- This is the "widest growth gap" KPI on the dashboard; use this column rather than a measure
+  -- defined inside the .pbix, so the number can be reviewed in SQL. Same definition as Q4.
+  ROUND(
+    ROUND(100 * (SAFE_DIVIDE(rent_2br_2020, rent_2br_2015 * factor_2015_to_2020) - 1), 1)
+    - ROUND(100 * (SAFE_DIVIDE(median_hh_income_2020, median_hh_income_2015_in_2020_dollars) - 1), 1)
+  , 1) AS rent_minus_income_pts_2015_2020,
 
   CASE
     WHEN rent_2br_2025 IS NOT NULL THEN 'Full'

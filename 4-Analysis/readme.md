@@ -94,7 +94,7 @@ flowchart LR
 | Income needed | `income_needed_2br_2025`, `income_needed_pct_of_median_2025` | Income at which the average 2-bedroom costs 30% of gross income (the CMHC benchmark) |
 | Renter stress | `renters_30_plus_2021_pct` | Renter households spending 30%+ of income on shelter ÷ renter households with a calculable ratio (2021 Census) |
 | Vacancy | `vacancy_total_2025_pct` | CMHC October vacancy rate. About 3% is considered balanced |
-| Rent vs income growth | `real_rent_2br_growth_2015_2020_pct`, `real_income_growth_2015_2020_pct` | Both in 2020 dollars. Rent adjusted with Toronto CPI; census income already in constant dollars |
+| Rent vs income growth | `real_rent_2br_growth_2015_2020_pct`, `real_income_growth_2015_2020_pct`, `rent_minus_income_pts_2015_2020` | Both in 2020 dollars. Rent adjusted with Toronto CPI; census income already in constant dollars. The `_pts` column is the gap between the two: positive means rent grew faster. Use it for the dashboard's "widest growth gap" KPI |
 | Rent growth | `rent_2br_cagr_2020_2025_pct`, `rent_2br_cagr_2015_2025_pct` | Compound annual growth of the 2-bedroom rent |
 
 `NULL` always means "not published", never zero.
